@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>SIP</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" href="img/SIP_ICON.png">
+
+        <!-- Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body class="SIPfont">
+
+        <header>
+            <!-- Navbar Start -->
+            <a href="index.html" id="sip-logo" class="logo">
+                <img src="img/SIP_LOGO_W.png">
+            </a>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div id="sidenav-links" class="sidenav-links">
+                    <a href="#sobresip" onclick="closeNav()">Sobre Nosotros</a>
+                    <a href="index.html#contactanos" onclick="closeNav()">Contáctanos</a>
+                    <a href="sip.html" onclick="closeNav()">SIP</a>
+                    <a href="sip-wealth.html" onclick="closeNav()">SIP Wealth</a>
+                </div>
+            </div>
+            <span style="font-size:35px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
+            <!-- Navbar End -->
+        </header>
+
+        <div id="body">
+            <!--Portada Start-->
+
+            <div class="portada-sip">
+                <img src="img/SIP_LOGO_W.png" class="sip-logo-w">
+                <div class="portada-texto">
+                    ¿Quieres empezar tu camino financiero? ¡SIP! Somos
+                    una alternativa en donde creemos en el poder de
+                    empezar hoy. Te acompañamos a construir tu fondo
+                    de emergencia, tus primeras decisiones sobre tu
+                    dinero y tus metas financieras. Porque decirle que sí
+                    a tu futuro es decirle ¡SIP!
+                </div>
+            </div>
+
+            <!--Portada End-->
+
+            <!--Sobre Nosotros Start-->
+
+            <div class="sobre-nosotros">
+                <div class="purple-filter">
+                    <div class="title-sobre">
+                        Sobre Nosotros
+                    </div>
+                    <div class="texto-sobre-nosotros">
+                        En SIP creemos que empezar bien lo cambia todo.
+                        Creamos un espacio para aprender de finanzas, tomar
+                        acción y construir tu patrimonio de forma simple y
+                        acompañada.
+                        Desde tu primer fondo de emergencia hasta hacer
+                        crecer tu dinero, te guiamos con herramientas claras,
+                        asesoría honesta y experiencia real, para que le des un
+                        <span class="moradito">“SIP” a tu futuro financiero.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sobre Nosotros End-->
+
+           <!--  <div>
+                <div class="slider">
+                    <div class="list">
+                        <div class="item">
+                            <img src="img/SIPI.png">
+                        </div>
+                        <div class="item">
+                            <img src="img/SIPI.png">
+                        </div>
+                        <div class="item">
+                            <img src="img/SIPI.png">
+                        </div>
+                    </div>
+                    <div class="circle">
+                        SIP - Simple Investment Partners
+                    </div>
+                    <div class="content">
+                        <div>Servicios</div>
+                        <div>SIP</div>
+                        <button>Ver Más</button>
+                    </div>
+                    <div class="arrow">
+                        <button id="prev"></button>
+                        <button id="next"></button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!--Servicios Start-->
+
+            <div class="servicios-body-2">
+                <div class="title-servicios">
+                        Servicios
+                </div>
+                <div class="body-2-container">
+                    <div class="body-2">
+                    <!-- ontouchstart used for card flip -->
+                        <div class="wrapper" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="card-front">
+                                    <div class="front-title">Ahorra hoy, disfruta mañana</div>
+                                    <div class="logo">
+                                        <img class="initial" src="img/background1.jpg">
+                                    </div>
+                                    <div class="oval"></div>
+                                </div>
+                                <div id="card-back-1" class="card-back">
+                                    Asegura tu futuro sin
+                                    descuidar tu presente.
+                                    Creamos contigo un plan
+                                    de ahorro a largo plazo,
+                                    flexible y constante, que se
+                                    adapta a tus posibilidades y
+                                    te acerca, paso a paso, a
+                                    una jubilación con libertad
+                                    financiera.
+                                </div>
+                            </div> <!--/flipper -->
+                        </div> <!--/wrapper -->
+                    </div>
+                    <div class="body-2">
+                    <!-- ontouchstart used for card flip -->
+                        <div class="wrapper" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="card-front">
+                                    <div class="front-title">Inversión con objetivo</div>
+                                    <div class="logo">
+                                        <img class="initial" src="img/background2.jpg">
+                                    </div>
+                                    <div class="oval"></div>
+                                </div>
+                                <div id="card-back-2" class="card-back">
+                                    ¿Tienes una meta
+                                    concreta? Ya sea un viaje,
+                                    tu primer departamento o
+                                    una etapa importante de la
+                                    vida, diseñamos contigo
+                                    una estrategia financiera
+                                    personalizada que se
+                                    adapte a tu horizonte de
+                                    tiempo y tu perfil de riesgo.
+                                </div>
+                            </div> <!--/flipper -->
+                        </div> <!--/wrapper -->
+                    </div>
+                    <div class="body-2">
+                    <!-- ontouchstart used for card flip -->
+                        <div class="wrapper" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="card-front">
+                                    <div class="front-title">Crowdfunding inmobiliario</div>
+                                    <div class="logo">
+                                        <img class="initial" src="img/background3.jpg">
+                                    </div>
+                                    <div class="oval"></div>
+                                </div>
+                                <div id="card-back-3" class="card-back">
+                                    Haz que tu dinero
+                                    construya algo sólido.
+                                    Explora con nosotros
+                                    oportunidades
+                                    inmobiliarias alineadas a tu
+                                    perfil, tus metas y tu
+                                    momento de vida.
+                                </div>
+                            </div> <!--/flipper -->
+                        </div> <!--/wrapper -->
+                    </div>
+                </div>
+            </div>
+
+            <!--Servicios End-->
+            <div>
+                <div class="title-por-que">
+                    ¿Por qué SIP?
+                </div>
+                <div class="diferentes-container">
+                    <div class="dif-2"></div>
+                    <div class="dif"></div>
+                    <div id="square-dif" class="dif-square">
+                        <img src="img/SIP_ICON.png" class="dif-text">
+                    </div>
+                    <div id="diferentes-texto" class="square-dif-container">
+                        <div class="dif-desc">
+                            Porque empezar con el pie derecho te ahorra años de errores.
+                        </div>
+                        <div class="dif-desc">
+                            Porque todos deberían tener acceso a
+                            herramientas financieras claras, reguladas y
+                            seguras.
+                        </div>
+                        <div class="dif-desc">
+                            Porque nadie te enseña esto en la escuela.
+                        </div>
+                        <div class="dif-desc">
+                            Porque no necesitas ser experto para tomar
+                            buenas decisiones.
+                        </div>
+                        <div class="dif-desc">
+                            Porque creemos en acompañarte, no en
+                            venderte.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Por qué Start-->
+
+<!--             <div class="por-que-sip">
+                <div class="por-sip-full-texto">
+                    <div class="por-sip-title">
+                        ¿Por qué SIP?
+                    </div>
+                    <div class="por-sip-texto">
+                        <div class="por-sip-sub">
+                            Porque empezar con el pie derecho te ahorra años de errores.
+                        </div>
+                        <hr>
+                        <div class="por-sip-sub">
+                            Porque todos deberían tener acceso a
+                            herramientas financieras claras, reguladas y
+                            seguras.
+                        </div>
+                        <hr>
+                        <div class="por-sip-sub">
+                            Porque nadie te enseña esto en la escuela.
+                        </div>
+                        <hr>
+                        <div class="por-sip-sub">
+                            Porque no necesitas ser experto para tomar
+                            buenas decisiones.
+                        </div>
+                        <hr>
+                        <div class="por-sip-sub">
+                            Porque creemos en acompañarte, no en
+                            venderte.
+                        </div>
+                    </div>
+                </div>
+                <img class="por-sip-img" src="img/SIPI.png">
+            </div> -->
+
+            <!--Por qué End-->
+
+            <!--Que Nos Hace Diferentes Start-->
+
+           <!--  <div class="por-que-sip">
+                <img class="por-sip-img" src="img/SIPI.png">
+                <div class="por-sip-full-texto">
+                    <div class="por-sip-title">
+                        ¿Qué nos hace diferentes?
+                    </div>
+                    <div class="por-sip-texto">
+                        <div class="por-sip-sub">
+                            Acompañamiento real, sin juicio: Te guiamos
+                            paso a paso, desde cero.
+                        </div>
+                        <hr>
+                        <div class="por-sip-sub">
+                            Lenguaje claro y cero rollo: Te explicamos lo
+                            que necesitas saber, sin adornos ni
+                            tecnicismos.
+                        </div>
+                        <hr>
+                        <div class="por-sip-sub">
+                            Enfoque en metas, no en productos: Primero tus
+                            objetivos, luego las herramientas.
+                        </div>
+                        <hr>
+                        <div class="por-sip-sub">
+                            Asesoría cercana y con propósito: nunca estás
+                            solo en tus decisiones financieras. 
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div>
+                <div class="title-diferentes">
+                    ¿Qué nos hace diferentes?
+                </div>
+                <div class="servicios-container">
+                    <div class="cuadritos-2"></div>
+                    <div class="cuadritos"></div>
+                    <div id="square-servicios" class="servicios-square">
+                        <img src="img/SIP_ICON.png" class="square-text">
+                    </div>
+                    <div id="por-que-texto" class="square-desc-container">
+                        <div class="square-desc">
+                            Acompañamiento real, sin juicio: Te guiamos paso a paso, desde cero.
+                        </div>
+                        <div class="square-desc">
+                            Lenguaje claro y cero rollo: Te explicamos lo
+                            que necesitas saber, sin adornos ni
+                            tecnicismos.
+                        </div>
+                        <div class="square-desc">
+                            Enfoque en metas, no en productos: Primero tus
+                            objetivos, luego las herramientas.
+                        </div>
+                        <div class="square-desc">
+                            Asesoría cercana y con propósito: nunca estás
+                            solo en tus decisiones financieras. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Que Nos Hace Diferentes End-->
+
+            <div class="title-diferentes">
+                ¿Qué nos hace diferentes?
+            </div>
+            <div id="cube-container">
+                <div class="cube">
+                    <div class="side-1">
+                        <div class="moradito cube-title">Acompañamiento real, sin juicio:</div>Te guiamos paso a paso, desde cero.
+                    </div>
+                    <div class="side-2">
+                        <div class="moradito cube-title">Lenguaje claro y cero rollo:</div> Te explicamos lo
+                        que necesitas saber, sin adornos ni
+                        tecnicismos.
+                    </div>
+                    <div class="side-3">
+                        <div class="moradito cube-title">Enfoque en metas, no en productos:</div>Primero tus
+                        objetivos, luego las herramientas.
+                    </div>
+                    <div class="side-4">
+                        <div class="moradito cube-title">Asesoría cercana y con propósito:</div>Nunca estás
+                        solo en tus decisiones financieras. 
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="como-hacemos">
+
+                <div class="como-title">¿Cómo hacemos <span class="timeline-sip">SIP</span>?</div>
+
+                <div class="process-line">
+                    <div class="section-line"></div>
+                    <div class="section-line-2"></div>
+                    <ul>
+                        <li>
+                            <span class="como-icon" id="icon-1"></span>
+                            <div class="como-rect left left-1">
+                                <span class="como-sub">Radiografía Financiera</span>
+                                <p class="como-text">Sesión de asesoramiento y análisis donde buscamos
+                                conocer tus necesidades y objetivos, así como
+                                también tu situación financiera actual para poder
+                                determinar cuál es tu perfil.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="como-icon" id="icon-2"></span>
+                            <div class="como-rect right right-1">
+                                <span class="como-sub">Diseño de estrategia</span>
+                                <p class="como-text">Es aquí donde entramos en acción y se determina
+                                cuáles son las herramientas que más se alinean con
+                                tu perfil, buscando cubrir 4 áreas fundamentales:
+                                fondo de emergencia, ahorro para el retiro,
+                                inversiones pasivas e inversiones de gestión activa.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="como-icon" id="icon-3"></span>
+                            <div class="como-rect left left-2">
+                                <span class="como-sub">Seguimiento puntual</span>
+                                <p class="como-text">Una vez implementada la estrategia, se lleva un
+                                seguimiento de manera continua y se continúa el
+                                análisis de la estrategia.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="como-icon" id="icon-4"></span>
+                            <div class="como-rect right right-2">
+                                <span class="como-sub">Evaluación de resultados</span>
+                                <p class="como-text">Al cumplir puntos clave de la estrategia, se realiza una
+                                evaluación de los resultados, de las necesidades y de
+                                los objetivos para determinar si se requiere un
+                                rebalance o de estrategia o continuidad de la misma.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!--Listo Start-->
+<!--
+            <div class="listo-sip">
+                <div class="listo-title">
+                    ¿Listo para empezar?
+                    Así es como lo hacemos
+                </div>
+                <div class="hover-big">
+                    <div class="hover-container">
+                        <div class="hover-title">
+                            Radiografía Financiera
+                        </div>
+                        <div class="hover-text">
+                            Sesión de asesoramiento y análisis donde buscamos
+                            conocer tus necesidades y objetivos, así como
+                            también tu situación financiera actual para poder
+                            determinar cuál es tu perfil.
+                        </div>
+                    </div>
+
+                    <div class="hover-container">
+                        <div class="hover-title">
+                            Diseño de estrategia
+                        </div>
+                        <div class="hover-text">
+                            Es aquí donde entramos en acción y se determina
+                            cuáles son las herramientas que más se alinean con
+                            tu perfil, buscando cubrir 4 áreas fundamentales:
+                            fondo de emergencia, ahorro para el retiro,
+                            inversiones pasivas e inversiones de gestión activa.
+                        </div>
+                    </div>
+
+                    <div class="hover-container">
+                        <div class="hover-title">
+                            Seguimiento puntual
+                        </div>
+                        <div class="hover-text">
+                            Una vez implementada la estrategia, se lleva un
+                            seguimiento de manera continua y se continúa el
+                            análisis de la estrategia.
+                        </div>
+                    </div>
+
+                    <div class="hover-container">
+                        <div class="hover-title">
+                            Evaluación de resultados
+                        </div>
+                        <div class="hover-text">
+                            Al cumplir puntos clave de la estrategia, se realiza una
+                            evaluación de los resultados, de las necesidades y de
+                            los objetivos para determinar si se requiere un
+                            rebalance o de estrategia o continuidad de la misma.
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+            <!--Listo End-->
+
+            <!-- Logos Carrousel Start-->
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="img/MONIFIC_LOGO.svg"/>
+                    <img src="img/GBM_LOGO.svg"/>
+                    <img src="img/FINIX_LOGO.png"/>
+                    <img src="img/HANSARD_LOGO.svg"/>
+                    <img src="img/DOOPRIMER_LOGO.webp"/>
+                    <img src="img/ALLIANZ_LOGO.svg"/>
+                    <img src="img/SKANDIA_LOGO.png"/>
+                    <img src="img/DINEROENACCION_LOGO.png"/>
+                </div>
+                <div class="logos-slide">
+                    <img src="img/MONIFIC_LOGO.svg"/>
+                    <img src="img/GBM_LOGO.svg"/>
+                    <img src="img/FINIX_LOGO.png"/>
+                    <img src="img/HANSARD_LOGO.svg"/>
+                    <img src="img/DOOPRIMER_LOGO.webp"/>
+                    <img src="img/ALLIANZ_LOGO.svg"/>
+                    <img src="img/SKANDIA_LOGO.png"/>
+                    <img src="img/DINEROENACCION_LOGO.png"/>
+                </div>
+            </div>
+
+            <!-- Logos Carrousel End-->
+
+            <!--Disclaimer Start-->
+
+            <div class="disclaimer">
+                <div class="disclaimer-title">
+                    Aviso Legal
+                </div>
+                <div class="disclaimer-text">
+                    Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un
+                    asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro
+                    rol se enfoca en orientación general, educación financiera y vinculación con instituciones
+                    autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni
+                    garantizamos rendimientos.
+                </div>
+            </div>
+
+            <!--Disclaimer End-->
+
+            <!-- Footer Start -->
+
+    <!--         <footer>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/SIP_LOGO_W.png" class="footlogo">
+                        <p>
+                            SIP Simple Investment Partners.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h3>Oficina</h3>
+                        <p>Av. Eugenio Garza Sada</p>
+                        <p>Monterrey, Nuevo León</p>
+                        <p>CP 64520, México</p>
+                        <p class="email">asesoria@sip-wealth.com</p>
+                        <h4>+52 999 120 7978</h4>
+                    </div>
+                    <div class="col">
+                        <h3>Links</h3>
+                        <ul class="footlinks">
+                            <li><a href="">Sobre nosotros</a></li>
+                            <li><a href="">Inversión personal</a></li>
+                            <li><a href="">Inversión de empresas</a></li>
+                            <li><a href="">SIP Media</a></li>
+                            <li><a href="">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </footer> -->
+
+            <!-- Footer End -->
+        </div>
+
+        <!-- Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
