@@ -79,7 +79,7 @@ const timeline_events = document.querySelectorAll(".timeline ul li");
 
 function showTime(e) {
     e.setAttribute("done", "true");
-    e.querySelector(".timeline-point").style.background = "rgb(151,127,184)";
+    e.querySelector(".timeline-point").style.background = "#4a25a9";
     e.querySelector(".date").style.opacity = "100%";
     e.querySelector("p").style.opacity = "100%";
 }
