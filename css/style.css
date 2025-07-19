@@ -20,17 +20,12 @@ body {
 }
 
 #sip-wealth-body {
-    background-color: rgb(5, 0, 40);
-}
-
-.SIPfont {
-    font-family: 'Montserrat', sans-serif;
     background-color: white;
 }
 
 .SIPfont {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(30, 0, 75);
+    background-color: white;
 }
 
 .WEALTHfont {
@@ -62,7 +57,7 @@ header .logo {
 }
 
 .header-scroll {
-    background-color: rgb(30, 0, 75);
+    background-color: rgba(74, 37, 169, 255);
 }
 
 .logo img {
@@ -81,7 +76,7 @@ header .logo {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgb(30, 0, 75);
+  background-color: rgba(74, 37, 169, 0.6);
   overflow-x: hidden;
   transition: width 0.5s;
   padding-top: 60px;
@@ -118,6 +113,10 @@ header .logo {
 
 .sidenav a:hover {
   color: rgb(151,127,184);
+}
+
+.sidenav-wealth a:hover {
+  color: #071e44;
 }
 
 .sidenav .closebtn {
@@ -185,11 +184,11 @@ header .logo {
 
 .logos-section-logo {
     display: block;
-    height: 500px;
+    height: 600px;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    transition: height 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: -100px;
+    margin-bottom: 300px;
 }
 
 .invisible {
@@ -197,17 +196,21 @@ header .logo {
 }
 
 .shrink {
-    height: 200px;
+    height: 400px;
+    transform: translateY(-150px);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .textblock {
     text-align: center;
-    margin: -90px 200px 30px 200px;
+    margin: -250px auto 60px auto;
     height: 180px;
-    background-color: rgba(30, 0, 75,0.5);
     padding: 30px 20px;
     border-radius: 20px;
     line-height: 1.5;
+    font-size: 28px;
+    width: 700px;
 }
 
 .white {
@@ -243,18 +246,17 @@ header .logo {
 */
 .butt-1 {
     position: relative;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 18px 28px;
-    border: none;
+    border: solid 2px black;
     font-size: larger;
     font-weight: bolder;
     cursor: pointer;
-    color: rgb(151,127,184);
-    transition: color 0.3s ease-in-out;
-    background-color: rgb(30, 0, 75);
+    color: black;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 0 0 0 2px rgb(5, 0, 40), 0 0.75em 0 0 rgb(7, 6, 12);
 }
 
 .butt-text {
@@ -262,17 +264,22 @@ header .logo {
     transition: color 0.3s ease-in-out;
 }
 
-.butt-1:hover {
-    color: #fff;
+#button-1:hover {
+    color: #4a25a9;
+    border: solid 2px #4a25a9;
 }
 
-.butt-1:active {
-  background-color: rgb(151,127,184);
+#button-2:hover {
+    color: #071e44;
+    border: solid 2px #071e44;
+}
+
+/* .butt-1:active {
   transform: translateY(4px);
   box-shadow: 0 0 0 2px rgb(5, 0, 40), 0 0.50em 0 0 rgb(7, 6, 12);
-}
+} */
 
-.butt-1::after {
+/* .butt-1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -280,22 +287,22 @@ header .logo {
     width: 100%;
     height: 100%;
     transform: scaleY(0);
-    transform-origin: bottom center;
+    transform-origin: bottom left;
     transition: all 0.3s;
     z-index: -1;
-}
+} */
 
-#button-1::after {
-    background: rgb(151,127,184);
+/* #button-1::after {
+    background-color: #4a25a9;
 }
 
 #button-2::after {
-    background: rgb(5, 0, 40);
+    background-color: #071e44;
 }
 
 .butt-1:hover::after {
     transform: scaleY(1);
-}
+} */
 
 .sobre-nosotros {
     text-align: center;
@@ -385,6 +392,10 @@ header .logo {
     position: relative;
 }
 
+.logos-2 {
+    background-color: #071e44;
+}
+
 .logos:before,
 .logos:after {
     position: absolute;
@@ -408,13 +419,13 @@ header .logo {
 
 .logos-2:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(5,0,40));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #071e44);
     
 }
 
 .logos-2:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(5,0,40));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #071e44);
 }
 
 .logos-slide {
@@ -593,8 +604,9 @@ header .logo {
 
 .title-servicios {
     font-size: 40px;
-    color: white;
-    margin-bottom: 60px;
+    color: #4a25a9;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .servicios-body-2 {
@@ -727,18 +739,23 @@ hr {
 .disclaimer {
     text-align: center;
     color: white;
-    margin: -20px auto 100px auto;
-    width: 80%;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+.disc-wealth {
+    background-color: #071e44;
+    padding-bottom: 20px;
 }
 
 .disclaimer-title {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 10px;
+    margin-bottom: 10px;
 }
 
 .disclaimer-text {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 7px;
+    line-height: 10px;
 }
 
 .servicios-wealth {
@@ -747,7 +764,7 @@ hr {
 }
 
 .diferencia {
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -756,6 +773,7 @@ hr {
     width: fit-content;
     margin-left: 50%;
     margin-bottom: 50px;
+    color: #071e44;
 }
 
 .dif-text-intro {
@@ -782,10 +800,9 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
-    background: linear-gradient(to right, #4a25a9, rgb(30, 0, 75));
-    color: #fff;
+    background: linear-gradient(to top, #4a25a9, transparent);
+    color: black;
     padding: 100px 0 30px;
-    border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
 }
@@ -800,25 +817,46 @@ footer {
 }
 
 .col {
-    flex-basis: 25%;
+    flex-basis: 28%;
     padding: 10px;
 }
 
+.col-sip {
+    font-size: 26px;
+}
+
+.col-2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footlinks {
+    font-size: 20px;
+}
+
 .footlogo {
-    width: 80px;
-    margin-bottom: 30px;
+    width: 200px;
+    margin: auto;
 }
 
 .col h3 {
     width: fit-content;
+    margin-top: 30px;
     margin-bottom: 40px;
     position: relative;
+    font-size: 24px;
+    border-bottom: solid 2px black;
+}
+
+.col h4 {
+    font-size: 20px;
 }
 
 .email {
     width: fit-content;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid black;
     margin: 20px 0;
+    font-size: 20px;
 }
 
 .footlinks li {
@@ -828,8 +866,12 @@ footer {
 
 .footlinks li a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 } 
+
+.footlinks li a:hover {
+    border-bottom: solid 2px black;
+}
 
 .body-2-container {
     width: 80%;
@@ -1182,7 +1224,7 @@ body .content_shadow {
 }
 
 .full-intro {
-    background-image: url("../img/nyc.jpg");
+    background-image: url("../img/city.svg");
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -1195,7 +1237,7 @@ body .content_shadow {
 
 .purple-filter {
     padding-top: 20px;
-    background-color: rgba(30,0,75,0.5);
+    background-color: rgba(74,37,169,0.5);
 }
 
 #bottom-dif {
@@ -1210,7 +1252,7 @@ body .content_shadow {
 .front-title-2 {
     font-size: 30px;
     margin-bottom: -40px;
-    color: white;
+    color: #071e44;
     animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
 }
@@ -1466,7 +1508,7 @@ body .content_shadow {
 }
 
 .timeline-sip {
-    color: rgb(151,127,184);
+    color: #4a25a9;
     font-weight: 800;
 }
 
@@ -1489,7 +1531,7 @@ body .content_shadow {
     padding: 0 40px;
     transition: 1.5s;
     text-align: center;
-    color: rgb(5, 0, 40);
+    color: black;
     font-size: 20px;
 }
 
@@ -1499,7 +1541,7 @@ body .content_shadow {
     font-size: 32px;
     position: absolute;
     top: -110px;
-    color: rgb(151,127,184);
+    color: #4a25a9;
     font-weight: bolder;
 }
 
@@ -1537,7 +1579,7 @@ body .content_shadow {
 
 .timeline-innerline {
     position: absolute;
-    background: rgb(151,127,184);
+    background: #4a25a9;
     width: 0%;
     height: 4px;
     top: 0%;
@@ -1913,63 +1955,100 @@ body .content_shadow {
     background-color: white;
 }
 
-.slider {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    background-image: radial-gradient(
-        #fff3, transparent 50%
-    );
-    margin-top: -50px;
-}
-.slider .list {
-    position: absolute;
-    width: max-content;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    transition: transform .8s;
-}
-.slider .list .item {
-    width: calc(var(--radius) * 2);
+.serv-cont {
+    margin-bottom: 200px;
     text-align: center;
-    transform: rotate(45deg);
-    transition: transform 1s;
 }
-.slider .list .item.active {
-    transform: rotate(0deg);
+.serv-rect {
+    border: solid 2px #4a25a9;
+    border-radius: 20px;
+    width: 500px;
+    padding: 30px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}
+.serv-icon {
+    background-color: #4a25a9;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: auto;
+    margin-top: -60px;
+}
+.serv-img {
+    width: 35px;
+    height: auto;
+    margin-top: 10px;
+}
+.serv-icon-borders {
+    width: 70px;
+    margin: auto;
+    background-color: white;
+}
+.serv-title {
+    color: #4a25a9;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.serv-desc {
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
 }
 
-.slider .list .item img {
-    width: 90%;
-    filter: drop-shadow(0 0 20px #000);
-}
-.slider .content {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #eee;
-    width: max-content;
-}
-.slider .content div:nth-child(2) {
-    font-size: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 10px;
+.title-servicios-wealth {
+    font-size: 40px;
+    color: #071e44;
+    margin-bottom: 40px;
     font-weight: bold;
-    position: relative;
 }
-.slider .content div:nth-child(1) {
-    text-align: left;
-    text-transform: uppercase;
-    transform: translateY(20px);
+.serv-cont-wealth {
+    margin-bottom: 200px;
+    text-align: center;
 }
-.slider .content button {
-    border: 1px solid #eee5;
-    background: transparent;
-    color: #eee;
-    letter-spacing: 5px;
+.serv-rect-wealth {
+    border: solid 2px #071e44;
+    border-radius: 20px;
+    width: 500px;
+    padding: 30px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}
+.serv-icon-wealth {
+    background-color: #071e44;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: auto;
+    margin-top: -60px;
+}
+.serv-img-wealth {
+    width: 35px;
+    height: auto;
+    margin-top: 10px;
+}
+.serv-icon-borders-wealth {
+    width: 70px;
+    margin: auto;
+    background-color: white;
+}
+.serv-title-wealth {
+    color: #071e44;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.serv-desc-wealth {
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
 }
