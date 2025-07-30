@@ -13,11 +13,12 @@
 
         <!-- Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
     </head>
 
-    <body id="sip-wealth-body" class="SIPfont">
+    <body class="SIPfont" onload="effect()">
 
-        <header class="header-wealth">
+        <header class="wealth-header">
             <!-- Navbar Start -->
             <a href="index.html" id="sip-logo" class="logo">
                 <img src="img/WEALTH_LOGO_W.png">
@@ -26,10 +27,10 @@
             <div id="mySidenav" class="sidenav sidenav-wealth">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div id="sidenav-links" class="sidenav-links">
-                    <a href="#sobrewealth" onclick="closeNav()">Sobre Nosotros</a>
+                    <a href="index.html" onclick="closeNav()">Inicio</a>
+                    <a href="#sobre-wealth" onclick="closeNav()">Sobre Nosotros</a>
                     <a href="index.html#contactanos" onclick="closeNav()">Contáctanos</a>
                     <a href="sip.html"- onclick="closeNav()">SIP</a>
-                    <a href="sip-wealth.html" onclick="closeNav()">SIP Wealth</a>
                 </div>
             </div>
             <span style="font-size:35px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
@@ -40,9 +41,9 @@
         
             <!--Portada Start-->
 
-            <div class="portada-sip">
+            <div class="portada-wealth">
                 <img src="img/WEALTH_LOGO_W.png" class="sip-logo-w">
-                <div class="portada-texto">
+                <div class="portada-texto animate">
                     Tu patrimonio ya tiene historia. Ahora, que tenga
                     estrategia.
                     SIP Wealth es acompañamiento personalizado para
@@ -56,215 +57,225 @@
             <!--Sobre Nosotros Start-->
 
             <div id="sobre-wealth" class="sobre-nosotros">
-                <div class="title-sobre">
-                    Sobre Nosotros
-                </div>
-                <div class="texto-sobre-nosotros">
-                    En SIP Wealth diseñamos estrategias patrimoniales personalizadas para
-                    personas que buscan consolidar, diversificar y proyectar su capital a largo
-                    plazo.
-                    Ofrecemos acceso a productos financieros de alto nivel, gestionados
-                    profesionalmente y respaldados por instituciones autorizadas.
-                    <div class="moradito">
-                        Con más de 10 años de experiencia y 300 millones de pesos canalizados,
-                        acompañamos de forma cercana a nuestros clientes en cada etapa
-                        financiera, con soluciones sólidas, transparentes y enfocadas en resultados.
+                <div class="purple-filter-wealth">
+                    <div class="title-sobre animate">
+                        Sobre Nosotros
+                    </div>
+                    <div class="texto-sobre-nosotros animate">
+                        En SIP Wealth diseñamos estrategias patrimoniales personalizadas para
+                        personas que buscan consolidar, diversificar y proyectar su capital a largo
+                        plazo.
+                        Ofrecemos acceso a productos financieros de alto nivel, gestionados
+                        profesionalmente y respaldados por instituciones autorizadas.
+                        <div class="azulito animate">
+                            Con más de 10 años de experiencia y 300 millones de pesos canalizados,
+                            acompañamos de forma cercana a nuestros clientes en cada etapa
+                            financiera, con soluciones sólidas, transparentes y enfocadas en resultados.
+                        </div>
                     </div>
                 </div>
-
             </div>
 
             <!--Sobre Nosotros End-->
 
             <!--Por qué Start-->
 
-            <div class="por-que-sip">
-                <div class="por-sip-full-texto">
-                    <div class="por-sip-title por-wealth-title">
-                        ¿Por qué SIP Wealth?
+            <div class="por-que-container-wealth">
+                <div class="por-que-title-wealth animate">
+                    ¿Por qué <span class="por-que-wealth-azulito">SIP Wealth</span>?
+                </div>
+                <div class="por-que-contenido">
+                    <div class="por-que-shape-wealth animate">
+                        <div class="por-que-sub-cont">
+                            <div class="por-que-icon">
+                                <img class="por-que-img" src="img/house-plants-2.png" alt="">
+                            </div>
+                            <div class="por-que-texto">
+                                Porque tu patrimonio merece atención
+                                personalizada y estrategia profesional.
+                            </div>
+                        </div>
                     </div>
-                    <div class="por-sip-texto">
-                        <div class="por-sip-sub">
-                            Porque tu patrimonio merece atención
-                            personalizada y estrategia profesional.
+                    <div class="por-que-shape-wealth animate">
+                        <div class="por-que-sub-cont">
+                            <div class="por-que-icon">
+                                <img class="por-que-img" src="img/grafico.png" alt="">
+                            </div>
+                            <div class="por-que-texto">
+                                Porque una buena asesoría no vende productos:
+                                diseña soluciones.
+                            </div>
                         </div>
-                        <hr>
-                        <div class="por-sip-sub">
-                            Porque una buena asesoría no vende productos:
-                            diseña soluciones.
+                    </div>
+                    <div class="por-que-shape-wealth animate">
+                        <div class="por-que-sub-cont">
+                            <div class="por-que-icon">
+                                <img class="por-que-img" src="img/aprender-en-linea-2.png" alt="">
+                            </div>
+                            <div class="por-que-texto">
+                                Porque nadie te enseña esto en la escuela.
+                            </div>
                         </div>
-                        <hr>
-                        <div class="por-sip-sub">
-                            Porque nadie te enseña esto en la escuela.
+                    </div>
+                    <div class="por-que-shape-wealth animate">
+                        <div class="por-que-sub-cont">
+                            <div class="por-que-icon">
+                                <img class="por-que-img" src="img/customer-relationship-management.png" alt="">
+                            </div>
+                            <div class="por-que-texto">
+                                Porque buscamos relaciones a largo plazo
+                                basadas en confianza.
+                            </div>
                         </div>
-                        <hr>
-                        <div class="por-sip-sub">
-                            Porque buscamos relaciones a largo plazo
-                            basadas en confianza.
-                        </div>
-                        <hr>
-                        <div class="por-sip-sub">
-                            Porque tus objetivos son nuestra prioridad, no
-                            nuestros intereses.
+                    </div>
+                    <div class="por-que-shape-wealth animate">
+                        <div class="por-que-sub-cont">
+                            <div class="por-que-icon">
+                                <img class="por-que-img" src="img/objetivo.png" alt="">
+                            </div>
+                            <div class="por-que-texto">
+                                Porque tus objetivos son nuestra prioridad, no
+                                nuestros intereses.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <img class="por-sip-img" src="img/SIPI.png">
             </div>
 
             <!--Por qué End-->
 
             <!--Diferencia Start-->
 
-            <div class="diferencia">
-                <div class="dif-title">
-                    Lo que hace la diferencia
-                </div>
-                <div class="dif-cont">
-                    <div class="dif-text-intro">
-                        En SIP Wealth no ofrecemos
-                        asesoría genérica.
-                        Creamos estrategias personalizadas,
-                        con expertos que entienden tu
-                        patrimonio, tu contexto y tus metas.
-                        Estas son las razones por las que
-                        nuestros clientes nos eligen:
+            <div class="dif-container">
+                <div class="diferencia">
+                    <div class="dif-title animate">
+                        Lo que hace la diferencia
                     </div>
-                    <img class="dif-img" src="img/SIPI.png">
+                    <div class="dif-cont">
+                        <div class="dif-text-intro animate">
+                            En <span class="dif-wealth-azulito">SIP Wealth</span> no ofrecemos
+                            asesoría genérica.
+                            Creamos estrategias personalizadas,
+                            con expertos que entienden tu
+                            patrimonio, tu contexto y tus metas.
+                            Estas son las razones por las que
+                            nuestros clientes nos eligen:
+                        </div>
+                    </div>
+                </div>
+                <div class="dif-wealth-contenido">
+                    <div class="dif-wealth-shape animate">
+                        <div class="dif-wealth-sub">
+                            Asesoría Especializada
+                        </div>
+                        <div class="dif-wealth-text">
+                            Soluciones hechas a la medida,
+                            con análisis profundo y visión
+                            patrimonial.
+                        </div>
+                    </div>
+                    <div class="dif-wealth-shape animate">
+                        <div class="dif-wealth-sub">
+                            Acompañamiento Estratégico
+                        </div>
+                        <div class="dif-wealth-text">
+                            Te acompañamos en cada etapa
+                            con seguimiento constante y
+                            visión de largo plazo.
+                        </div>
+                    </div>
+                    <div class="dif-wealth-shape animate">
+                        <div class="dif-wealth-sub">
+                            Transparencia Total
+                        </div>
+                        <div class="dif-wealth-text">
+                            Sin comisiones ocultas ni
+                            intereses cruzados. La
+                            confianza es el centro de todo.
+                        </div>
+                    </div>
+                    <div class="dif-wealth-shape animate">
+                        <div class="dif-wealth-sub">
+                            Recomendaciones a tu Medida
+                        </div>
+                        <div class="dif-wealth-text">
+                            Estrategias personalizadas para
+                            crecimiento, protección y liquidez.
+                        </div>
+                    </div>
+                    <div class="dif-wealth-shape animate">
+                        <div class="dif-wealth-sub">
+                            Asesores Especializados
+                        </div>
+                        <div class="dif-wealth-text">
+                            Más de 10 años de experiencia
+                            combinada y +300M de pesos
+                            bajo gestión.
+                        </div>
+                    </div>
+                    <div class="dif-wealth-shape animate">
+                        <div class="dif-wealth-sub">
+                            Impulso Patrimonial
+                        </div>
+                        <div class="dif-wealth-text">
+                            Acompañamiento a personas y
+                            negocios para optimizar la
+                            organización de sus recursos y
+                            planificación financiera.
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Diferencia End-->
 
-            <!--Contenedores Diferencia Start-->
+            <!--Servicios Start-->
 
-            <div id="top-dif" class="servicios-body-2">
-                <div class="body-2-container">
-                    <div class="body-2">
-                    <!-- ontouchstart used for card flip -->
-                        <div class="wrapper-2" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper-2">
-                                <div class="card-front-2">
-                                    <div class="front-title-2">Asesoría Especializada</div>
-                                    <div class="oval-2"></div>
-                                </div>
-                                <div id="card-back-1-2" class="card-back-2">
-                                    Soluciones hechas a la medida,
-                                    con análisis profundo y visión
-                                    patrimonial.
-                                </div>
-                            </div> <!--/flipper -->
-                        </div> <!--/wrapper -->
-                    </div>
-                    <div class="body-2">
-                    <!-- ontouchstart used for card flip -->
-                        <div class="wrapper-2" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper-2">
-                                <div class="card-front-2">
-                                    <div class="front-title-2">Acompañamiento Estratégico</div>
-                                    <div class="oval-2"></div>
-                                </div>
-                                <div id="card-back-2-2" class="card-back-2">
-                                    Te acompañamos en cada etapa
-                                    con seguimiento constante y
-                                    visión de largo plazo.
-                                </div>
-                            </div> <!--/flipper -->
-                        </div> <!--/wrapper -->
-                    </div>
-                    <div class="body-2">
-                    <!-- ontouchstart used for card flip -->
-                        <div class="wrapper-2" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper-2">
-                                <div class="card-front-2">
-                                    <div class="front-title-2">Transparencia Total</div>
-                                    <div class="oval-2"></div>
-                                </div>
-                                <div id="card-back-3-2" class="card-back-2">
-                                    Sin comisiones ocultas ni
-                                    intereses cruzados. La
-                                    confianza es el centro de todo.
-                                </div>
-                            </div> <!--/flipper -->
-                        </div> <!--/wrapper -->
-                    </div>
+            <div class="serv-cont-wealth">
+                <div class="title-servicios-wealth animate">
+                    Servicios
                 </div>
-            </div>
-
-            <div id="bottom-dif" class="servicios-body-2">
-                <div class="body-2-container">
-                    <div class="body-2">
-                    <!-- ontouchstart used for card flip -->
-                        <div class="wrapper-2" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper-2">
-                                <div class="card-front-2">
-                                    <div class="front-title-2">Recomendaciones a tu Medida</div>
-                                    <div class="oval-2"></div>
-                                </div>
-                                <div id="card-back-1-3" class="card-back-2">
-                                    Estrategias personalizadas para
-                                    crecimiento, protección y liquidez.
-                                </div>
-                            </div> <!--/flipper -->
-                        </div> <!--/wrapper -->
+                <div class="serv-rect-wealth animate">
+                    <div class="serv-icon-borders-wealth">
+                        <div class="serv-icon-wealth">
+                            <img class="serv-img-wealth" src="img/financiero.png" alt="">
+                        </div>
                     </div>
-                    <div class="body-2">
-                    <!-- ontouchstart used for card flip -->
-                        <div class="wrapper-2" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper-2">
-                                <div class="card-front-2">
-                                    <div class="front-title-2">Asesores Especializados</div>
-                                    <div class="oval-2"></div>
-                                </div>
-                                <div id="card-back-2-3" class="card-back-2">
-                                    Más de 10 años de experiencia
-                                    combinada y +300M de pesos
-                                    bajo gestión.
-                                </div>
-                            </div> <!--/flipper -->
-                        </div> <!--/wrapper -->
+                    <div class="serv-title-wealth">
+                        Planeación patrimonial y protección financiera
                     </div>
-                    <div class="body-2">
-                    <!-- ontouchstart used for card flip -->
-                        <div class="wrapper-2" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper-2">
-                                <div class="card-front-2">
-                                    <div class="front-title-2">Impulso Patrimonial</div>
-                                    <div class="oval-2"></div>
-                                </div>
-                                <div id="card-back-3-3" class="card-back-2">
-                                    Acompañamiento a personas y
-                                    negocios para optimizar la
-                                    organización de sus recursos y
-                                    planificación financiera.
-                                </div>
-                            </div> <!--/flipper -->
-                        </div> <!--/wrapper -->
-                    </div>
-                </div>
-            </div>
-
-            <!--Contenedores Diferencia End-->
-
-            <div class="servicios-container">
-                <div id="square-servicios" class="servicios-square">
-                    <img src="img/WEALTH_ICON.png" class="square-text">
-                </div>
-                <div id="container-servicios" class="square-desc-container">
-                    <div class="square-desc">
-                        Planeación patrimonial y protección financiera:
+                    <div class="serv-desc-wealth">
                         Estrategias diseñadas para proteger tu
                         patrimonio personal y familiar, optimizar la
                         sucesión y mejorar la eficiencia fiscal.
                     </div>
-                    <div class="square-desc">
-                        Inversión en deuda privada: Acceso a vehículos
+                </div>
+                <div class="serv-rect-wealth animate">
+                    <div class="serv-icon-borders-wealth">
+                        <div class="serv-icon-wealth">
+                            <img class="serv-img-wealth" src="img/seguridad-financiera.png" alt="">
+                        </div>
+                    </div>
+                    <div class="serv-title-wealth">
+                        Inversión en deuda privada
+                    </div>
+                    <div class="serv-desc-wealth">
+                        Acceso a vehículos
                         con flujos estables y riesgo moderado, ideales
                         para conservar capital y generar ingresos
                         recurrentes.
                     </div>
-                    <div class="square-desc">
-                        Portafolios diversificados globalmente:
+                </div>
+                <div class="serv-rect-wealth animate">
+                    <div class="serv-icon-borders-wealth">
+                        <div class="serv-icon-wealth">
+                            <img class="serv-img-wealth" src="img/house-plants.png" alt="">
+                        </div>
+                    </div>
+                    <div class="serv-title-wealth">
+                        Portafolios diversificados globalmente
+                    </div>
+                    <div class="serv-desc-wealth">
                         Composición de portafolios con exposición
                         internacional y multiactivo, enfocados en
                         crecimiento sostenible y alineados a tus
@@ -273,44 +284,10 @@
                 </div>
             </div>
 
-            <!--Servicios Start-->
-
-            <div class="por-que-sip servicios-wealth">
-                <img class="por-sip-img" src="img/SIPI.png">
-                <div class="por-sip-full-texto">
-                    <div class="por-sip-title por-wealth-title">
-                        Servicios
-                    </div>
-                    <div class="por-sip-texto">
-                        <div class="por-sip-sub">
-                            Planeación patrimonial y protección financiera:
-                            Estrategias diseñadas para proteger tu
-                            patrimonio personal y familiar, optimizar la
-                            sucesión y mejorar la eficiencia fiscal.
-                        </div>
-                        <hr>
-                        <div class="por-sip-sub">
-                            Inversión en deuda privada: Acceso a vehículos
-                            con flujos estables y riesgo moderado, ideales
-                            para conservar capital y generar ingresos
-                            recurrentes.
-                        </div>
-                        <hr>
-                        <div class="por-sip-sub">
-                            Portafolios diversificados globalmente:
-                            Composición de portafolios con exposición
-                            internacional y multiactivo, enfocados en
-                            crecimiento sostenible y alineados a tus
-                            objetivos de largo plazo.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!--Servicios End-->
 
             <!-- Logos Carrousel Start-->
-            <div class="logos logos-2">
+            <div class="logos logos-2 animate">
                 <div class="logos-slide">
                     <img src="img/MONIFIC_LOGO.svg"/>
                     <img src="img/GBM_LOGO.svg"/>
@@ -337,54 +314,23 @@
 
             <!--Disclaimer Start-->
 
-            <div class="disclaimer">
-                <div class="disclaimer-title">
-                    Aviso Legal
-                </div>
-                <div class="disclaimer-text">
-                    Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un
-                    asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro
-                    rol se enfoca en orientación general, educación financiera y vinculación con instituciones
-                    autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni
-                    garantizamos rendimientos.
+            <div class="disc-wealth">
+                <div class="disclaimer">
+                    <div class="disclaimer-title">
+                        Aviso Legal
+                    </div>
+                    <div class="disclaimer-text">
+                        Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un
+                        asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro
+                        rol se enfoca en orientación general, educación financiera y vinculación con instituciones
+                        autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni
+                        garantizamos rendimientos.
+                    </div>
                 </div>
             </div>
 
             <!--Disclaimer End-->
 
-            <!-- Footer Start -->
-
-    <!--         <footer>
-                <div class="row">
-                    <div class="col">
-                        <img src="img/SIP_LOGO_W.png" class="footlogo">
-                        <p>
-                            SIP Simple Investment Partners.
-                        </p>
-                    </div>
-                    <div class="col">
-                        <h3>Oficina</h3>
-                        <p>Av. Eugenio Garza Sada</p>
-                        <p>Monterrey, Nuevo León</p>
-                        <p>CP 64520, México</p>
-                        <p class="email">asesoria@sip-wealth.com</p>
-                        <h4>+52 999 120 7978</h4>
-                    </div>
-                    <div class="col">
-                        <h3>Links</h3>
-                        <ul class="footlinks">
-                            <li><a href="">Sobre nosotros</a></li>
-                            <li><a href="">Inversión personal</a></li>
-                            <li><a href="">Inversión de empresas</a></li>
-                            <li><a href="">SIP Media</a></li>
-                            <li><a href="">Eventos</a></li>
-                        </ul>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            </footer> -->
-
-            <!-- Footer End -->
         </div>
 
         <!-- Javascript -->
