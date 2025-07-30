@@ -36,7 +36,7 @@ function handleScroll() {
     const sip = document.querySelectorAll('.sip-logo-w');
     const title = document.querySelectorAll('.intro');
     const title2 = document.querySelectorAll('.intro-2');
-    const header = document.querySelector('header');
+    const headersip = document.querySelector('#header-sip');
     if (window.scrollY > 10) { // Change 10 to the scroll distance you want
         logos.forEach(logo => {
             logo.classList.add('shrink'); // Add class to shrink the images
@@ -65,9 +65,13 @@ function handleScroll() {
         });
     }
     if (window.scrollY > 100) {
-        header.classList.add('header-scroll');
+        headersip.classList.add('header-scroll');
+        document.getElementById("sip-logo-sip").src="img/SIP_LOGO_W.png";
+        document.getElementById("sip-three-lines").style.color="white";
     } else {
-        header.classList.remove('header-scroll');
+        headersip.classList.remove('header-scroll');
+        document.getElementById("sip-logo-sip").src="img/SIP_LOGO_W.png";
+        document.getElementById("sip-three-lines").style.color="white";
     }
 }
 
@@ -88,7 +92,7 @@ let i = 0;
 function slowLoop() {
     setTimeout(function (){
         showTime(timeline_events[i]);
-        line.style.width = `${((i + 1) / timeline_events.length) * 100}%`;
+        timelineProgress(i + 1);
         i++;
         if (i < timeline_events.length)
             slowLoop();
@@ -106,3 +110,38 @@ let observer = new IntersectionObserver((entries, observer) => {
 
 let target = document.querySelector(".timeline ul");
 observer.observe(target);
+
+function timelineProgress(value) {
+    let progress = `${((i + 1) / timeline_events.length) * 100}%`;
+
+    if (window.matchMedia("(max-width: 599px)").matches) {
+        line.style.height = progress;
+        line.style.width = "4px";
+    } else {
+        line.style.width = progress;
+        line.style.height = "4px";
+    }
+}
+
+function effect() {
+    const observador = new IntersectionObserver((entradas) => {
+    entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+            entrada.target.classList.add("in-view");
+            entrada.target.classList.remove("not-in-view");
+        } else {
+            entrada.target.classList.remove("in-view");
+            entrada.target.classList.add("not-in-view");
+        }
+    })
+    }, {
+        rootMargin: "0px",
+        threshold: [0, 0.1, 1]
+    })
+
+    const tags = document.querySelectorAll(".animate");
+
+    tags.forEach((tag) => {
+        observador.observe(tag);
+    })
+}
