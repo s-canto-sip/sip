@@ -17,9 +17,9 @@
 
     </head>
 
-    <body class="Indexfont">
+    <body class="Indexfont" onload="effect()">
 
-        <header>
+        <header id="header-sip">
 
             <!-- Navbar Start -->
             <a href="index.html" class="logo">
@@ -38,12 +38,12 @@
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div id="sidenav-links" class="sidenav-links">
-                    <a href="#contactanos" onclick="closeNav()">Contáctanos</a>
                     <a href="sip.html" onclick="closeNav()">SIP</a>
                     <a href="sip-wealth.html" onclick="closeNav()">SIP Wealth</a>
+                    <a href="#contactanos" onclick="closeNav()">Contáctanos</a>
                 </div>
             </div>
-            <span style="font-size:35px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
+            <span class="three-lines" style="font-size:35px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
 
             <!-- Navbar End -->
         </header>
@@ -63,10 +63,10 @@
                     </div>
 
                     <div class="logos-section">
-                        <div class="columns" id="col-1">
+                        <div class="columns animate" id="col-1">
                             <img src="img/SIP_LOGO_W.png" class="logos-section-logo">
                             <div class="textblock">
-                                <span class="white">
+                                <span class="white animate">
                                     ¿Quieres empezar a invertir? ¡SIP!
                                     Acompañamos tus primeros pasos:
                                     construir patrimonio, generar un fondo
@@ -75,13 +75,13 @@
                                 </span>
                             </div>
                             <div class="mas-info">
-                                <button type="button" id="button-1" class="butt-1" onclick="goToSIP()"><span class="butt-text">DESCUBRE SIP</span></button>
+                                <button type="button" id="button-1" class="butt-1 animate" onclick="goToSIP()"><span class="butt-text">DESCUBRE SIP</span></button>
                             </div>
                         </div>
-                        <div class="columns" id="col-2">
-                            <img src="img/WEALTH_LOGO_W.png" class="logos-section-logo">
+                        <div class="columns animate" id="col-2">
+                            <img src="img/WEALTH_LOGO_W.png" class="logos-section-logo" id="logos-wealth">
                             <div class="textblock">
-                                <span class="white">
+                                <span class="white animate">
                                     ¿Ya tienes un patrimonio? Protégelo,
                                     diversifícalo y hazlo crecer. Asesorías
                                     estratégicas para consolidarlo con
@@ -89,7 +89,7 @@
                                 </span>
                             </div>
                             <div class="mas-info">
-                                <button type="button" id="button-2" class="butt-1" onclick="goToWealth()" id="about-us"><span class="butt-text">CONOCE SIP WEALTH</span></button>
+                                <button type="button" id="button-2" class="butt-1 animate" onclick="goToWealth()" id="about-us"><span class="butt-text">CONOCE SIP WEALTH</span></button>
                             </div>
                         </div>
                     </div>
@@ -97,84 +97,50 @@
             </div>
 
             <!--Logos Section End-->
-            <div class="timeline">
 
+            <!--SIP TimeLine Start-->
+            <div class="timeline-container animate">
                 <div class="timeline-title">
-                    ¿Qué es <span class="timeline-sip">SIP</span>?
+                        ¿Qué es <span class="timeline-sip">SIP</span>?
                 </div>
 
-                <div class="timeline-line">
-                    <span class="timeline-innerline"></span>
+                <div class="timeline animate">
+
+                    <div class="timeline-line">
+                        <span class="timeline-innerline"></span>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <span class="timeline-point"></span>
+                            <span id="date-1" class="date">Simple</span>
+                            <p>Nuestro equipo de expertos te traducirá las finanzas como nadie</p>
+                        </li>
+                        <li>
+                            <span class="timeline-point"></span>
+                            <span id="date-2" class="date">Inteligente</span>
+                            <p>Estrategias diseñadas de a cuerdo a las necesidades del cliente</p>
+                        </li>
+                        <li>
+                            <span class="timeline-point"></span>
+                            <span id="date-3" class="date">Profesional</span>
+                            <p>Más de 10 años de experiencia en conjunto respaldan nuestra forma de trabajar</p>
+                        </li>
+                    </ul>
+
                 </div>
-
-                <ul>
-                    <li>
-                        <span class="timeline-point"></span>
-                        <span id="date-1" class="date">Simple</span>
-                        <p>Nuestro equipo de expertos te traducirá las finanzas como nadie</p>
-                    </li>
-                    <li>
-                        <span class="timeline-point"></span>
-                        <span id="date-2" class="date">Inteligente</span>
-                        <p>Estrategias diseñadas de a cuerdo a las necesidades del cliente</p>
-                    </li>
-                    <li>
-                        <span class="timeline-point"></span>
-                        <span id="date-3" class="date">Profesional</span>
-                        <p>Más de 10 años de experiencia en conjunto respaldan nuestra forma de trabajar</p>
-                    </li>
-                </ul>
-
             </div>
 
-            <!--SIP Start-->
-
-            <!-- <div class='page'>
-                <div class='content'>
-                    <div class='circle'>
-                        <div class='circle_title'>
-                            <h2>Simple</h2>
-                            <h3>Nuestro equipo de expertos te traducirá las finanzas como nadie</h3>
-                        </div>
-                        <div id="circle-1" class='circle_inner'>
-                        </div>
-                        <div class='content_shadow'></div>
-                    </div>
-                </div>
-                <div class='content'>
-                    <div class='circle'>
-                        <div class='circle_title'>
-                            <h2>Inteligente</h2>
-                            <h3>Estrategias diseñadas de a cuerdo a las necesidades del cliente</h3>
-                        </div>
-                        <div id="circle-2" class='circle_inner'>
-                        </div>
-                        <div class='content_shadow'></div>
-                    </div>
-                </div>
-                <div class='content'>
-                    <div class='circle'>
-                        <div class='circle_title'>
-                            <h2>Profesional</h2>
-                            <h3>Más de 10 años de experiencia en conjunto respaldan nuestra forma de trabajar</h3>
-                        </div>
-                        <div id="circle-3" class='circle_inner'>
-                        </div>
-                        <div class='content_shadow'></div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!--SIP End-->
+            <!--SIP TimeLine End-->
 
             <!-- Footer Start -->
 
-            <footer>
+            <footer id="contactanos" class="animate">
                 <div class="row">
                     <div class="col">
-                        <img src="img/SIP_LOGO_B.png" class="footlogo">
+                        <img src="img/SIP_LOGO_W.png" class="footlogo">
                         <p class="col-sip">
-                            SIP Simple Investment Partners.
+                            SIP Simple Investment Partners
                         </p>
                     </div>
                     <div class="col">
@@ -193,27 +159,8 @@
                             <li><a href="">SIP WEALTH</a></li>
                         </ul>
                     </div>
-                    <div class="col">
-                    </div>
                 </div>
             </footer>
-
-            <!--<footer class="main-footer">
-                <div id="contactanos" class="contactanos">
-                    Contáctanos
-                </div>
-                <div class="datos">
-                    <div class="contacto">
-                        <span class="correo">hola@sitioincreible.com</span>
-                        <span class="tel">(55) 1234-5678</span>
-                    </div>
-                    <div class="direccion">
-                        Av. Maestros 123, Cuernavaca, Mor. C.P. 12345
-                    </div>
-                </div>
-                <img class="sipi" src="img/SIPI.png">
-            
-            </footer>-->
 
             <!-- Footer End -->
 
@@ -221,6 +168,6 @@
 
         <!-- Javascript -->
         <script src="js/main.js"></script>
-    </body>
 
+    </body>
 </html>
