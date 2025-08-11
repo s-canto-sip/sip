@@ -220,7 +220,7 @@ header .logo {
     margin: auto;
     transition: all 0.5s ease;
     margin-top: -100px;
-    margin-bottom: 300px;
+    margin-bottom: 1000px;
 }
 .shrink {
     height: 400px;
@@ -263,12 +263,14 @@ header .logo {
     transition: color 0.3s ease-in-out;
 }
 #button-1:hover {
-    color: #4a25a9;
-    border: solid 2px #4a25a9;
+    background-color: #4a25a9;
+    border: solid 2px white;
+    color: white;
 }
 #button-2:hover {
-    color: #071e44;
-    border: solid 2px #071e44;
+    background-color: #071e44;
+    border: solid 2px white;
+    color: white;
 }
 .full-intro {
     background-image: url("../img/city.svg");
@@ -280,6 +282,7 @@ header .logo {
     background-size: cover;
 }
 .purple-filter {
+    height: 100vh;
     padding-top: 20px;
     background-color: rgba(74,37,169,0.5);
 }
@@ -289,13 +292,15 @@ header .logo {
 .sobre-nosotros {
     text-align: center;
     margin: 40px 450px 30px 450px;
+    /*
     background-image: url("../img/finance.svg");
 
-    /* Create the parallax scrolling effect */
+     Create the parallax scrolling effect 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    */
 }
 .sobre-nosotros h1 {
     margin-bottom: 40px;
@@ -307,35 +312,32 @@ header .logo {
 .purple-filter-sip {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: rgba(74,37,169,0.5);
+    background-color: rgba(74,37,169,0.1);
 }
 .purple-filter-wealth {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: rgba(7,30,68,0.5);
+    background-color: rgba(7,30,68,0.1);
 }
 .title-sobre {
-    border: solid 3px white;
+    border: solid 3px black;
     width: 400px;
     margin-left: 60%;
     height: 100px;
     font-size: 40px;
     line-height: 100px;
-    color: white;
+    color: black;
     border-radius: 12px;
     margin-bottom: 50px;
     font-weight: 700;
-    text-shadow: 2px 2px 5px black;
-    box-shadow: 2px 2px 5px black;
 }
 .texto-sobre-nosotros {
     width: 600px;
     margin: auto;
     font-size: 23px;
-    color: white;
+    color: black;
     line-height: 40px;
     font-weight: 600;
-    text-shadow: 4px 4px 10px black;
 }
 .moradito {
     color: #4a25a9;
@@ -356,6 +358,7 @@ header .logo {
 
 .logos-container {
     background-color: rgba(74, 37, 169, 0.1);
+    position: relative;
 }
 .logos {
     overflow: hidden;
@@ -416,11 +419,12 @@ header .logo {
 }
 .sip-logo-w {
     height: 1000px;
-    margin-bottom: -170px;
-    transition: height 0.5s ease;
+    margin-bottom: 1000px;
+    transition: all 0.5s ease;
 }
 .sip-shrink {
     height: 680px;
+    margin-bottom: -170px;
 }
 .portada-texto {
     width: 700px;
@@ -463,6 +467,7 @@ header .logo {
     border: solid 2px #4a25a9;
     border-radius: 20px;
     width: 500px;
+    height: 250px;
     padding: 30px;
     vertical-align: top;
     text-align: center;
@@ -531,6 +536,7 @@ header .logo {
     text-align: center;
     display: inline-block;
     margin: 20px;
+    height: 250px;
 }
 .serv-icon-wealth {
     background-color: #071e44;
@@ -581,12 +587,11 @@ header .logo {
     padding-bottom: 20px;
 }
 .disclaimer-title {
-    font-size: 10px;
+    font-size: small;
     margin-bottom: 10px;
 }
 .disclaimer-text {
-    font-size: 7px;
-    line-height: 10px;
+    font-size: small;
 }
 
 /*Diferencia*/
@@ -1020,18 +1025,18 @@ footer {
     animation-fill-mode: forwards;
 }
 #icon-1 {
-    background-image: url(../img/data.png);
+    background-image: url(../img/data_W.png);
 }
 #icon-2 {
-    background-image: url(../img/sketch.png);
+    background-image: url(../img/sketch_W.png);
     top: 240px;
 }
 #icon-3 {
-    background-image: url(../img/follow.png);
+    background-image: url(../img/follow_W.png);
     top: 460px;
 }
 #icon-4 {
-    background-image: url(../img/check-list.png);
+    background-image: url(../img/check-list_W.png);
     top: 660px;
 }
 .como-rect {
@@ -1042,6 +1047,7 @@ footer {
     position: absolute;
     border-radius: 25px;
     border: solid 2px #4a25a9;
+    z-index: 2;
 }
 .left {
     left: 10%;
@@ -1174,7 +1180,7 @@ footer {
     text-align: left;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 767px) {
     * {
         max-width: 100%;
     }
@@ -1198,6 +1204,9 @@ footer {
         margin: auto;
     }
 
+    .purple-filter {
+        height: fit-content;
+    }
     .columns {
         float: none;
         margin-bottom: 5rem;
@@ -1227,6 +1236,51 @@ footer {
         margin-top: 150px;
     }
 
+    .timeline-title {
+        width: 90vw;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .timeline-line {
+        display: none;
+    }
+    .timeline-point {
+        display: none;
+    }
+    .timeline-innerline {
+        display: none;
+    }
+    .timeline ul {
+        display: block;
+    }
+    .timeline li p {
+        padding: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .timeline li {
+        text-align: center;
+    }
+    .date {
+        position: relative;
+        top: 0;
+        width: 90vw;
+        margin: auto;
+    }
+    #date-1 {
+        left: unset;
+    }
+    #date-2 {
+        left: auto;
+    }
+    #date-3 {
+        left: 0;
+    }
+    .timeline-container {
+        padding-bottom: 5rem;
+    }
+/*
     .timeline ul {
         flex-direction: column;
     }
@@ -1273,7 +1327,7 @@ footer {
     .timeline-container {
         padding-bottom: 2rem;
     }
-
+*/
     footer {
         height: 38rem;
         overflow-y: hidden;
@@ -1306,6 +1360,7 @@ footer {
     .title-sobre {
         margin: auto;
         margin-bottom: 2rem;
+        width: 90vw;
     }
     .texto-sobre-nosotros {
         font-size: 1.5rem;
@@ -1314,18 +1369,24 @@ footer {
 
     .title-servicios {
         margin: 4rem auto;
+        width: 90vw;
     }
     .serv-rect {
         width: 90vw;
+        height: fit-content;
     }
 
     .por-que-title {
         margin: 4rem auto;
+        width: 90vw;
     }
     .por-que-shape {
         width: 85vw;
         height: fit-content;
         padding: 0.5rem;
+    }
+    .por-que-sub-cont {
+        height: fit-content;
     }
     .por-que-texto {
         text-align: center;
@@ -1367,7 +1428,8 @@ footer {
         height: fit-content;
     }
     .como-hacemos {
-        padding-bottom: 40rem;
+        padding-bottom: calc(100rem - 220vw);
+        position: relative;
     }
 
     .logos {
@@ -1413,18 +1475,16 @@ footer {
 
     .title-servicios-wealth {
         margin: 4rem auto;
+        width: 90vw;
     }
     .serv-rect-wealth {
         width: 90vw;
+        height: fit-content;
     }
 
 }
 
-@media (min-width: 600px) {
-    
-}
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     
 }
 
