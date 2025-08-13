@@ -330,7 +330,7 @@ header .logo {
     color: rgb(64,64,64);
     border-radius: 12px;
     margin-bottom: 50px;
-    font-weight: 700;
+    font-weight: bold;
 }
 .texto-sobre-nosotros {
     width: 600px;
@@ -338,21 +338,17 @@ header .logo {
     font-size: 23px;
     color: rgb(64,64,64);
     line-height: 40px;
-    font-weight: 600;
+    font-weight: normal;
 }
 .moradito {
     color: #4a25a9;
     font-size: 26px;
-    font-weight: 800;
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    font-weight: bold;
 }
 .azulito {
     color: #071e44;
     font-size: 26px;
-    font-weight: 800;
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    font-weight: bold;
 }
 
 /*Logos Carrousel*/
@@ -621,7 +617,7 @@ header .logo {
 }
 .dif-text-intro {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: normal;
     width: 1000px;
     margin: auto;
     margin-top: 60px;
@@ -630,7 +626,7 @@ header .logo {
 }
 .dif-wealth-azulito {
     color: #071e44;
-    font-weight: 900;
+    font-weight: bold;
 }
 .dif-cont::after {
   content: "";
@@ -793,12 +789,12 @@ footer {
     position: relative;
     margin-bottom: 200px;
     font-size: 42px;
-    font-weight: 600;
+    font-weight: bold;
     margin-left: 40px;
 }
 .timeline-sip {
     color: #4a25a9;
-    font-weight: 800;
+    font-weight: bold;
 }
 .timeline ul {
     margin-top: 30px;
@@ -1472,6 +1468,7 @@ footer {
         margin: 2rem auto;
         width: 90vw;
         height: fit-content;
+        padding: 25px;
     }
 
     .title-servicios-wealth {
