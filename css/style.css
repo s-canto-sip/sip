@@ -46,11 +46,11 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Montserrat';
-    color: rgb(64,64,64);
 }
 
 body {
   background-color: white;
+  color: rgb(64,64,64);
 }
 
 .in-view {
