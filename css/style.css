@@ -51,6 +51,7 @@
 body {
   background-color: white;
   color: rgb(64,64,64);
+  overflow-x: hidden;
 }
 
 .in-view {
@@ -341,6 +342,8 @@ header .logo {
 }
 .moradito {
     color: #4a25a9;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     font-size: 26px;
     font-weight: bold;
 }
@@ -718,6 +721,7 @@ footer {
     padding: 50px 0 300px 0;
     font-size: 13px;
     line-height: 20px;
+    overflow: hidden;
 }
 .row {
     width: 85%;
