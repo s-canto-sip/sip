@@ -710,20 +710,79 @@ header .logo {
 /*Footer*/
 
 footer {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    background-color: #4a25a9;
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
-    height: 300px;
-    color: white;
-    padding: 50px 0 300px 0;
-    font-size: 13px;
-    line-height: 20px;
-    overflow: hidden;
+    background: linear-gradient(white, #4a25a9);
 }
-.row {
+.foot-img {
+    height: 90vh;
+}
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2 {
+    font-size: 40px;
+    color: #4a25a9;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #4a25a9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus {
+    border: 2px solid #071e44;
+}
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+.contact-left button {
+    position: relative;
+    border-radius: 50px;
+    padding: 18px 28px;
+    border: solid 2px rgb(64,64,64);
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(64,64,64);
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+.contact-left button:hover {
+    background-color: #4a25a9;
+    border: solid 2px white;
+    color: white;
+}
+
+/* .row {
     width: 85%;
     margin: auto;
     display: flex;
@@ -778,7 +837,7 @@ footer {
 } 
 .footlinks li a:hover {
     border-bottom: solid 2px white;
-}
+} */
 
 /*Timeline Simple Investment Partners*/
 
@@ -902,7 +961,7 @@ footer {
     transform: scaleY(0);
     animation-fill-mode: forwards;
 }
-.como-icon {
+.como-icon {                                                                                
     border: none;
     position: absolute;
     border-radius: 50%;
@@ -1341,6 +1400,19 @@ footer {
         line-height: 2rem;
     }
 
+    .foot-img {
+        display: none;
+    }
+    .contact-container {
+        display: block;
+    }
+    .contact-left {
+        align-items: center;
+    }
+    .contact-inputs {
+        width: 90vw;
+    }
+
     /*SIP*/
     #sip-logo {
         height: 5rem;
@@ -1349,11 +1421,13 @@ footer {
     .sip-logo-w {
         height: 100vw;
         margin-top: 5rem;
+        margin-bottom: auto;
     }
     .portada-texto {
         width: 100vw;
         padding: 0 1rem;
         font-size: 1.5rem;
+        margin-top: 0;
     }
 
     .title-sobre {
@@ -1490,4 +1564,37 @@ footer {
 
 @media (min-width: 1024px) {
     
+    .title-sobre {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-servicios {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .por-que-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dif-sip-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .como-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .por-que-title-wealth {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dif-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-servicios-wealth {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
