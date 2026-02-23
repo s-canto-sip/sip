@@ -136,28 +136,20 @@
             <!-- Footer Start -->
 
             <footer id="contactanos" class="animate">
-                <div class="row">
-                    <div class="col">
-                        <img src="img/SIP_LOGO_W.png" class="footlogo">
-                        <p class="col-sip">
-                            SIP Simple Investment Partners
-                        </p>
-                    </div>
-                    <div class="col">
-                        <h3>Contáctanos</h3>
-                        <p class="col-2"></p>
-                        <p class="col-2"></p>
-                        <p class="col-2"></p>
-                        <p class="email">contacto@sipartners.com.mx</p>
-                        <h4>+52 55 1574 3461</h4>
-                    </div>
-                    <div class="col">
-                        <h3>Accesos</h3>
-                        <ul class="footlinks">
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">SIP</a></li>
-                            <li><a href="">SIP WEALTH</a></li>
-                        </ul>
+                <div class="contact-container">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <div class="contact-left-title">
+                            <h2>Contáctanos</h2>
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="1d5d84d8-8985-4d07-b79d-55a7f25f7383">
+                        <input type="text" name="name" placeholder="Nombre" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="Correo Electrónico" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Mensaje" class="contact-inputs" required></textarea>
+                        <button type="submit"><span class="butt-text">Enviar</span></button>
+                    </form>
+                    <div class="contact-right">
+                        <img class="foot-img" src="img/SIP_ICON.png">
                     </div>
                 </div>
             </footer>
@@ -171,4 +163,3 @@
 
     </body>
 </html>
-
