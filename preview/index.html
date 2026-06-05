@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP — Simple Investment Partners | Soluciones financieras para cada etapa</title>
+    <meta name="description" content="Simple Investment Partners: asesoría financiera simple, inteligente y profesional. Empieza a invertir con SIP o consolida tu patrimonio con SIP Wealth.">
+    <meta name="keywords" content="inversiones, asesoría financiera, patrimonio, SIP, finanzas personales, México">
+    <meta property="og:title" content="SIP — Simple Investment Partners">
+    <meta property="og:description" content="Soluciones financieras para cada etapa de tu vida.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../img/SIP_LOGO.png">
+
+    <link rel="icon" href="../img/SIP_ICON.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-brand="sip">
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header" id="siteHeader">
+        <a href="index.html" class="brand" aria-label="Inicio — Simple Investment Partners">
+            <img src="../img/SIP_ICON_W.png" alt="Simple Investment Partners">
+        </a>
+        <nav class="nav-desktop" aria-label="Principal">
+            <a href="sip.html">SIP</a>
+            <a href="sip-wealth.html">SIP Wealth</a>
+            <a href="#contacto" class="nav-cta">Contáctanos</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+    </header>
+
+    <div class="scrim" id="scrim"></div>
+    <nav class="drawer" id="drawer" aria-label="Menú móvil">
+        <button class="close" id="drawerClose" aria-label="Cerrar menú">&times;</button>
+        <a href="sip.html">SIP</a>
+        <a href="sip-wealth.html">SIP Wealth</a>
+        <a href="#contacto">Contáctanos</a>
+    </nav>
+
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <p class="hero__eyebrow">Simple Investment Partners</p>
+                <h1>Soluciones financieras para cada etapa de tu vida</h1>
+                <p class="lede">Te traducimos las finanzas, diseñamos la estrategia y te acompañamos. Elige por dónde empezar.</p>
+                <div class="paths">
+                    <article class="path">
+                        <img class="path__logo" src="../img/SIP_LOGO_W.png" alt="SIP">
+                        <h2>¿Quieres empezar a invertir?</h2>
+                        <p>Acompañamos tus primeros pasos: construir patrimonio, generar un fondo de emergencia, poner a trabajar tus ahorros o ver por tu retiro.</p>
+                        <a class="btn btn--light" href="sip.html">Descubre SIP
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </article>
+                    <article class="path">
+                        <img class="path__logo" src="../img/WEALTH_LOGO_W.png" alt="SIP Wealth">
+                        <h2>¿Ya tienes un patrimonio?</h2>
+                        <p>Protégelo, diversifícalo y hazlo crecer. Asesorías estratégicas para consolidarlo con soluciones hechas a tu medida.</p>
+                        <a class="btn btn--light" href="sip-wealth.html" style="color:var(--wealth)">Conoce SIP Wealth
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Nuestra forma de trabajar</p>
+                    <h2>¿Qué es <span class="accent">SIP</span>?</h2>
+                    <p>Tres principios que definen cómo trabajamos contigo.</p>
+                </div>
+                <div class="pillars">
+                    <article class="pillar reveal"><h3>Simple</h3><p>Nuestro equipo de expertos te traducirá las finanzas como nadie.</p></article>
+                    <article class="pillar reveal"><h3>Inteligente</h3><p>Estrategias diseñadas de acuerdo a las necesidades de cada cliente.</p></article>
+                    <article class="pillar reveal"><h3>Profesional</h3><p>Más de 10 años de experiencia en conjunto respaldan nuestra forma de trabajar.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contacto">
+            <div class="container">
+                <div class="contact__grid">
+                    <form class="reveal" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                        <h2>Contáctanos</h2>
+                        <div class="rule"></div>
+                        <input type="hidden" name="access_key" value="1d5d84d8-8985-4d07-b79d-55a7f25f7383">
+                        <div class="form-field">
+                            <label for="name">Nombre <span class="req" aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="message">Mensaje <span class="req" aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--solid form-submit">Enviar mensaje</button>
+                    </form>
+                    <aside class="contact__aside reveal">
+                        <img src="../img/SIP_ICON.png" alt="">
+                        <p class="disclaimer" style="background:none;color:var(--ink-soft);padding:0;font-size:var(--step--1)">
+                            Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un
+                            asesor en inversiones registrado ante la CNBV. Nuestro rol se enfoca en orientación general,
+                            educación financiera y vinculación con instituciones autorizadas.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
