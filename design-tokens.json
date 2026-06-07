@@ -1,0 +1,39 @@
+{
+  "_comment": "SIP design tokens for JS/React/Tailwind consumers. Mirrors css/tokens.css and the :root block in css/landing.css. Source of truth is the CSS; keep this in sync.",
+  "color": {
+    "ink": "#06080D",
+    "surface": "#0E1320",
+    "surfaceTint": "#F3F4F2",
+    "teal": "#13A394",
+    "tealDeep": "#063B37",
+    "navy": "#16335B",
+    "navyDeep": "#0A1C34",
+    "mint": "#2FE6C6",
+    "mintInk": "#04241D",
+    "fg": "#F8FAFC",
+    "fgMuted": "#9AA3B2",
+    "border": "#1C2230"
+  },
+  "brand": {
+    "sip":    { "accent": "#2FE6C6", "accentInk": "#04241D" },
+    "wealth": { "accent": "#6ea8ff", "accentInk": "#071326", "glow": "#6ea8ff", "text": "#9cc2ff" }
+  },
+  "font": {
+    "head": "'Playfair Display', Georgia, serif",
+    "body": "'Inter', system-ui, -apple-system, sans-serif"
+  },
+  "radius": {
+    "card": "16px",
+    "pill": "30px"
+  },
+  "layout": {
+    "maxWidth": "1180px",
+    "sectionPaddingY": "96px"
+  },
+  "motion": {
+    "ease": "cubic-bezier(.22,.61,.36,1)"
+  },
+  "breakpoint": {
+    "mobile": "860px"
+  }
+}

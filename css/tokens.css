@@ -1,0 +1,63 @@
+/* ============================================================
+   SIP Design Tokens — CANONICAL brand source
+   ------------------------------------------------------------
+   This file is the single source of truth for the SIP brand
+   across ALL projects (SIP-Web, SIP-App, future repos).
+   Mint/teal + Playfair/Inter. No purple.
+
+   Other repos consume a generated copy of these values
+   (see design-tokens.json for the JS/Tailwind/oklch version).
+   Change the brand HERE, then regenerate the copies.
+
+   Import in any HTML/CSS project:
+     <link rel="stylesheet" href="tokens.css">
+   Then style with var(--token) — never raw hex.
+
+   Brand switch: add data-brand="wealth" to <body> to flip
+   the accent from mint to blue across every component.
+   ============================================================ */
+
+:root{
+  /* base surfaces */
+  --ink:#06080D;
+  --surface:#0E1320;
+  --surface-tint:#F3F4F2;
+
+  /* brand colors */
+  --teal:#13A394;
+  --teal-deep:#063B37;
+  --navy:#16335B;
+  --navy-deep:#0A1C34;
+
+  /* accent (re-pointed by the brand switch below) */
+  --mint:#2FE6C6;
+  --mint-ink:#04241D;
+
+  /* wealth-side accents (used directly on split sections) */
+  --wealth-glow:#6ea8ff;
+  --wealth-text:#9cc2ff;
+
+  /* text */
+  --fg:#F8FAFC;
+  --fg-muted:#9AA3B2;
+  --border:#1C2230;
+
+  /* layout & geometry */
+  --maxw:1180px;
+  --r:16px;
+  --r-pill:30px;
+
+  /* motion */
+  --ease:cubic-bezier(.22,.61,.36,1);
+
+  /* type */
+  --font-head:'Playfair Display',Georgia,serif;
+  --font-body:'Inter',system-ui,-apple-system,sans-serif;
+}
+
+/* SIP Wealth: re-point the accent token to blue.
+   Every component using var(--mint) turns blue automatically. */
+body[data-brand="wealth"]{
+  --mint:#6ea8ff;
+  --mint-ink:#071326;
+}
