@@ -8,8 +8,8 @@
 <link rel="icon" href="img/SIP_ICON.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/landing.css">
 </head>
 <body data-brand="sip">
 <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -20,7 +20,7 @@
     <a href="index.html">Inicio</a>
     <a href="#sobre">Sobre nosotros</a>
     <a href="sip-wealth.html">SIP Wealth</a>
-    <a href="index.html#contacto" class="cta">Contáctanos</a>
+    <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
   </nav>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -32,16 +32,19 @@
   <a href="index.html">Inicio</a>
   <a href="#sobre">Sobre nosotros</a>
   <a href="sip-wealth.html">SIP Wealth</a>
-  <a href="index.html#contacto">Contáctanos</a>
+  <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
 </nav>
 
 <main id="main">
+
   <!-- PORTADA -->
   <section class="portada">
-    <div class="container portada__inner">
+    <span class="portada__glow" aria-hidden="true"></span>
+    <div class="portada__inner">
       <img class="portada__logo" src="img/SIP_LOGO_W.png" alt="SIP">
       <h1>El poder de <span class="hl">empezar hoy</span>.</h1>
-      <p>¿Quieres empezar tu camino financiero? ¡SIP! Te acompañamos a construir tu fondo de emergencia, tus primeras decisiones sobre tu dinero y tus metas. Porque decirle que sí a tu futuro es decirle <span class="hl">¡SIP!</span></p>
+      <p>¿Quieres empezar tu camino financiero? ¡SIP! Te acompañamos a construir tu fondo de emergencia, tus primeras decisiones sobre tu dinero y tus metas. Porque decirle que sí a tu futuro es decirle <span style="color:var(--mint);font-weight:600">¡SIP!</span></p>
+      <div class="portada__cta"><a href="index.html#contacto" class="btn btn--mint">Agenda tu llamada <span class="a">→</span></a></div>
     </div>
   </section>
 
@@ -57,25 +60,25 @@
   </section>
 
   <!-- SERVICIOS -->
-  <section class="section section--tint">
+  <section class="section">
     <div class="container">
       <div class="section__head center reveal">
         <span class="eyebrow">Lo que hacemos</span>
         <h2>Servicios</h2>
       </div>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card__icon"><img src="img/financiero.png" alt=""></div>
+      <div class="svc">
+        <article class="svc__card reveal">
+          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 8-7 0 4-3 7-8 7z"/><path d="M12 14c0-3-3-5-7-5 0 3 3 5 7 5z"/></svg></div>
           <h3>Ahorra hoy, disfruta mañana</h3>
           <p>Asegura tu futuro sin descuidar tu presente. Creamos contigo un plan de ahorro a largo plazo, flexible y constante, que te acerca paso a paso a una jubilación con libertad financiera.</p>
         </article>
-        <article class="card reveal">
-          <div class="card__icon"><img src="img/seguridad-financiera.png" alt=""></div>
+        <article class="svc__card reveal">
+          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
           <h3>Inversión con objetivo</h3>
           <p>¿Tienes una meta concreta? Un viaje, tu primer departamento o una etapa importante de la vida: diseñamos una estrategia personalizada según tu horizonte de tiempo y perfil de riesgo.</p>
         </article>
-        <article class="card reveal">
-          <div class="card__icon"><img src="img/house-plants.png" alt=""></div>
+        <article class="svc__card reveal">
+          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
           <h3>Crowdfunding inmobiliario</h3>
           <p>Haz que tu dinero construya algo sólido. Explora con nosotros oportunidades inmobiliarias alineadas a tu perfil, tus metas y tu momento de vida.</p>
         </article>
@@ -91,17 +94,17 @@
         <h2>¿Por qué <span class="accent">SIP</span>?</h2>
       </div>
       <div class="reasons">
-        <div class="reason reveal"><div class="reason__icon"><img src="img/calendario.png" alt=""></div><p>Porque empezar con el pie derecho te ahorra años de errores.</p></div>
-        <div class="reason reveal"><div class="reason__icon"><img src="img/edit-tools.png" alt=""></div><p>Porque todos deberían tener acceso a herramientas claras, reguladas y seguras.</p></div>
-        <div class="reason reveal"><div class="reason__icon"><img src="img/aprender-en-linea.png" alt=""></div><p>Porque nadie te enseña esto en la escuela.</p></div>
-        <div class="reason reveal"><div class="reason__icon"><img src="img/medalla.png" alt=""></div><p>Porque no necesitas ser experto para tomar buenas decisiones.</p></div>
-        <div class="reason reveal"><div class="reason__icon"><img src="img/amigo.png" alt=""></div><p>Porque creemos en acompañarte, no en venderte.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg></div><p>Porque empezar con el pie derecho te ahorra años de errores.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><p>Porque todos deberían tener acceso a herramientas claras, reguladas y seguras.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-5-2-8-1.5v13C7 17 10 17.5 12 19c2-1.5 5-2 8-1.5v-13C17 4 14 4.5 12 6z"/><path d="M12 6v13"/></svg></div><p>Porque nadie te enseña esto en la escuela.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12c1 1 1 2 1 3h6c0-1 0-2 1-3a7 7 0 0 0-4-12z"/></svg></div><p>Porque no necesitas ser experto para tomar buenas decisiones.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C5 16 3 12 3 8.5 3 6 5 4 7.5 4c1.7 0 3 .8 4.5 2.5C13.5 4.8 14.8 4 16.5 4 19 4 21 6 21 8.5 21 12 19 16 12 21z"/></svg></div><p>Porque creemos en acompañarte, no en venderte.</p></div>
       </div>
     </div>
   </section>
 
   <!-- DIFERENTES -->
-  <section class="section section--tint">
+  <section class="section">
     <div class="container">
       <div class="section__head center reveal">
         <span class="eyebrow">Nuestra diferencia</span>
@@ -133,16 +136,26 @@
     </div>
   </section>
 
+  <!-- CTA -->
+  <section class="section endcta">
+    <div class="container">
+      <h2 class="reveal">¿Listo para darle un <span class="accent">SIP</span> a tu futuro?</h2>
+      <p class="reveal">Da el primer paso hoy. Te acompañamos sin compromiso.</p>
+      <div class="reveal"><a href="index.html#contacto" class="btn btn--mint">Agenda tu llamada <span class="a">→</span></a></div>
+    </div>
+  </section>
+
   <!-- ALIADOS -->
-  <div class="marquee-wrap">
-    <p class="lab">Instituciones aliadas</p>
+  <section class="partners" aria-label="Instituciones aliadas">
+    <p class="partners__lab">Instituciones aliadas</p>
     <div class="marquee">
       <div class="marquee__track">
         <img src="img/MONIFIC_LOGO.svg" alt="Monific"><img src="img/GBM_LOGO.svg" alt="GBM"><img src="img/FINIX_LOGO.png" alt="Finix"><img src="img/HANSARD_LOGO.svg" alt="Hansard"><img src="img/DOOPRIMER_LOGO.webp" alt="Dooprimer"><img src="img/ALLIANZ_LOGO.svg" alt="Allianz"><img src="img/SKANDIA_LOGO.png" alt="Skandia"><img src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción">
         <img src="img/MONIFIC_LOGO.svg" alt=""><img src="img/GBM_LOGO.svg" alt=""><img src="img/FINIX_LOGO.png" alt=""><img src="img/HANSARD_LOGO.svg" alt=""><img src="img/DOOPRIMER_LOGO.webp" alt=""><img src="img/ALLIANZ_LOGO.svg" alt=""><img src="img/SKANDIA_LOGO.png" alt=""><img src="img/DINEROENACCION_LOGO.png" alt="">
       </div>
     </div>
-  </div>
+  </section>
+
 </main>
 
 <!-- FOOTER -->
@@ -150,7 +163,7 @@
   <div class="container">
     <div class="foot__top">
       <div class="foot__brand">
-        <img src="img/SIP_LOGO_W.png" alt="SIP">
+        <img src="img/SIP_LOGO_W.png" alt="SIP" width="120">
         <p>Simple, inteligente y profesional. Te acompañamos en cada etapa de tu vida financiera.</p>
       </div>
       <nav class="foot__nav">
@@ -159,7 +172,7 @@
       </nav>
     </div>
     <div class="disclaimer">
-      <h2>Aviso legal</h2>
+      <h4>Aviso legal</h4>
       <p>Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro rol se enfoca en orientación general, educación financiera y vinculación con instituciones autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni garantizamos rendimientos.</p>
     </div>
     <div class="foot__bottom">© 2025 Simple Investment Partners · Todos los derechos reservados.</div>

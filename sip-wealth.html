@@ -8,8 +8,8 @@
 <link rel="icon" href="img/WEALTH_ICON.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/landing.css">
 </head>
 <body data-brand="wealth">
 <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -20,7 +20,7 @@
     <a href="index.html">Inicio</a>
     <a href="#sobre">Sobre nosotros</a>
     <a href="sip.html">SIP</a>
-    <a href="index.html#contacto" class="cta">Contáctanos</a>
+    <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
   </nav>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -32,16 +32,19 @@
   <a href="index.html">Inicio</a>
   <a href="#sobre">Sobre nosotros</a>
   <a href="sip.html">SIP</a>
-  <a href="index.html#contacto">Contáctanos</a>
+  <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
 </nav>
 
 <main id="main">
+
   <!-- PORTADA -->
   <section class="portada">
-    <div class="container portada__inner">
+    <span class="portada__glow" aria-hidden="true"></span>
+    <div class="portada__inner">
       <img class="portada__logo" src="img/WEALTH_LOGO_W.png" alt="SIP Wealth">
       <h1>Tu patrimonio ya tiene historia. Ahora, que tenga <span class="hl">estrategia</span>.</h1>
       <p>Acompañamiento personalizado para quienes buscan diversificar, consolidar y proyectar su capital a largo plazo.</p>
+      <div class="portada__cta"><a href="index.html#contacto" class="btn btn--mint">Agenda una consulta <span class="a">→</span></a></div>
     </div>
   </section>
 
@@ -57,10 +60,10 @@
   </section>
 
   <!-- STATS BAND -->
-  <section class="section section--band">
+  <section class="section statband">
     <div class="container">
-      <div class="section__head center reveal" style="margin-bottom:var(--sp-12)">
-        <span class="eyebrow on-dark">Nuestra trayectoria</span>
+      <div class="section__head center reveal" style="margin-bottom:40px">
+        <span class="eyebrow">Nuestra trayectoria</span>
         <h2>Resultados que <span class="accent">respaldan</span></h2>
       </div>
       <div class="stats reveal">
@@ -79,17 +82,17 @@
         <h2>¿Por qué <span class="accent">SIP Wealth</span>?</h2>
       </div>
       <div class="reasons">
-        <div class="reason reveal"><div class="reason__icon"><img src="img/house-plants-2.png" alt=""></div><p>Porque tu patrimonio merece atención personalizada y estrategia profesional.</p></div>
-        <div class="reason reveal"><div class="reason__icon"><img src="img/grafico.png" alt=""></div><p>Porque una buena asesoría no vende productos: diseña soluciones.</p></div>
-        <div class="reason reveal"><div class="reason__icon"><img src="img/aprender-en-linea-2.png" alt=""></div><p>Porque nadie te enseña esto en la escuela.</p></div>
-        <div class="reason reveal"><div class="reason__icon"><img src="img/customer-relationship-management.png" alt=""></div><p>Porque buscamos relaciones a largo plazo basadas en confianza.</p></div>
-        <div class="reason reveal"><div class="reason__icon"><img src="img/objetivo.png" alt=""></div><p>Porque tus objetivos son nuestra prioridad, no nuestros intereses.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3 7 9l5 12 5-12-2-6"/></svg></div><p>Porque tu patrimonio merece atención personalizada y estrategia profesional.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></div><p>Porque una buena asesoría no vende productos: diseña soluciones.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-5-2-8-1.5v13C7 17 10 17.5 12 19c2-1.5 5-2 8-1.5v-13C17 4 14 4.5 12 6z"/><path d="M12 6v13"/></svg></div><p>Porque nadie te enseña esto en la escuela.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3 2.5-5.2 5.5-5.2s5.5 2.2 5.5 5.2"/><path d="M16 5.2A3.2 3.2 0 0 1 16 11.6"/><path d="M20.5 20c0-2.6-1.8-4.6-4.2-5"/></svg></div><p>Porque buscamos relaciones a largo plazo basadas en confianza.</p></div>
+        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div><p>Porque tus objetivos son nuestra prioridad, no nuestros intereses.</p></div>
       </div>
     </div>
   </section>
 
   <!-- LO QUE HACE LA DIFERENCIA -->
-  <section class="section section--tint">
+  <section class="section">
     <div class="container">
       <div class="section__head center reveal">
         <span class="eyebrow">Nuestra diferencia</span>
@@ -114,19 +117,19 @@
         <span class="eyebrow">Lo que hacemos</span>
         <h2>Servicios</h2>
       </div>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card__icon"><img src="img/financiero.png" alt=""></div>
+      <div class="svc">
+        <article class="svc__card reveal">
+          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <h3>Planeación patrimonial y protección financiera</h3>
           <p>Estrategias diseñadas para proteger tu patrimonio personal y familiar, optimizar la sucesión y mejorar la eficiencia fiscal.</p>
         </article>
-        <article class="card reveal">
-          <div class="card__icon"><img src="img/seguridad-financiera.png" alt=""></div>
+        <article class="svc__card reveal">
+          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V11"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg></div>
           <h3>Inversión en deuda privada</h3>
           <p>Acceso a vehículos con flujos estables y riesgo moderado, ideales para conservar capital y generar ingresos recurrentes.</p>
         </article>
-        <article class="card reveal">
-          <div class="card__icon"><img src="img/house-plants.png" alt=""></div>
+        <article class="svc__card reveal">
+          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 4 5.7 4 9s-1.4 6.4-4 9c-2.6-2.6-4-5.7-4-9s1.4-6.4 4-9z"/></svg></div>
           <h3>Portafolios diversificados globalmente</h3>
           <p>Portafolios con exposición internacional y multiactivo, enfocados en crecimiento sostenible y alineados a tus objetivos de largo plazo.</p>
         </article>
@@ -134,16 +137,26 @@
     </div>
   </section>
 
+  <!-- CTA -->
+  <section class="section endcta">
+    <div class="container">
+      <h2 class="reveal">Tu patrimonio merece una <span class="accent">estrategia</span></h2>
+      <p class="reveal">Conversemos sobre cómo consolidar y proyectar tu capital. Sin compromiso.</p>
+      <div class="reveal"><a href="index.html#contacto" class="btn btn--mint">Agenda una consulta <span class="a">→</span></a></div>
+    </div>
+  </section>
+
   <!-- ALIADOS -->
-  <div class="marquee-wrap">
-    <p class="lab">Instituciones aliadas</p>
+  <section class="partners" aria-label="Instituciones aliadas">
+    <p class="partners__lab">Instituciones aliadas</p>
     <div class="marquee">
       <div class="marquee__track">
         <img src="img/MONIFIC_LOGO.svg" alt="Monific"><img src="img/GBM_LOGO.svg" alt="GBM"><img src="img/FINIX_LOGO.png" alt="Finix"><img src="img/HANSARD_LOGO.svg" alt="Hansard"><img src="img/DOOPRIMER_LOGO.webp" alt="Dooprimer"><img src="img/ALLIANZ_LOGO.svg" alt="Allianz"><img src="img/SKANDIA_LOGO.png" alt="Skandia"><img src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción">
         <img src="img/MONIFIC_LOGO.svg" alt=""><img src="img/GBM_LOGO.svg" alt=""><img src="img/FINIX_LOGO.png" alt=""><img src="img/HANSARD_LOGO.svg" alt=""><img src="img/DOOPRIMER_LOGO.webp" alt=""><img src="img/ALLIANZ_LOGO.svg" alt=""><img src="img/SKANDIA_LOGO.png" alt=""><img src="img/DINEROENACCION_LOGO.png" alt="">
       </div>
     </div>
-  </div>
+  </section>
+
 </main>
 
 <!-- FOOTER -->
@@ -151,7 +164,7 @@
   <div class="container">
     <div class="foot__top">
       <div class="foot__brand">
-        <img src="img/WEALTH_LOGO_W.png" alt="SIP Wealth">
+        <img src="img/WEALTH_LOGO_W.png" alt="SIP Wealth" width="120">
         <p>Estrategias patrimoniales sólidas, transparentes y enfocadas en resultados de largo plazo.</p>
       </div>
       <nav class="foot__nav">
@@ -160,7 +173,7 @@
       </nav>
     </div>
     <div class="disclaimer">
-      <h2>Aviso legal</h2>
+      <h4>Aviso legal</h4>
       <p>Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro rol se enfoca en orientación general, educación financiera y vinculación con instituciones autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni garantizamos rendimientos.</p>
     </div>
     <div class="foot__bottom">© 2025 Simple Investment Partners · Todos los derechos reservados.</div>
