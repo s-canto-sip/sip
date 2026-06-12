@@ -1,8 +1,8 @@
 /* ============ SIP Landing — design tokens ============ */
 :root{
-  --ink:#06080D; --teal:#13A394; --teal-deep:#063B37;
+  --ink:#06080D; --teal:#4a25a9; --teal-deep:#30186b;
   --navy:#16335B; --navy-deep:#0A1C34;
-  --mint:#2FE6C6; --mint-ink:#04241D;
+  --mint:#6433e1; --mint-ink:#160b33;
   --surface:#0E1320; --surface-tint:#F3F4F2;
   --fg:#F8FAFC; --fg-muted:#9AA3B2; --border:#1C2230;
   --maxw:1180px;
@@ -89,7 +89,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 /* ============ hero gateway ============ */
 .hero__split{display:flex;position:relative;min-height:min(82vh,720px)}
 .gate{flex:1;position:relative;overflow:hidden;display:flex;align-items:center;transition:flex .5s var(--ease)}
-.gate--sip{background:radial-gradient(130% 120% at 15% 25%,#0f8479,#0a5f57 42%,#063b37)}
+.gate--sip{background:radial-gradient(130% 120% at 15% 25%,#4a25a9,#361b7b 42%,#22114e)}
 .gate--wealth{background:radial-gradient(130% 120% at 85% 25%,#234a86,#16335b 42%,#0a1c34)}
 .gate__glow{position:absolute;width:340px;height:340px;border-radius:50%;filter:blur(60px);opacity:.45;pointer-events:none;transition:opacity .4s var(--ease)}
 .gate--sip .gate__glow{background:var(--mint);top:-100px;left:-60px}
@@ -98,7 +98,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 .gate--wealth .gate__inner{margin-left:0;margin-right:auto}
 .gate__logo{margin-bottom:22px}
 .gate h1{font-size:clamp(34px,4.4vw,52px);color:#fff;margin:16px 0}
-.gate h1 em{font-style:italic;font-weight:500;color:#5af0d6}
+.gate h1 em{font-style:italic;font-weight:500;color:#8d63f5}
 .gate h1 em.em-navy{color:#9cc2ff}
 .gate p{color:#cbd3df;font-size:16px;max-width:330px;margin-bottom:26px}
 @media(min-width:861px){
@@ -154,7 +154,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 .bento__card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);
   padding:34px 30px;position:relative;overflow:hidden;transition:transform .25s var(--ease),border-color .25s}
 .bento__card:hover{transform:translateY(-4px);border-color:#2c3650}
-.bento__card--lead{grid-row:span 1;background:radial-gradient(120% 140% at 0% 0%,#0f5048 0%,var(--surface) 55%)}
+.bento__card--lead{grid-row:span 1;background:radial-gradient(120% 140% at 0% 0%,#331974 0%,var(--surface) 55%)}
 .bento__num{font-family:var(--font-head);font-size:30px;color:var(--mint);opacity:.85}
 .bento__card h3{font-size:24px;margin:10px 0 10px;color:#fff}
 .bento__card p{color:var(--fg-muted);font-size:15px}
@@ -166,7 +166,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 /* ============ paths ============ */
 .paths__grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .path{position:relative;overflow:hidden;border-radius:var(--r);padding:42px 38px;border:1px solid var(--border)}
-.path--sip{background:radial-gradient(120% 130% at 10% 0%,#0f5b53,#08322e 70%)}
+.path--sip{background:radial-gradient(120% 130% at 10% 0%,#361b7b,#22114e 70%)}
 .path--wealth{background:radial-gradient(120% 130% at 90% 0%,#1d3f72,#0a1c34 70%)}
 .path__glow{position:absolute;width:240px;height:240px;border-radius:50%;filter:blur(60px);opacity:.35;top:-90px}
 .path--sip .path__glow{background:var(--mint);left:-40px}
