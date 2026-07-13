@@ -1,3 +1,13 @@
+
+h1,
+h2,
+h3,
+p,
+a,
+li{
+  overflow-wrap:break-word;
+}
+
 /* ============ SIP Landing — design tokens ============ */
 :root{
   --ink:#06080D; --teal:#4a25a9; --teal-deep:#30186b;
@@ -5,7 +15,7 @@
   --mint:#6433e1; --mint-ink:#160b33;
   --surface:#0E1320; --surface-tint:#F3F4F2;
   --fg:#F8FAFC; --fg-muted:#9AA3B2; --border:#1C2230;
-  --maxw:1180px;
+  --maxw:1280px;
   --r:16px; --r-pill:30px;
   --ease:cubic-bezier(.22,.61,.36,1);
   --font-head:'Playfair Display',Georgia,serif;
@@ -18,7 +28,13 @@ body{font-family:var(--font-body);background:var(--ink);color:var(--fg);
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-spacing:-.01em}
-.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+.container{
+  width:min(100%,var(--maxw));
+  margin-inline:auto;
+  padding-inline:clamp(16px,4vw,24px);
+}
+
 .eyebrow{font-family:var(--font-body);font-size:11px;letter-spacing:.26em;
   text-transform:uppercase;font-weight:600;color:var(--mint)}
 .section{padding:96px 0}
@@ -55,6 +71,15 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 .site-header{position:sticky;top:0;z-index:100;display:flex;align-items:center;
   justify-content:space-between;padding:16px 24px;background:#06080dcc;
   backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:.3s var(--ease)}
+  
+@media (max-width:480px){
+
+  .site-header{
+    padding:12px 16px;
+  }
+
+}
+
 .site-header[data-scrolled="true"]{border-bottom-color:var(--border);background:#06080df2}
 .brand{display:flex;align-items:center;gap:12px}
 .brand span{font-size:11px;letter-spacing:.22em;font-weight:600}
@@ -87,7 +112,16 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 }
 
 /* ============ hero gateway ============ */
-.hero__split{display:flex;position:relative;min-height:min(82vh,720px)}
+.hero__split{display:flex;position:relative;min-height:min(85vh,720px)}
+
+@media (max-width:860px){
+
+  .hero__split{
+    min-height:auto;
+  }
+
+}
+
 .gate{flex:1;position:relative;overflow:hidden;display:flex;align-items:center;transition:flex .5s var(--ease)}
 .gate--sip{background:radial-gradient(130% 120% at 15% 25%,#4a25a9,#361b7b 42%,#22114e)}
 .gate--wealth{background:radial-gradient(130% 120% at 85% 25%,#234a86,#16335b 42%,#0a1c34)}
@@ -100,7 +134,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 .gate h1{font-size:clamp(34px,4.4vw,52px);color:#fff;margin:16px 0}
 .gate h1 em{font-style:italic;font-weight:500;color:#8d63f5}
 .gate h1 em.em-navy{color:#9cc2ff}
-.gate p{color:#cbd3df;font-size:16px;max-width:330px;margin-bottom:26px}
+.gate p{color:#cbd3df;font-size:clamp(14px,2vw,16px);max-width:330px;margin-bottom:26px}
 @media(min-width:861px){
   .gate:hover{flex:1.05}
   .gate:hover .gate__glow{opacity:.72}
@@ -110,7 +144,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 .hero__seam{position:absolute;left:50%;top:0;bottom:0;width:1px;
   background:linear-gradient(#fff0,#ffffff55,#fff0);transform:translateX(-50%)}
 .hero__badge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
-  width:92px;height:92px;border-radius:50%;background:var(--ink);border:1px solid #2a3344;
+  width:clamp(70px,12vw,92px);height:clamp(70px,12vw,92px);border-radius:50%;background:var(--ink);border:1px solid #2a3344;
   display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
   z-index:3;box-shadow:0 14px 40px #0008}
 .hero__badge .s{font-size:9px;letter-spacing:.18em;color:var(--fg-muted)}
@@ -202,6 +236,15 @@ h2.on-light{color:#13202e}
 .contact__pop b{font-family:var(--font-head);font-size:38px;color:var(--mint)}
 .contact__pop span{color:var(--fg-muted);font-size:13px;line-height:1.4}
 .contact__form{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:34px}
+
+@media (max-width:480px){
+
+  .contact__form{
+    padding:20px;
+  }
+
+}
+
 .field{margin-bottom:18px}
 .field label{display:block;font-size:13px;font-weight:600;margin-bottom:7px;color:var(--fg)}
 .field input,.field textarea{width:100%;background:var(--ink);border:1px solid var(--border);
@@ -218,6 +261,15 @@ h2.on-light{color:#13202e}
 .foot__top{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid var(--border)}
 .foot__brand p{color:var(--fg-muted);font-size:14px;max-width:320px;margin-top:16px}
 .foot__nav{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+
+@media (max-width:520px){
+
+  .foot__nav{
+    grid-template-columns:1fr;
+  }
+
+}
+
 .foot__nav h4{font-family:var(--font-body);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg);margin-bottom:14px}
 .foot__nav a{display:block;color:var(--fg-muted);font-size:14px;padding:5px 0;transition:color .2s}
 .foot__nav a:hover{color:var(--mint)}
@@ -269,7 +321,57 @@ h2.on-light{color:#13202e}
    SUB-PAGES (sip.html / sip-wealth.html) — same system, navy variant
    ==================================================================== */
 body[data-brand="wealth"]{--mint:#6ea8ff;--mint-ink:#071326}
-.site-header .brand img{height:26px;width:auto}
+
+.site-header .brand img{
+  height:clamp(20px,4vw,26px);
+  width:auto;
+}
+
+@media(max-width:860px){
+
+  .brand span{
+    display:none;
+  }
+
+}
+
+@media(max-width:860px){
+
+  .gate__inner{
+    padding:40px 24px;
+  }
+
+}
+
+@media(max-width:860px){
+
+  .hero__badge{
+    width:72px;
+    height:72px;
+  }
+
+}
+
+
+.mobile-cta{
+  bottom:max(16px, env(safe-area-inset-bottom));
+}
+
+@media(max-width:480px){
+
+  .section{
+    padding:72px 0;
+  }
+
+  .contact__form{
+    padding:24px;
+  }
+
+  .hero__stats .stat{
+    padding:20px 10px;
+  }
+
+}
 
 /* section heads (sub-page convention) */
 .section__head{max-width:680px;margin:0 0 48px}
