@@ -348,6 +348,7 @@ body[data-brand="wealth"]{--mint:#6ea8ff;--mint-ink:#071326}
   .hero__badge{
     width:72px;
     height:72px;
+    visibility:hidden;
   }
 
 }
