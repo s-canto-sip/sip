@@ -15,7 +15,7 @@
     "wealth": { "accent": "#6ea8ff", "accentInk": "#071326", "button": "#6ea8ff", "buttonInk": "#071326" }
   },
   "font": {
-    "head": "'Playfair Display', Georgia, serif",
+    "head": "'Fraunces', Georgia, serif",
     "body": "'Inter', system-ui, -apple-system, sans-serif"
   },
   "radius": { "card": "16px", "pill": "30px" },

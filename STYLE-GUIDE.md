@@ -68,7 +68,7 @@ Section-level split backgrounds use explicit variant classes: `.gate--sip` / `.g
 
 | Role | Font | Stack token |
 |---|---|---|
-| Headings (`h1,h2,h3`) | **Playfair Display** (serif, 600). The manual specifies Cooper BT | `var(--font-head)` |
+| Headings (`h1,h2,h3`) | **Fraunces** (serif, 600). Free web substitute for the manual's Cooper BT; the logo keeps Cooper | `var(--font-head)` |
 | Body, UI, labels | **Inter** (sans) | `var(--font-body)` |
 
 Headings: `line-height:1.08`, `letter-spacing:-.01em`.
@@ -214,4 +214,4 @@ When you add a multi-column grid, **always include a `@media(max-width:860px){ g
 2. Set `<body data-brand="wealth">` if it's a Wealth page; omit for SIP.
 3. Compose from the §6 components inside `.section > .container` wrappers.
 4. Use `var(--token)` for every color. Add the 860px collapse rule for any grid.
-5. Headings = Playfair, body = Inter (already inherited — don't override).
+5. Headings = Fraunces, body = Inter (already inherited — don't override).
