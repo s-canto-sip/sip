@@ -5,24 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SIP — Simple Investment Partners | Elige tu camino financiero</title>
 <meta name="description" content="Simple Investment Partners: asesoría financiera simple, inteligente y profesional. Empieza a invertir con SIP o consolida tu patrimonio con SIP Wealth.">
+<link rel="canonical" href="https://sipartners.com.mx/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Simple Investment Partners">
+<meta property="og:title" content="SIP — Simple Investment Partners | Elige tu camino financiero">
+<meta property="og:description" content="Simple Investment Partners: asesoría financiera simple, inteligente y profesional. Empieza a invertir con SIP o consolida tu patrimonio con SIP Wealth.">
+<meta property="og:url" content="https://sipartners.com.mx/">
+<meta property="og:image" content="https://sipartners.com.mx/img/og-sip.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/SIP_ICON.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/landing.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sipartners.com.mx/#organization",
+      "name": "Simple Investment Partners",
+      "alternateName": "SIP",
+      "url": "https://sipartners.com.mx/",
+      "logo": "https://sipartners.com.mx/img/SIP_LOGO_W.png",
+      "email": "hola@sipartners.com.mx"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sipartners.com.mx/#website",
+      "name": "Simple Investment Partners",
+      "url": "https://sipartners.com.mx/",
+      "inLanguage": "es-MX",
+      "publisher": {
+        "@id": "https://sipartners.com.mx/#organization"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body data-brand="sip">
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header" id="siteHeader">
   <a href="index.html" class="brand" aria-label="Inicio — Simple Investment Partners">
-    <img src="img/SIP_ICON_W.png" alt="" width="30">
-    <span>SIMPLE INVESTMENT PARTNERS</span>
+    <img src="img/SIP_ICON_W.png" alt="" width="30" height="30">
+    <h1 class="brand__name"><span>SIMPLE INVESTMENT PARTNERS</span></h1>
   </a>
   <nav class="nav-desktop" aria-label="Principal">
     <a href="index.html">Inicio</a>
     <a href="sip.html">SIP</a>
     <a href="sip-wealth.html">SIP Wealth</a>
+    <a href="consulting/">Para empresas</a>
     <a href="#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
   </nav>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
@@ -35,6 +71,7 @@
   <a href="index.html">Inicio</a>
   <a href="sip.html">SIP</a>
   <a href="sip-wealth.html">SIP Wealth</a>
+  <a href="consulting/">Para empresas</a>
   <a href="#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
 </nav>
 <!-- sticky mobile CTA (shown after hero, mobile only) -->
@@ -48,9 +85,9 @@
       <div class="gate gate--sip">
         <span class="gate__glow"></span>
         <div class="gate__inner">
-          <img class="gate__logo" src="img/SIP_LOGO_W.png" alt="SIP" width="120">
+          <img class="gate__logo" src="img/SIP_LOGO_W.png" alt="SIP" width="120" height="64">
           <span class="eyebrow">Empieza hoy</span>
-          <h1>Empieza a<br><em>invertir bien.</em></h1>
+          <h2>Empieza a<br><em>invertir bien.</em></h2>
           <p>Tu fondo de emergencia, tus ahorros trabajando y tu retiro — acompañado paso a paso.</p>
           <a class="btn btn--light" href="sip.html">Descubre SIP <span class="a">→</span></a>
         </div>
@@ -58,9 +95,9 @@
       <div class="gate gate--wealth">
         <span class="gate__glow"></span>
         <div class="gate__inner">
-          <img class="gate__logo" src="img/WEALTH_LOGO_W.png" alt="SIP Wealth" width="120">
+          <img class="gate__logo" src="img/WEALTH_LOGO_W.png" alt="SIP Wealth" width="120" height="54">
           <span class="eyebrow" style="color:#bcd4ff">Consolida</span>
-          <h1>Haz crecer<br><em class="em-navy">tu patrimonio.</em></h1>
+          <h2>Haz crecer<br><em class="em-navy">tu patrimonio.</em></h2>
           <p>Protégelo, diversifícalo y multiplícalo con estrategia y soluciones a tu medida.</p>
           <a class="btn btn--light" href="sip-wealth.html">Conoce SIP Wealth <span class="a">→</span></a>
         </div>
@@ -81,8 +118,8 @@
     <p class="partners__lab">Instituciones aliadas</p>
     <div class="marquee">
       <div class="marquee__track">
-        <img src="img/MONIFIC_LOGO.svg" alt="Monific"><img src="img/GBM_LOGO.svg" alt="GBM"><img src="img/FINIX_LOGO.png" alt="Finix"><img src="img/HANSARD_LOGO.svg" alt="Hansard"><img src="img/DOOPRIMER_LOGO.webp" alt="Dooprimer"><img src="img/ALLIANZ_LOGO.svg" alt="Allianz"><img src="img/SKANDIA_LOGO.png" alt="Skandia"><img src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción">
-        <img src="img/MONIFIC_LOGO.svg" alt=""><img src="img/GBM_LOGO.svg" alt=""><img src="img/FINIX_LOGO.png" alt=""><img src="img/HANSARD_LOGO.svg" alt=""><img src="img/DOOPRIMER_LOGO.webp" alt=""><img src="img/ALLIANZ_LOGO.svg" alt=""><img src="img/SKANDIA_LOGO.png" alt=""><img src="img/DINEROENACCION_LOGO.png" alt="">
+        <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="Monific" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="GBM" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="Finix" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="Hansard" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="Dooprimer" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="Allianz" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="Skandia" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción" width="420" height="120">
+        <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="" width="420" height="120">
       </div>
     </div>
   </section>
@@ -254,6 +291,7 @@
         <div class="contact__pop"><b>+10</b><span>años acompañando<br>a inversionistas</span></div>
       </div>
       <form class="contact__form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
         <input type="hidden" name="access_key" value="1d5d84d8-8985-4d07-b79d-55a7f25f7383">
         <div class="field"><label for="name">Nombre</label>
           <input type="text" id="name" name="name" autocomplete="name" required>
@@ -277,19 +315,19 @@
   <div class="container">
     <div class="foot__top">
       <div class="foot__brand">
-        <img src="img/SIP_LOGO_W.png" alt="SIP" width="120">
+        <img src="img/SIP_LOGO_W.png" alt="SIP" width="120" height="64">
         <p>Simple, inteligente y profesional. Te acompañamos en cada etapa de tu vida financiera.</p>
       </div>
       <nav class="foot__nav">
-        <div><h4>Explora</h4><a href="index.html">Inicio</a><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a></div>
-        <div><h4>Contacto</h4><a href="#contacto">Escríbenos</a><a href="mailto:hola@sipartners.com.mx">hola@sipartners.com.mx</a></div>
+        <div><h2>Explora</h2><a href="index.html">Inicio</a><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="consulting/">SIP Consulting</a></div>
+        <div><h2>Contacto</h2><a href="#contacto">Escríbenos</a><a href="mailto:hola@sipartners.com.mx">hola@sipartners.com.mx</a></div>
       </nav>
     </div>
     <div class="disclaimer">
-      <h4>Aviso legal</h4>
+      <h2>Aviso legal</h2>
       <p>Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro rol se enfoca en orientación general, educación financiera y vinculación con instituciones autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni garantizamos rendimientos.</p>
     </div>
-    <div class="foot__bottom">© 2025 Simple Investment Partners · Todos los derechos reservados.</div>
+    <div class="foot__bottom">© 2026 Simple Investment Partners · Todos los derechos reservados.</div>
   </div>
 </footer>
 
