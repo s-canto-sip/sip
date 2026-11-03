@@ -8,9 +8,9 @@
 
 ## 0. Hard Rules (non-negotiable)
 
-1. **No purple.** Ever. The palette is teal / navy / mint only.
+1. **Each brand keeps its color.** SIP is purple, SIP Wealth is blue, per the official identity manual.
 2. **No fabricated content.** Don't invent stats, testimonials, client names, or numbers. Use real copy or leave a placeholder flagged for Santiago.
-3. **Use design tokens, never raw hex.** Write `var(--mint)`, not `#2FE6C6`. Hardcoded hex values cause the brand to break on Wealth pages (see §2).
+3. **Use design tokens, never raw hex.** Write `var(--mint)`, not a raw color. Hardcoded hex values cause the brand to break on Wealth pages (see §2).
 4. **One stylesheet.** Every page links `css/landing.css`. Don't create per-page CSS files.
 5. **Dark by default.** Background is near-black `--ink`. The only light section is `.section--tint`.
 
@@ -25,18 +25,18 @@ Defined in `:root` at the top of `css/landing.css`. Reference them with `var(--t
 | `--ink` | `#06080D` | Page background, deepest base |
 | `--surface` | `#0E1320` | Card / panel background |
 | `--surface-tint` | `#F3F4F2` | The one light section background |
-| `--teal` | `#13A394` | Core brand teal (avatars, step numbers) |
-| `--teal-deep` | `#063B37` | Dark teal for gradients / light buttons |
-| `--navy` | `#16335B` | SIP Wealth core color |
-| `--navy-deep` | `#0A1C34` | Dark navy for gradients |
-| `--mint` | `#2FE6C6` | **Primary accent** — CTAs, highlights, icons |
-| `--mint-ink` | `#04241D` | Text color on mint backgrounds |
+| `--teal` | `#4A25A9` | **Official SIP purple.** Token name is historical |
+| `--teal-deep` | `#30186B` | Dark purple for gradients and light buttons |
+| `--navy` | `#071E44` | **Official SIP Wealth blue** |
+| `--mint` | `#9B82F2` | **Accent on dark surfaces** (6.55:1). Token name is historical |
+| `--mint-ink` | `#160B33` | Text on accent backgrounds |
+| `--btn` / `--btn-ink` | `#4A25A9` / `#FFFFFF` | Solid buttons (9.87:1) |
 | `--fg` | `#F8FAFC` | Primary text |
 | `--fg-muted` | `#9AA3B2` | Secondary / body text |
 | `--border` | `#1C2230` | Hairline borders, dividers |
 
 **Brand-side glow accents** (used on the homepage split + path cards):
-- SIP side → mint glow `var(--mint)` / `#2FE6C6`
+- SIP side → purple glow
 - Wealth side → blue glow `#6ea8ff`, blue text accent `#9cc2ff`
 
 All color pairs in this palette pass WCAG AA contrast.
@@ -47,18 +47,18 @@ All color pairs in this palette pass WCAG AA contrast.
 
 This is the most important mechanic to understand. The site is **two brands sharing one stylesheet**:
 
-- **SIP** = mint/teal accent (default)
-- **SIP Wealth** = blue/navy accent
+- **SIP** = purple (default)
+- **SIP Wealth** = blue
 
 The switch is a single line:
 
 ```css
-body[data-brand="wealth"]{ --mint:#6ea8ff; --mint-ink:#071326 }
+body[data-brand="wealth"]{ --mint:#6ea8ff; --mint-ink:#071326; --btn:#6ea8ff; --btn-ink:#071326; --glow:#0e2a58 }
 ```
 
 Putting `data-brand="wealth"` on the `<body>` **re-points the `--mint` token to blue**, so every component that uses `var(--mint)` (buttons, accents, icon tiles, highlights) automatically turns blue — no other markup changes needed.
 
-> **This is exactly why rule §0.3 exists.** If you hardcode `#2FE6C6` instead of `var(--mint)`, your element stays mint on Wealth pages and breaks the brand. Always use the token.
+> **This is exactly why rule §0.3 exists.** If you hardcode a color instead of `var(--mint)`, your element stays purple on Wealth pages and breaks the brand. Always use the token.
 
 Section-level split backgrounds use explicit variant classes: `.gate--sip` / `.gate--wealth`, `.path--sip` / `.path--wealth`.
 
@@ -68,7 +68,7 @@ Section-level split backgrounds use explicit variant classes: `.gate--sip` / `.g
 
 | Role | Font | Stack token |
 |---|---|---|
-| Headings (`h1,h2,h3`) | **Playfair Display** (serif, 600) | `var(--font-head)` |
+| Headings (`h1,h2,h3`) | **Playfair Display** (serif, 600). The manual specifies Cooper BT | `var(--font-head)` |
 | Body, UI, labels | **Inter** (sans) | `var(--font-body)` |
 
 Headings: `line-height:1.08`, `letter-spacing:-.01em`.
