@@ -43,6 +43,7 @@
 
   /* tipografía */
   --font-head:'Fraunces',Georgia,serif;
+  --font-num:'Urbanist',system-ui,sans-serif;
   --font-body:'Inter',system-ui,-apple-system,sans-serif;
 }
 

@@ -69,6 +69,7 @@ Section-level split backgrounds use explicit variant classes: `.gate--sip` / `.g
 | Role | Font | Stack token |
 |---|---|---|
 | Headings (`h1,h2,h3`) | **Fraunces** (serif, 600). Free web substitute for the manual's Cooper BT; the logo keeps Cooper | `var(--font-head)` |
+| Big numbers (stats, steps) | **Urbanist** (700) | `var(--font-num)` |
 | Body, UI, labels | **Inter** (sans) | `var(--font-body)` |
 
 Headings: `line-height:1.08`, `letter-spacing:-.01em`.

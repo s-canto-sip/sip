@@ -16,6 +16,7 @@
   },
   "font": {
     "head": "'Fraunces', Georgia, serif",
+    "numbers": "'Urbanist', system-ui, sans-serif",
     "body": "'Inter', system-ui, -apple-system, sans-serif"
   },
   "radius": { "card": "16px", "pill": "30px" },
