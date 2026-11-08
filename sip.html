@@ -19,19 +19,23 @@
 <link rel="icon" href="img/SIP_ICON.png">
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/site.css">
 </head>
-<body data-brand="sip">
+<body class="v2" data-brand="sip">
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
-<header class="site-header" id="siteHeader">
-  <a href="index.html" class="brand" aria-label="Inicio"><img src="img/SIP_LOGO_W.png" alt="SIP" width="480" height="254"></a>
-  <nav class="nav-desktop" aria-label="Principal">
+<header class="topbar" id="siteHeader">
+  <a href="index.html" class="topbar__brand" aria-label="Inicio — Simple Investment Partners">
+    <img src="img/SIP_ICON_W.png" alt="" width="28" height="28">
+    <span>Simple Investment Partners</span>
+  </a>
+  <nav class="topbar__nav" aria-label="Principal">
     <a href="index.html">Inicio</a>
-    <a href="#sobre">Sobre nosotros</a>
+    <a href="sip.html" aria-current="page">SIP</a>
     <a href="sip-wealth.html">SIP Wealth</a>
-    <a href="consulting/">Para empresas</a>
-    <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
+    <a href="consulting/">Empresas</a>
   </nav>
+  <a href="index.html#contacto" class="topbar__cta">Contáctanos</a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
@@ -40,130 +44,121 @@
 <nav class="drawer" id="drawer" aria-label="Menú">
   <button class="close" id="drawerClose" aria-label="Cerrar menú">&times;</button>
   <a href="index.html">Inicio</a>
-  <a href="#sobre">Sobre nosotros</a>
+  <a href="sip.html">SIP</a>
   <a href="sip-wealth.html">SIP Wealth</a>
-  <a href="consulting/">Para empresas</a>
-  <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
+  <a href="consulting/">Empresas</a>
+  <a href="index.html#contacto" class="btn btn--mint">Contáctanos</a>
 </nav>
 
 <main id="main">
 
-  <!-- PORTADA -->
-  <section class="portada">
-    <span class="portada__glow" aria-hidden="true"></span>
-    <div class="portada__inner">
-      <img class="portada__logo" src="img/SIP_LOGO_W.png" alt="SIP" width="480" height="254">
-      <h1>El poder de <span class="hl">empezar hoy</span>.</h1>
-      <p>¿Quieres empezar tu camino financiero? ¡SIP! Te acompañamos a construir tu fondo de emergencia, tus primeras decisiones sobre tu dinero y tus metas. Porque decirle que sí a tu futuro es decirle <span style="color:var(--mint);font-weight:600">¡SIP!</span></p>
-      <div class="portada__cta"><a href="index.html#contacto" class="btn btn--mint">Agenda tu llamada <span class="a">→</span></a></div>
-    </div>
-  </section>
-
-  <!-- SOBRE NOSOTROS -->
-  <section class="section" id="sobre">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Quiénes somos</span>
-        <h2>Sobre nosotros</h2>
+  <section class="h-hero" aria-labelledby="hero-title">
+    <div class="h-wrap h-hero__grid">
+      <div class="h-hero__copy">
+        <img class="h-hero__logo" src="img/SIP_LOGO_W.png" alt="SIP" width="480" height="254">
+        <h1 id="hero-title">El poder de <em>empezar hoy</em>.</h1>
+        <p>¿Quieres empezar tu camino financiero? Te acompañamos a construir tu fondo de emergencia, tus primeras decisiones sobre tu dinero y tus metas. Porque decirle que sí a tu futuro es decirle ¡SIP!</p>
+        <div class="h-hero__cta">
+          <a href="index.html#contacto" class="h-btn h-btn--solid">Agenda tu llamada</a>
+          <a href="#proceso" class="h-btn h-btn--line">Cómo trabajamos</a>
+        </div>
       </div>
-      <p class="prose reveal">En SIP creemos que empezar bien lo cambia todo. Creamos un espacio para aprender de finanzas, tomar acción y construir tu patrimonio de forma simple y acompañada. Desde tu primer fondo de emergencia hasta hacer crecer tu dinero, te guiamos con herramientas claras, asesoría honesta y experiencia real, para que le des un <span class="hl">“SIP” a tu futuro financiero.</span></p>
-    </div>
-  </section>
-
-  <!-- SERVICIOS -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Lo que hacemos</span>
-        <h2>Servicios</h2>
-      </div>
-      <div class="svc">
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 8-7 0 4-3 7-8 7z"/><path d="M12 14c0-3-3-5-7-5 0 3 3 5 7 5z"/></svg></div>
-          <h3>Ahorra hoy, disfruta mañana</h3>
-          <p>Asegura tu futuro sin descuidar tu presente. Creamos contigo un plan de ahorro a largo plazo, flexible y constante, que te acerca paso a paso a una jubilación con libertad financiera.</p>
-        </article>
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
-          <h3>Inversión con objetivo</h3>
-          <p>¿Tienes una meta concreta? Un viaje, tu primer departamento o una etapa importante de la vida: diseñamos una estrategia personalizada según tu horizonte de tiempo y perfil de riesgo.</p>
-        </article>
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
-          <h3>Crowdfunding inmobiliario</h3>
-          <p>Haz que tu dinero construya algo sólido. Explora con nosotros oportunidades inmobiliarias alineadas a tu perfil, tus metas y tu momento de vida.</p>
-        </article>
+      <div class="h-index" role="group" aria-label="Tu camino con SIP">
+        <p class="h-index__group">Tu camino con SIP</p>
+        <div class="h-index__row h-index__row--static">
+          <span class="h-index__name">Fondo de emergencia</span>
+          <span class="h-index__for">Tu primer colchón para imprevistos</span>
+        </div>
+        <div class="h-index__row h-index__row--static">
+          <span class="h-index__name">Ahorro con objetivo</span>
+          <span class="h-index__for">Tus ahorros trabajando para una meta</span>
+        </div>
+        <div class="h-index__row h-index__row--static">
+          <span class="h-index__name">Retiro</span>
+          <span class="h-index__for">Empezar a ver por tu futuro desde hoy</span>
+        </div>
       </div>
     </div>
+    <dl class="h-wrap h-facts">
+      <div><dt>Experiencia</dt><dd><b>+10</b> años</dd></div>
+      <div><dt>Instituciones aliadas</dt><dd><b>8</b></dd></div>
+      <div><dt>Para</dt><dd>Quien empieza a invertir</dd></div>
+      <div><dt>Base</dt><dd>Ciudad de México</dd></div>
+    </dl>
   </section>
 
-  <!-- POR QUÉ SIP -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Razones</span>
-        <h2>¿Por qué <span class="accent">SIP</span>?</h2>
-      </div>
-      <div class="reasons">
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg></div><p>Porque empezar con el pie derecho te ahorra años de errores.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><p>Porque todos deberían tener acceso a herramientas claras, reguladas y seguras.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-5-2-8-1.5v13C7 17 10 17.5 12 19c2-1.5 5-2 8-1.5v-13C17 4 14 4.5 12 6z"/><path d="M12 6v13"/></svg></div><p>Porque nadie te enseña esto en la escuela.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12c1 1 1 2 1 3h6c0-1 0-2 1-3a7 7 0 0 0-4-12z"/></svg></div><p>Porque no necesitas ser experto para tomar buenas decisiones.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C5 16 3 12 3 8.5 3 6 5 4 7.5 4c1.7 0 3 .8 4.5 2.5C13.5 4.8 14.8 4 16.5 4 19 4 21 6 21 8.5 21 12 19 16 12 21z"/></svg></div><p>Porque creemos en acompañarte, no en venderte.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DIFERENTES -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Nuestra diferencia</span>
-        <h2>¿Qué nos hace <span class="accent">diferentes</span>?</h2>
-      </div>
-      <div class="diff">
-        <div class="diff__item reveal"><h3>Acompañamiento real, sin juicio</h3><p>Te guiamos paso a paso, desde cero.</p></div>
-        <div class="diff__item reveal"><h3>Lenguaje claro y cero rollo</h3><p>Te explicamos lo que necesitas saber, sin adornos ni tecnicismos.</p></div>
-        <div class="diff__item reveal"><h3>Enfoque en metas, no en productos</h3><p>Primero tus objetivos, luego las herramientas.</p></div>
-        <div class="diff__item reveal"><h3>Asesoría cercana y con propósito</h3><p>Nunca estás solo en tus decisiones financieras.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CÓMO HACEMOS SIP -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Nuestro proceso</span>
-        <h2>¿Cómo hacemos <span class="accent">SIP</span>?</h2>
-      </div>
-      <div class="process">
-        <span class="process__fill"></span>
-        <div class="process__step"><span class="process__dot">1</span><div class="process__card"><h3>Radiografía financiera</h3><p>Sesión de asesoramiento y análisis donde conocemos tus necesidades, objetivos y situación actual para determinar tu perfil.</p></div></div>
-        <div class="process__step"><span class="process__dot">2</span><div class="process__card"><h3>Diseño de estrategia</h3><p>Determinamos las herramientas que más se alinean con tu perfil, cubriendo <span class="hl">4 áreas fundamentales:</span> fondo de emergencia, ahorro para el retiro, inversiones pasivas e inversiones de gestión activa.</p></div></div>
-        <div class="process__step"><span class="process__dot">3</span><div class="process__card"><h3>Seguimiento puntual</h3><p>Una vez implementada la estrategia, damos seguimiento continuo y mantenemos el análisis.</p></div></div>
-        <div class="process__step"><span class="process__dot">4</span><div class="process__card"><h3>Evaluación de resultados</h3><p>Al cumplir puntos clave evaluamos resultados, necesidades y objetivos para decidir si se requiere un rebalance o continuidad de la estrategia.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section endcta">
-    <div class="container">
-      <h2 class="reveal">¿Listo para darle un <span class="accent">SIP</span> a tu futuro?</h2>
-      <p class="reveal">Da el primer paso hoy. Te acompañamos sin compromiso.</p>
-      <div class="reveal"><a href="index.html#contacto" class="btn btn--mint">Agenda tu llamada <span class="a">→</span></a></div>
-    </div>
-  </section>
-
-  <!-- ALIADOS -->
-  <section class="partners" aria-label="Instituciones aliadas">
-    <p class="partners__lab">Instituciones aliadas</p>
-    <div class="marquee">
-      <div class="marquee__track">
+  <section class="h-partners" aria-label="Instituciones aliadas">
+    <div class="h-wrap h-partners__row">
+      <p>Instituciones aliadas</p>
+      <div class="h-partners__logos">
         <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="Monific" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="GBM" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="Finix" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="Hansard" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="Dooprimer" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="Allianz" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="Skandia" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción" width="420" height="120">
-        <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="" width="420" height="120">
       </div>
+    </div>
+  </section>
+
+  <section class="h-section" id="sobre" aria-labelledby="about-title">
+    <div class="h-wrap h-split">
+      <h2 id="about-title" class="h-title reveal">Sobre nosotros</h2>
+      <p class="h-prose reveal">En SIP creemos que empezar bien lo cambia todo. Creamos un espacio para aprender de finanzas, tomar acción y construir tu patrimonio de forma simple y acompañada. Desde tu primer fondo de emergencia hasta hacer crecer tu dinero, te guiamos con herramientas claras, asesoría honesta y experiencia real, para que le des un «SIP» a tu futuro financiero.</p>
+    </div>
+  </section>
+
+  <section class="h-section h-services" id="servicios" aria-labelledby="services-title">
+    <div class="h-wrap">
+      <h2 id="services-title" class="h-title reveal">Servicios</h2>
+      <div class="h-services__grid">
+        <article class="h-service reveal"><h3>Ahorra hoy, disfruta mañana</h3><p>Asegura tu futuro sin descuidar tu presente. Creamos contigo un plan de ahorro a largo plazo, flexible y constante, que te acerca paso a paso a una jubilación con libertad financiera.</p></article>
+        <article class="h-service reveal"><h3>Inversión con objetivo</h3><p>¿Tienes una meta concreta? Un viaje, tu primer departamento o una etapa importante de la vida: diseñamos una estrategia personalizada según tu horizonte de tiempo y perfil de riesgo.</p></article>
+        <article class="h-service reveal"><h3>Crowdfunding inmobiliario</h3><p>Haz que tu dinero construya algo sólido. Explora con nosotros oportunidades inmobiliarias alineadas a tu perfil, tus metas y tu momento de vida.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="h-section" aria-labelledby="why-title">
+    <div class="h-wrap h-split">
+      <h2 id="why-title" class="h-title reveal">¿Por qué SIP?</h2>
+      <ul class="h-reasons reveal">
+        <li>Porque empezar con el pie derecho te ahorra años de errores.</li>
+        <li>Porque todos deberían tener acceso a herramientas claras, reguladas y seguras.</li>
+        <li>Porque nadie te enseña esto en la escuela.</li>
+        <li>Porque no necesitas ser experto para tomar buenas decisiones.</li>
+        <li>Porque creemos en acompañarte, no en venderte.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="h-section" aria-labelledby="diff-title">
+    <div class="h-wrap h-split">
+      <div class="reveal">
+        <h2 id="diff-title" class="h-title">¿Qué nos hace diferentes?</h2>
+        
+      </div>
+      <dl class="h-list reveal">
+        <div><dt>Acompañamiento real, sin juicio</dt><dd>Te guiamos paso a paso, desde cero.</dd></div>
+        <div><dt>Lenguaje claro y cero rollo</dt><dd>Te explicamos lo que necesitas saber, sin adornos ni tecnicismos.</dd></div>
+        <div><dt>Enfoque en metas, no en productos</dt><dd>Primero tus objetivos, luego las herramientas.</dd></div>
+        <div><dt>Asesoría cercana y con propósito</dt><dd>Nunca estás solo en tus decisiones financieras.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="h-section h-steps" id="proceso" aria-labelledby="steps-title">
+    <div class="h-wrap">
+      <h2 id="steps-title" class="h-title reveal">¿Cómo hacemos SIP?</h2>
+      <ol class="h-steps__list h-steps__list--4 reveal">
+        <li><span class="h-steps__n">1</span><h3>Radiografía financiera</h3><p>Sesión de asesoramiento y análisis donde conocemos tus necesidades, objetivos y situación actual para determinar tu perfil.</p></li>
+        <li><span class="h-steps__n">2</span><h3>Diseño de estrategia</h3><p>Determinamos las herramientas que más se alinean con tu perfil, cubriendo 4 áreas fundamentales: fondo de emergencia, ahorro para el retiro, inversiones pasivas e inversiones de gestión activa.</p></li>
+        <li><span class="h-steps__n">3</span><h3>Seguimiento puntual</h3><p>Una vez implementada la estrategia, damos seguimiento continuo y mantenemos el análisis.</p></li>
+        <li><span class="h-steps__n">4</span><h3>Evaluación de resultados</h3><p>Al cumplir puntos clave evaluamos resultados, necesidades y objetivos para decidir si se requiere un rebalance o continuidad de la estrategia.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="h-section h-close" aria-labelledby="close-title">
+    <div class="h-wrap h-close__in reveal">
+      <h2 id="close-title" class="h-quote">¿Listo para darle un <em>SIP</em> a tu futuro?</h2>
+      <p class="h-lead">Da el primer paso hoy. Te acompañamos sin compromiso.</p>
+      <a href="index.html#contacto" class="h-btn h-btn--solid">Agenda tu llamada</a>
     </div>
   </section>
 
@@ -177,16 +172,17 @@
         <img src="img/SIP_LOGO_W.png" alt="SIP" width="120" height="64">
         <p>Simple, inteligente y profesional. Te acompañamos en cada etapa de tu vida financiera.</p>
       </div>
-      <nav class="foot__nav">
-        <div><h2>Explora</h2><a href="index.html">Inicio</a><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="consulting/">SIP Consulting</a></div>
-        <div><h2>Contacto</h2><a href="index.html#contacto">Escríbenos</a><a href="mailto:hola@sipartners.com.mx">hola@sipartners.com.mx</a></div>
+      <nav class="foot__nav" aria-label="Pie de página">
+        <div><h2>Personas</h2><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="index.html#contacto">Escríbenos</a></div>
+        <div><h2>Empresas</h2><a href="consulting/">Finanzas estratégicas</a><a href="consulting/que-es-un-cfo-fraccional">¿Qué es un CFO fraccional?</a><a href="consulting/#contacto">Solicitar diagnóstico</a></div>
+        <div><h2>Contacto</h2><a href="mailto:hola@sipartners.com.mx">hola@sipartners.com.mx</a><a href="mailto:consulting@sipartners.com.mx">consulting@sipartners.com.mx</a></div>
       </nav>
     </div>
     <div class="disclaimer">
       <h2>Aviso legal</h2>
       <p>Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro rol se enfoca en orientación general, educación financiera y vinculación con instituciones autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni garantizamos rendimientos.</p>
     </div>
-    <div class="foot__bottom">© 2026 Simple Investment Partners · Todos los derechos reservados.</div>
+    <div class="foot__bottom">© 2026 Simple Investment Partners · SIP, SIP Wealth y SIP Consulting · Todos los derechos reservados.</div>
   </div>
 </footer>
 

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIP — Simple Investment Partners | Elige tu camino financiero</title>
+<title>Simple Investment Partners | Criterio financiero para tu patrimonio y tu empresa</title>
 <meta name="description" content="Simple Investment Partners: asesoría financiera simple, inteligente y profesional. Empieza a invertir con SIP o consolida tu patrimonio con SIP Wealth.">
 <link rel="canonical" href="https://sipartners.com.mx/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Simple Investment Partners">
-<meta property="og:title" content="SIP — Simple Investment Partners | Elige tu camino financiero">
+<meta property="og:title" content="Simple Investment Partners | Criterio financiero para tu patrimonio y tu empresa">
 <meta property="og:description" content="Simple Investment Partners: asesoría financiera simple, inteligente y profesional. Empieza a invertir con SIP o consolida tu patrimonio con SIP Wealth.">
 <meta property="og:url" content="https://sipartners.com.mx/">
 <meta property="og:image" content="https://sipartners.com.mx/img/og-sip.png">
@@ -19,6 +19,7 @@
 <link rel="icon" href="img/SIP_ICON.png">
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -46,21 +47,21 @@
 }
 </script>
 </head>
-<body data-brand="sip">
+<body class="v2" data-brand="home">
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
-<header class="site-header" id="siteHeader">
-  <a href="index.html" class="brand" aria-label="Inicio — Simple Investment Partners">
-    <img src="img/SIP_ICON_W.png" alt="" width="30" height="30">
-    <h1 class="brand__name"><span>SIMPLE INVESTMENT PARTNERS</span></h1>
+<header class="topbar" id="siteHeader">
+  <a href="index.html" class="topbar__brand" aria-label="Inicio — Simple Investment Partners">
+    <img src="img/SIP_ICON_W.png" alt="" width="28" height="28">
+    <span>Simple Investment Partners</span>
   </a>
-  <nav class="nav-desktop" aria-label="Principal">
-    <a href="index.html">Inicio</a>
+  <nav class="topbar__nav" aria-label="Principal">
+    <a href="index.html" aria-current="page">Inicio</a>
     <a href="sip.html">SIP</a>
     <a href="sip-wealth.html">SIP Wealth</a>
-    <a href="consulting/">Para empresas</a>
-    <a href="#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
+    <a href="consulting/">Empresas</a>
   </nav>
+  <a href="#contacto" class="topbar__cta">Contáctanos</a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
@@ -71,226 +72,139 @@
   <a href="index.html">Inicio</a>
   <a href="sip.html">SIP</a>
   <a href="sip-wealth.html">SIP Wealth</a>
-  <a href="consulting/">Para empresas</a>
-  <a href="#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
+  <a href="consulting/">Empresas</a>
+  <a href="#contacto" class="btn btn--mint">Contáctanos</a>
 </nav>
-<!-- sticky mobile CTA (shown after hero, mobile only) -->
-<a href="#contacto" class="mobile-cta" id="mobileCta">Agenda tu llamada <span class="a">→</span></a>
 
 <main id="main">
 
-  <!-- 1 · HERO — Elige tu camino -->
-  <section class="hero" aria-label="Elige tu camino">
-    <div class="hero__split">
-      <div class="gate gate--sip">
-        <span class="gate__glow"></span>
-        <div class="gate__inner">
-          <img class="gate__logo" src="img/SIP_LOGO_W.png" alt="SIP" width="120" height="64">
-          <span class="eyebrow">Empieza hoy</span>
-          <h2>Empieza a<br><em>invertir bien.</em></h2>
-          <p>Tu fondo de emergencia, tus ahorros trabajando y tu retiro — acompañado paso a paso.</p>
-          <a class="btn btn--light" href="sip.html">Descubre SIP <span class="a">→</span></a>
+  <section class="h-hero" aria-labelledby="hero-title">
+    <div class="h-wrap h-hero__grid">
+      <div class="h-hero__copy">
+        <h1 id="hero-title">Criterio financiero para <em class="u-sip">tu patrimonio</em> y para <em class="u-con">tu&nbsp;empresa</em>.</h1>
+        <p>Simple Investment Partners acompaña a personas que empiezan a invertir o ya tienen un patrimonio, y a empresas que necesitan dirección financiera.</p>
+        <div class="h-hero__cta">
+          <a href="#contacto" class="h-btn h-btn--solid">Contáctanos</a>
+          <a href="#unidades" class="h-btn h-btn--line">Conoce cómo trabajamos</a>
         </div>
       </div>
-      <div class="gate gate--wealth">
-        <span class="gate__glow"></span>
-        <div class="gate__inner">
-          <img class="gate__logo" src="img/WEALTH_LOGO_W.png" alt="SIP Wealth" width="120" height="54">
-          <span class="eyebrow" style="color:#bcd4ff">Consolida</span>
-          <h2>Haz crecer<br><em class="em-navy">tu patrimonio.</em></h2>
-          <p>Protégelo, diversifícalo y multiplícalo con estrategia y soluciones a tu medida.</p>
-          <a class="btn btn--light" href="sip-wealth.html">Conoce SIP Wealth <span class="a">→</span></a>
-        </div>
-      </div>
-      <div class="hero__seam" aria-hidden="true"></div>
-      <div class="hero__badge"><span class="s">ELIGE TU</span><span class="b">Camino</span></div>
+
+      <nav class="h-index" aria-label="Unidades de negocio">
+        <p class="h-index__group">Personas</p>
+        <a class="h-index__row u-row-sip" href="sip.html">
+          <span class="h-index__name">SIP</span>
+          <span class="h-index__for">Para quien empieza a invertir</span>
+          <svg class="h-index__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="h-index__row u-row-wealth" href="sip-wealth.html">
+          <span class="h-index__name">SIP Wealth</span>
+          <span class="h-index__for">Para quien ya tiene un patrimonio</span>
+          <svg class="h-index__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="h-index__group">Empresas</p>
+        <a class="h-index__row u-row-con" href="consulting/">
+          <span class="h-index__name">SIP Consulting</span>
+          <span class="h-index__for">Finanzas estratégicas y CFO fraccional</span>
+          <svg class="h-index__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </nav>
     </div>
-    <div class="hero__stats">
-      <div class="stat"><div class="n" data-count="10" data-prefix="+">+10</div><div class="l">años de experiencia</div></div>
-      <div class="stat"><div class="n" data-count="8">8</div><div class="l">instituciones aliadas</div></div>
-      <div class="stat"><div class="n" data-count="100" data-suffix="%">100%</div><div class="l">independiente</div></div>
-      <div class="stat"><div class="n">2</div><div class="l">caminos a tu medida</div></div>
-    </div>
+
+    <dl class="h-wrap h-facts">
+      <div><dt>Experiencia</dt><dd><b>+10</b> años</dd></div>
+      <div><dt>Instituciones aliadas</dt><dd><b>8</b></dd></div>
+      <div><dt>Unidades</dt><dd>Personas y empresas</dd></div>
+      <div><dt>Base</dt><dd>Ciudad de México</dd></div>
+    </dl>
   </section>
 
-  <!-- 2 · PARTNERS — proof before the ask -->
-  <section class="partners" aria-label="Instituciones aliadas">
-    <p class="partners__lab">Instituciones aliadas</p>
-    <div class="marquee">
-      <div class="marquee__track">
+  <section class="h-partners" aria-label="Instituciones aliadas">
+    <div class="h-wrap h-partners__row">
+      <p>Instituciones aliadas</p>
+      <div class="h-partners__logos">
         <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="Monific" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="GBM" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="Finix" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="Hansard" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="Dooprimer" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="Allianz" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="Skandia" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción" width="420" height="120">
-        <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="" width="420" height="120">
       </div>
     </div>
   </section>
 
-  <!-- 3 · ¿QUÉ ES SIP? — bento -->
-  <section class="section bento-sec">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Nuestra forma de trabajar</span>
-        <h2>¿Qué es <span class="hl">SIP</span>?</h2>
-        <p class="sec-sub">Tres principios que definen cómo trabajamos contigo.</p>
-      </div>
-      <div class="bento">
-        <article class="bento__card bento__card--lead reveal">
-          <span class="bento__num">01</span>
-          <h3>Simple</h3>
-          <p>Nuestro equipo de expertos te traduce las finanzas como nadie — sin tecnicismos, sin letra chica.</p>
-          <a href="#contacto" class="bento__cta">Conversemos <span class="a">→</span></a>
-        </article>
-        <article class="bento__card reveal">
-          <span class="bento__num">02</span>
-          <h3>Inteligente</h3>
-          <p>Estrategias diseñadas de acuerdo a las necesidades de cada cliente.</p>
-        </article>
-        <article class="bento__card reveal">
-          <span class="bento__num">03</span>
-          <h3>Profesional</h3>
-          <p>Más de 10 años de experiencia en conjunto respaldan nuestra forma de trabajar.</p>
-        </article>
-      </div>
+  <section class="h-section h-principles" aria-labelledby="principles-title">
+    <div class="h-wrap h-split">
+      <h2 id="principles-title" class="h-quote reveal">Las finanzas no tienen que ser complicadas. Solo necesitas a alguien que las traduzca por ti.</h2>
+      <dl class="h-list reveal">
+        <div><dt>Simple</dt><dd>Te traducimos las finanzas, sin tecnicismos ni letra chica.</dd></div>
+        <div><dt>Inteligente</dt><dd>Estrategias diseñadas de acuerdo a las necesidades de cada cliente.</dd></div>
+        <div><dt>Profesional</dt><dd>Más de 10 años de experiencia en conjunto respaldan nuestra forma de trabajar.</dd></div>
+      </dl>
     </div>
   </section>
 
-  <!-- · DECLARACIÓN EDITORIAL -->
-  <section class="statement">
-    <p class="reveal">Las finanzas no tienen que ser complicadas. Solo necesitas <em>a alguien que las traduzca</em> por ti.</p>
-    <div class="stmt-sub reveal">— La forma SIP de acompañarte</div>
-  </section>
-
-  <!-- 4 · LOS DOS CAMINOS -->
-  <section class="section paths" aria-label="Los dos caminos">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Dos caminos, un mismo acompañamiento</span>
-        <h2>¿Cuál es tu momento?</h2>
-      </div>
-      <div class="paths__grid">
-        <article class="path path--sip reveal">
-          <span class="path__glow"></span>
-          <h3>SIP</h3>
-          <p class="path__for">Para quien <strong>empieza a invertir</strong>.</p>
-          <ul>
-            <li>Construir tu fondo de emergencia</li>
-            <li>Poner a trabajar tus ahorros</li>
-            <li>Empezar a ver por tu retiro</li>
-          </ul>
-          <a href="sip.html" class="btn btn--mint">Descubre SIP <span class="a">→</span></a>
-        </article>
-        <article class="path path--wealth reveal">
-          <span class="path__glow"></span>
-          <h3>SIP Wealth</h3>
-          <p class="path__for">Para quien <strong>ya tiene un patrimonio</strong>.</p>
-          <ul>
-            <li>Proteger y diversificar tu capital</li>
-            <li>Estrategia patrimonial a tu medida</li>
-            <li>Soluciones internacionales</li>
-          </ul>
-          <a href="sip-wealth.html" class="btn btn--mint">Conoce SIP Wealth <span class="a">→</span></a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5 · CÓMO TRABAJAMOS -->
-  <section class="section steps-sec section--tint">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="eyebrow" style="color:var(--teal)">Sin complicaciones</span>
-        <h2 class="on-light">Cómo trabajamos</h2>
-      </div>
-      <div class="steps">
-        <div class="step reveal"><span class="step__n">1</span><h3>Conversamos</h3><p>Entendemos tu momento, tus metas y tus dudas.</p></div>
-        <div class="step reveal"><span class="step__n">2</span><h3>Diseñamos</h3><p>Una estrategia clara, a la medida de lo que necesitas.</p></div>
-        <div class="step reveal"><span class="step__n">3</span><h3>Acompañamos</h3><p>Estamos contigo en cada paso, ajustando en el camino.</p></div>
-      </div>
-      <div class="steps__cta reveal"><a href="#contacto" class="btn btn--mint">Agenda tu llamada <span class="a">→</span></a></div>
-    </div>
-  </section>
-
-  <!-- · POR QUÉ CONFIAR EN SIP -->
-  <section class="section trust" aria-label="Por qué confiar en SIP">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Por qué elegirnos</span>
-        <h2>¿Por qué confiar en <span class="hl">SIP</span>?</h2>
-        <p class="sec-sub">Trabajamos para ti, con total claridad.</p>
-      </div>
-      <div class="trust__grid">
-        <article class="trust__item reveal">
-          <div class="trust__ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+  <section class="h-section h-units" id="unidades" aria-labelledby="units-title">
+    <div class="h-wrap">
+      <h2 id="units-title" class="h-title reveal">Dos unidades, una misma forma de trabajar.</h2>
+      <div class="h-units__grid">
+        <article class="h-unit u-unit-people reveal">
+          <h3>Personas</h3>
+          <div class="h-unit__lines">
+            <div class="h-unit__line u-line-sip">
+              <h4><a href="sip.html">SIP</a></h4>
+              <p>Para quien empieza a invertir.</p>
+              <ul><li>Construir tu fondo de emergencia</li><li>Poner a trabajar tus ahorros</li><li>Empezar a ver por tu retiro</li></ul>
+              <a class="h-link" href="sip.html">Conoce SIP</a>
+            </div>
+            <div class="h-unit__line u-line-wealth">
+              <h4><a href="sip-wealth.html">SIP Wealth</a></h4>
+              <p>Para quien ya tiene un patrimonio.</p>
+              <ul><li>Proteger y diversificar tu capital</li><li>Estrategia patrimonial a tu medida</li><li>Soluciones internacionales</li></ul>
+              <a class="h-link" href="sip-wealth.html">Conoce SIP Wealth</a>
+            </div>
           </div>
-          <h3>100% independiente</h3>
-          <p>No pertenecemos a ninguna institución financiera. Nuestras recomendaciones responden a ti, no a un producto.</p>
         </article>
-        <article class="trust__item reveal">
-          <div class="trust__ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M9 12.5L8 21l4-2 4 2-1-8.5"/></svg>
+        <article class="h-unit u-unit-business reveal">
+          <h3>Empresas</h3>
+          <div class="h-unit__lines">
+            <div class="h-unit__line u-line-con">
+              <h4><a href="consulting/">SIP Consulting</a></h4>
+              <p>Finanzas estratégicas para empresas que escalan.</p>
+              <ul><li>Caja visible y pronóstico rodante</li><li>Márgenes por producto y canal</li><li>Cierre mensual y paquete a socios</li></ul>
+              <a class="h-link" href="consulting/">Conoce SIP Consulting</a>
+            </div>
           </div>
-          <h3><span class="trust__num">+10</span> años de experiencia</h3>
-          <p>Más de una década acompañando a inversionistas en cada etapa de su vida financiera.</p>
-        </article>
-        <article class="trust__item reveal">
-          <div class="trust__ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-3h4v3"/></svg>
-          </div>
-          <h3><span class="trust__num">8</span> instituciones aliadas</h3>
-          <p>Te vinculamos con entidades autorizadas por las autoridades competentes, no con productos propios.</p>
-        </article>
-        <article class="trust__item reveal">
-          <div class="trust__ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M5 7h14M5 7l-2.5 5h5L5 7zM19 7l-2.5 5h5L19 7z"/></svg>
-          </div>
-          <h3>Sin conflicto de interés</h3>
-          <p>No ofrecemos instrumentos propios ni garantizamos rendimientos: solo orientación honesta y educación financiera.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- · TESTIMONIOS — LISTO PERO DESACTIVADO.
-       NO publicar con texto de ejemplo. Cuando tengas testimonios REALES de clientes (con su permiso),
-       reemplaza [Nombre]/[Rol]/la cita y las iniciales del avatar, luego elimina las líneas de comentario
-       que rodean esta sección para activarlo. Va justo antes del formulario de contacto a propósito.
-  <section class="section testimonials" aria-label="Testimonios">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Confían en nosotros</span>
-        <h2>Lo que dicen nuestros clientes</h2>
-      </div>
-      <div class="tcards">
-        <article class="tcard reveal">
-          <div class="q">&ldquo;</div>
-          <p>[Cita real del cliente — qué problema resolvió SIP para él/ella.]</p>
-          <div class="who"><div class="av">SIP</div><div><div class="nm">[Nombre del cliente]</div><div class="rl">[Cliente SIP]</div></div></div>
-        </article>
-        <article class="tcard reveal">
-          <div class="q">&ldquo;</div>
-          <p>[Cita real del cliente — el resultado o la tranquilidad que obtuvo.]</p>
-          <div class="who"><div class="av">SIP</div><div><div class="nm">[Nombre del cliente]</div><div class="rl">[Cliente SIP Wealth]</div></div></div>
-        </article>
-        <article class="tcard reveal">
-          <div class="q">&ldquo;</div>
-          <p>[Cita real del cliente — por qué confía en el acompañamiento de SIP.]</p>
-          <div class="who"><div class="av">SIP</div><div><div class="nm">[Nombre del cliente]</div><div class="rl">[Inversionista]</div></div></div>
-        </article>
-      </div>
+  <section class="h-section h-steps" aria-labelledby="steps-title">
+    <div class="h-wrap">
+      <h2 id="steps-title" class="h-title reveal">Cómo trabajamos</h2>
+      <ol class="h-steps__list reveal">
+        <li><span class="h-steps__n">1</span><h3>Conversamos</h3><p>Entendemos tu momento, tus metas y tus dudas.</p></li>
+        <li><span class="h-steps__n">2</span><h3>Diseñamos</h3><p>Una estrategia clara, a la medida de lo que necesitas.</p></li>
+        <li><span class="h-steps__n">3</span><h3>Acompañamos</h3><p>Estamos contigo en cada paso, ajustando en el camino.</p></li>
+      </ol>
     </div>
   </section>
-  -->
 
-  <!-- 6 · CONTACTO -->
-  <section class="section contact" id="contacto">
-    <div class="container contact__grid">
-      <div class="contact__copy reveal">
-        <span class="eyebrow">Demos el siguiente paso</span>
-        <h2>Contáctanos</h2>
-        <p class="intro">Cuéntanos en qué etapa estás y te acompañamos a dar el siguiente paso. Sin compromiso.</p>
-        <div class="contact__pop"><b>+10</b><span>años acompañando<br>a inversionistas</span></div>
+  <section class="h-section h-trust" aria-labelledby="trust-title">
+    <div class="h-wrap h-split">
+      <h2 id="trust-title" class="h-title reveal">¿Por qué confiar en nosotros?</h2>
+      <dl class="h-list reveal">
+        <div><dt>100% independientes</dt><dd>No pertenecemos a ninguna institución financiera. Nuestras recomendaciones responden a ti, no a un producto.</dd></div>
+        <div><dt>+10 años de experiencia</dt><dd>Más de una década acompañando a inversionistas en cada etapa de su vida financiera.</dd></div>
+        <div><dt>8 instituciones aliadas</dt><dd>Te vinculamos con entidades autorizadas por las autoridades competentes, no con productos propios.</dd></div>
+        <div><dt>Sin conflicto de interés</dt><dd>No ofrecemos instrumentos propios ni garantizamos rendimientos: solo orientación honesta y educación financiera.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="h-section h-contact" id="contacto" aria-labelledby="contact-title">
+    <div class="h-wrap h-split">
+      <div class="reveal">
+        <h2 id="contact-title" class="h-title">Contáctanos</h2>
+        <p class="h-lead">Cuéntanos en qué etapa estás y te acompañamos a dar el siguiente paso. Sin compromiso.</p>
+        <p class="h-lead h-lead--small">¿Escribes por tu empresa? <a href="consulting/#contacto">Solicita un diagnóstico de finanzas estratégicas</a>.</p>
       </div>
-      <form class="contact__form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <form class="h-form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
         <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
         <input type="hidden" name="access_key" value="1d5d84d8-8985-4d07-b79d-55a7f25f7383">
         <div class="field"><label for="name">Nombre</label>
@@ -302,7 +216,7 @@
         <div class="field"><label for="message">Mensaje</label>
           <textarea id="message" name="message" rows="4" required></textarea>
           <span class="err" data-for="message"></span></div>
-        <button type="submit" class="btn btn--mint" style="width:100%;justify-content:center">Enviar mensaje <span class="a">→</span></button>
+        <button type="submit" class="h-btn h-btn--solid h-btn--block">Enviar mensaje</button>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -318,16 +232,17 @@
         <img src="img/SIP_LOGO_W.png" alt="SIP" width="120" height="64">
         <p>Simple, inteligente y profesional. Te acompañamos en cada etapa de tu vida financiera.</p>
       </div>
-      <nav class="foot__nav">
-        <div><h2>Explora</h2><a href="index.html">Inicio</a><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="consulting/">SIP Consulting</a></div>
-        <div><h2>Contacto</h2><a href="#contacto">Escríbenos</a><a href="mailto:hola@sipartners.com.mx">hola@sipartners.com.mx</a></div>
+      <nav class="foot__nav" aria-label="Pie de página">
+        <div><h2>Personas</h2><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="index.html#contacto">Escríbenos</a></div>
+        <div><h2>Empresas</h2><a href="consulting/">Finanzas estratégicas</a><a href="consulting/que-es-un-cfo-fraccional">¿Qué es un CFO fraccional?</a><a href="consulting/#contacto">Solicitar diagnóstico</a></div>
+        <div><h2>Contacto</h2><a href="mailto:hola@sipartners.com.mx">hola@sipartners.com.mx</a><a href="mailto:consulting@sipartners.com.mx">consulting@sipartners.com.mx</a></div>
       </nav>
     </div>
     <div class="disclaimer">
       <h2>Aviso legal</h2>
       <p>Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro rol se enfoca en orientación general, educación financiera y vinculación con instituciones autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni garantizamos rendimientos.</p>
     </div>
-    <div class="foot__bottom">© 2026 Simple Investment Partners · Todos los derechos reservados.</div>
+    <div class="foot__bottom">© 2026 Simple Investment Partners · SIP, SIP Wealth y SIP Consulting · Todos los derechos reservados.</div>
   </div>
 </footer>
 
