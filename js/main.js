@@ -104,7 +104,7 @@
         var res = await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
         if(res.ok){ form.reset(); status.className='form-status ok'; status.textContent='¡Gracias! Te contactaremos pronto.'; }
         else throw new Error('bad');
-      }catch(e){ status.className='form-status bad'; status.textContent='Algo salió mal. Escríbenos a hola@sipartners.com.mx'; }
+      }catch(e){ status.className='form-status bad'; status.textContent='Algo salió mal. Escríbenos a contacto@sipartners.com.mx'; }
       finally{ btn.disabled=false; }
     });
   }
