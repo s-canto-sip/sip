@@ -52,7 +52,7 @@
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="topbar" id="siteHeader">
-  <a href="index.html" class="topbar__brand" aria-label="Inicio — Simple Investment Partners">
+  <a href="index.html" class="topbar__brand" aria-label="Ir al inicio de Simple Investment Partners">
     <img src="img/SIP_ICON_W.png" alt="" width="28" height="28">
     <span>Simple Investment Partners</span>
   </a>
@@ -62,7 +62,7 @@
     <a href="sip-wealth.html">SIP Wealth</a>
     <a href="consulting/">Empresas</a>
   </nav>
-  <a href="#contacto" class="topbar__cta">Contáctanos</a>
+  <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada." data-wa="Hola, vengo de sipartners.com.mx. Me gustaría agendar una llamada." class="topbar__cta">Contáctanos</a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
@@ -74,7 +74,7 @@
   <a href="sip.html">SIP</a>
   <a href="sip-wealth.html">SIP Wealth</a>
   <a href="consulting/">Empresas</a>
-  <a href="#contacto" class="btn btn--mint">Contáctanos</a>
+  <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada." data-wa="Hola, vengo de sipartners.com.mx. Me gustaría agendar una llamada." class="btn btn--mint">Contáctanos</a>
 </nav>
 
 <main id="main">
@@ -85,7 +85,7 @@
         <h1 id="hero-title">Criterio financiero para <em class="u-sip">tu patrimonio</em> y para <em class="u-con">tu&nbsp;empresa</em>.</h1>
         <p>Simple Investment Partners acompaña a personas que empiezan a invertir o ya tienen un patrimonio, y a empresas que necesitan dirección financiera.</p>
         <div class="h-hero__cta">
-          <a href="#contacto" class="h-btn h-btn--solid">Agenda una llamada</a>
+          <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada." data-wa="Hola, vengo de sipartners.com.mx. Me gustaría agendar una llamada." class="h-btn h-btn--solid">Agenda una llamada</a>
           <a href="#unidades" class="h-btn h-btn--line">Conoce cómo trabajamos</a>
         </div>
       </div>
@@ -198,24 +198,49 @@
   <section class="h-section h-contact" id="contacto" aria-labelledby="contact-title">
     <div class="h-wrap h-split">
       <div class="reveal">
-        <h2 id="contact-title" class="h-title">Contáctanos</h2>
-        <p class="h-lead">Cuéntanos en qué etapa estás y te acompañamos a dar el siguiente paso. Sin compromiso.</p>
-        <p class="h-lead h-lead--small">¿Escribes por tu empresa? <a href="consulting/#contacto">Solicita un diagnóstico de finanzas estratégicas</a>.</p>
+        <h2 id="contact-title" class="h-title">¿Por dónde empezamos?</h2>
+        <p class="h-lead">Contesta dos o tres preguntas y abre la conversación con tu caso ya explicado. Te responde una persona del equipo, sin compromiso.</p>
+        <p class="h-lead h-lead--small">¿Prefieres correo? Escríbenos a <a href="mailto:contacto@sipartners.com.mx">contacto@sipartners.com.mx</a>.</p>
       </div>
-      <form class="h-form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
-        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
-        <input type="hidden" name="access_key" value="1d5d84d8-8985-4d07-b79d-55a7f25f7383">
-        <div class="field"><label for="name">Nombre</label>
-          <input type="text" id="name" name="name" autocomplete="name" required>
-          <span class="err" data-for="name"></span></div>
-        <div class="field"><label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
-          <span class="err" data-for="email"></span></div>
-        <div class="field"><label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <span class="err" data-for="message"></span></div>
-        <button type="submit" class="h-btn h-btn--solid h-btn--block">Enviar mensaje</button>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      <form class="h-qual reveal" id="qualifier" aria-label="Calificador de contacto">
+        <fieldset>
+          <legend>¿Para quién buscas asesoría?</legend>
+          <div class="h-chips">
+            <label class="h-chip"><input type="radio" name="para" value="persona" data-line="Busco asesoría para mí."><span>Para mí</span></label>
+            <label class="h-chip"><input type="radio" name="para" value="empresa" data-line="Busco asesoría para mi empresa."><span>Para mi empresa</span></label>
+            <label class="h-chip"><input type="radio" name="para" value="ambos" data-line="Busco asesoría para mí y para mi empresa."><span>Para los dos</span></label>
+          </div>
+        </fieldset>
+        <fieldset data-show="persona ambos">
+          <legend>¿En qué etapa estás?</legend>
+          <div class="h-chips">
+            <label class="h-chip"><input type="radio" name="etapa" value="sip" data-line="empiezo a invertir"><span>Empiezo a invertir</span></label>
+            <label class="h-chip"><input type="radio" name="etapa" value="wealth" data-line="ya tengo un patrimonio"><span>Ya tengo un patrimonio</span></label>
+          </div>
+        </fieldset>
+        <fieldset data-show="empresa ambos">
+          <legend>¿Qué necesita tu empresa primero?</legend>
+          <div class="h-chips">
+            <label class="h-chip"><input type="radio" name="necesidad" value="caja" data-line="ver la caja a futuro"><span>Ver su caja a futuro</span></label>
+            <label class="h-chip"><input type="radio" name="necesidad" value="margenes" data-line="cuidar márgenes"><span>Cuidar márgenes</span></label>
+            <label class="h-chip"><input type="radio" name="necesidad" value="capital" data-line="levantar capital"><span>Levantar capital</span></label>
+            <label class="h-chip"><input type="radio" name="necesidad" value="reportes" data-line="reportes para socios"><span>Reportes para socios</span></label>
+            <label class="h-chip"><input type="radio" name="necesidad" value="otro" data-line="otra cosa"><span>Otra cosa</span></label>
+          </div>
+        </fieldset>
+        <fieldset data-show="empresa ambos">
+          <legend>Facturación anual</legend>
+          <div class="h-chips">
+            <label class="h-chip"><input type="radio" name="facturacion" value="lt-10" data-line="menos de $10M MXN"><span>Menos de $10M</span></label>
+            <label class="h-chip"><input type="radio" name="facturacion" value="10-50" data-line="$10M a $50M MXN"><span>$10M a $50M</span></label>
+            <label class="h-chip"><input type="radio" name="facturacion" value="50-100" data-line="$50M a $100M MXN"><span>$50M a $100M</span></label>
+            <label class="h-chip"><input type="radio" name="facturacion" value="gt-100" data-line="más de $100M MXN"><span>Más de $100M</span></label>
+          </div>
+        </fieldset>
+        <div class="h-qual__out">
+          <p class="h-qual__route" id="qualRoute" aria-live="polite">Elige una opción y te decimos qué equipo te atiende.</p>
+          <a class="h-btn h-btn--solid h-btn--block" id="qualGo" href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx.%20Me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa." data-wa="Hola, vengo de sipartners.com.mx. Me gustaría recibir asesoría.">Escríbenos</a>
+        </div>
       </form>
     </div>
   </section>
@@ -245,5 +270,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/contacto.js"></script>
 </body>
 </html>

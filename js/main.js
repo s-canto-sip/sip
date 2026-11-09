@@ -76,36 +76,4 @@
     nums.forEach(function(n){ io.observe(n); });
   }
 
-  // Contact form: inline validation + web3forms AJAX submit
-  var form = document.getElementById('contactForm');
-  if (form){
-    var status = document.getElementById('formStatus');
-    var setErr = function(input, msg){
-      var field = input.closest('.field');
-      field.classList.toggle('invalid', !!msg);
-      var slot = field.querySelector('.err'); if(slot) slot.textContent = msg||'';
-    };
-    var validate = function(input){
-      if(input.validity.valueMissing){ setErr(input,'Este campo es obligatorio.'); return false; }
-      if(input.type==='email' && input.validity.typeMismatch){ setErr(input,'Escribe un correo válido.'); return false; }
-      setErr(input,''); return true;
-    };
-    form.querySelectorAll('input[required],textarea[required]').forEach(function(input){
-      input.addEventListener('blur', function(){ validate(input); });
-    });
-    form.addEventListener('submit', async function(ev){
-      ev.preventDefault();
-      var inputs = form.querySelectorAll('input[required],textarea[required]'), ok=true, first=null;
-      inputs.forEach(function(i){ if(!validate(i)){ ok=false; first=first||i; } });
-      if(!ok){ if(first) first.focus(); return; }
-      var btn=form.querySelector('button[type=submit]'); btn.disabled=true;
-      status.className='form-status'; status.textContent='Enviando…';
-      try{
-        var res = await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-        if(res.ok){ form.reset(); status.className='form-status ok'; status.textContent='¡Gracias! Te contactaremos pronto.'; }
-        else throw new Error('bad');
-      }catch(e){ status.className='form-status bad'; status.textContent='Algo salió mal. Escríbenos a contacto@sipartners.com.mx'; }
-      finally{ btn.disabled=false; }
-    });
-  }
 })();
