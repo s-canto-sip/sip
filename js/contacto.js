@@ -1,22 +1,26 @@
 // SIP · contacto por WhatsApp y calificador del inicio.
-// WHATSAPP: número de negocio en formato internacional, solo dígitos (ej. "5215512345678").
-// Mientras esté vacío, los botones abren un correo con el mismo mensaje ya escrito.
+// WhatsApp de cada unidad en formato internacional, solo dígitos (ej. "525512345678").
+// Inversiones (inicio, SIP, SIP Wealth) y Consulting contestan en números distintos.
+// El de Consulting es el mismo que WHATSAPP en src/lib/contact.ts: cambiar los dos juntos.
+// Si un número queda vacío, sus botones abren un correo con el mismo mensaje ya escrito.
 (function(){
-  var WHATSAPP = '';
-  var EMAIL = 'contacto@sipartners.com.mx';
-  var CONSULTING_EMAIL = 'consulting@sipartners.com.mx';
+  var WHATSAPP = { invest: '525515743461', consulting: '529982140221' };
+  var EMAIL = { invest: 'contacto@sipartners.com.mx', consulting: 'consulting@sipartners.com.mx' };
 
-  var href = function(message, email){
-    if (WHATSAPP) return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(message);
-    return 'mailto:' + (email || EMAIL) + '?subject=' + encodeURIComponent('Contacto desde sipartners.com.mx') +
-      '&body=' + encodeURIComponent(message);
-  };
-  var point = function(a, message, email){
-    a.href = href(message, email);
-    if (WHATSAPP){ a.target = '_blank'; a.rel = 'noopener'; }
+  var point = function(a, message, unit){
+    var number = WHATSAPP[unit];
+    if (number){
+      a.href = 'https://wa.me/' + number + '?text=' + encodeURIComponent(message);
+      a.target = '_blank'; a.rel = 'noopener';
+    } else {
+      a.href = 'mailto:' + EMAIL[unit] + '?subject=' + encodeURIComponent('Contacto desde sipartners.com.mx') +
+        '&body=' + encodeURIComponent(message);
+      a.removeAttribute('target');
+    }
+    return !!number;
   };
 
-  document.querySelectorAll('a[data-wa]').forEach(function(a){ point(a, a.dataset.wa, a.dataset.email); });
+  document.querySelectorAll('a[data-wa]').forEach(function(a){ point(a, a.dataset.wa, a.dataset.unit || 'invest'); });
 
   // Calificador: dos o tres preguntas y el mensaje sale escrito, con la unidad al frente
   // para que quien conteste el chat sepa a quién turnarlo.
@@ -53,8 +57,9 @@
     if (facturacion) lines.push('Facturación anual: ' + facturacion.dataset.line + '.');
     if (lines.length === 1) lines.push('Me gustaría recibir asesoría.');
 
-    point(go, lines.join(' '), who === 'empresa' ? CONSULTING_EMAIL : EMAIL);
-    go.textContent = WHATSAPP ? 'Continuar en WhatsApp' : 'Enviar por correo';
+    // Solo empresa va a Consulting; persona y ambos los abre inversiones.
+    var viaWhatsApp = point(go, lines.join(' '), who === 'empresa' ? 'consulting' : 'invest');
+    go.textContent = viaWhatsApp ? 'Continuar en WhatsApp' : 'Enviar por correo';
 
     if (!units.length){ route.textContent = 'Elige una opción y te decimos qué equipo te atiende.'; return; }
     route.innerHTML = 'Te atiende ' + units.map(function(u){
