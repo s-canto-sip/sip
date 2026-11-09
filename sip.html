@@ -21,6 +21,7 @@
 <script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="css/landing.css">
 <link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/sip.css">
 </head>
 <body class="v2" data-brand="sip">
 <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -69,34 +70,53 @@
 
 <main id="main">
 
-  <section class="h-hero" aria-labelledby="hero-title">
-    <div class="h-wrap h-hero__grid">
-      <div class="h-hero__copy">
-        <img class="h-hero__logo" src="img/SIP_LOGO_W.png" alt="SIP" width="480" height="254">
-        <h1 id="hero-title">El poder de <em>empezar hoy</em>.</h1>
-        <p>¿Quieres empezar tu camino financiero? Te acompañamos a construir tu fondo de emergencia, tus primeras decisiones sobre tu dinero y tus metas. Porque decirle que sí a tu futuro es decirle ¡SIP!</p>
-        <div class="h-hero__cta">
-          <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada%20para%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría agendar una llamada para empezar a invertir." class="h-btn h-btn--solid">Agenda tu llamada</a>
-          <a href="#proceso" class="h-btn h-btn--line">Cómo trabajamos</a>
-        </div>
-      </div>
-      <div class="s-path">
-        <p class="s-path__title" id="path-title">Tu camino con SIP</p>
-        <ol aria-labelledby="path-title">
-          <li><b>Fondo de emergencia</b><span>Tu primer colchón para imprevistos</span></li>
-          <li><b>Ahorro con objetivo</b><span>Tus ahorros trabajando para una meta</span></li>
-          <li><b>Retiro</b><span>Empezar a ver por tu futuro desde hoy</span></li>
-        </ol>
+  <section class="s-hero" aria-labelledby="hero-title">
+    <div class="s-hero__bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <img class="s-hero__bulb" src="img/SIP_ICON_W.png" alt="" width="240" height="240" aria-hidden="true">
+    <div class="h-wrap s-hero__in">
+      <p class="s-pill s-pill--on-purple">Educación y orientación financiera</p>
+      <h1 id="hero-title">Invertir no empieza con un producto. <em>Empieza con un plan.</em></h1>
+      <p class="s-hero__lead">Te ayudamos a poner orden en tus finanzas desde abajo: primero tu fondo de emergencia, luego el hábito de ahorrar y después a invertir. Porque decirle que sí a tu futuro es decirle ¡SIP!</p>
+      <div class="h-hero__cta">
+        <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada%20para%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría agendar una llamada para empezar a invertir." class="h-btn s-btn--white">Agenda tu llamada</a>
+        <a href="#niveles" class="h-btn s-btn--ghost">¿En qué nivel estás?</a>
       </div>
     </div>
-    <dl class="h-wrap h-facts">
-      <div><dt>Experiencia</dt><dd><b>+10</b> años</dd></div>
-      <div><dt>Instituciones aliadas</dt><dd><b>8</b></dd></div>
-      <div><dt>Base</dt><dd>Ciudad de México</dd></div>
-    </dl>
   </section>
 
-  <section class="h-partners" aria-label="Instituciones aliadas">
+  <section class="s-section s-levels" id="niveles" aria-labelledby="levels-title">
+    <div class="h-wrap">
+      <p class="s-pill">El camino</p>
+      <h2 id="levels-title" class="s-title">¿En qué <em>nivel</em> estás hoy?</h2>
+      <p class="s-sub">Siete niveles, un orden. Cada uno se construye sobre el anterior: elige el tuyo y te decimos qué sigue.</p>
+      <div class="s-levels__grid">
+        <div class="s-stairs" role="group" aria-label="Niveles">
+          <button type="button" class="s-step" data-level="0" aria-pressed="true"><b>I</b>Fondo de emergencia</button>
+          <button type="button" class="s-step" data-level="1" aria-pressed="false"><b>II</b>Retiro y hábito</button>
+          <button type="button" class="s-step" data-level="2" aria-pressed="false"><b>III</b>Activos reales</button>
+          <button type="button" class="s-step" data-level="3" aria-pressed="false"><b>IV</b>Patrimonio en dólares</button>
+          <button type="button" class="s-step" data-level="4" aria-pressed="false"><b>V</b>Planeación patrimonial</button>
+          <button type="button" class="s-step" data-level="5" aria-pressed="false"><b>VI</b>Deuda privada</button>
+          <button type="button" class="s-step" data-level="6" aria-pressed="false"><b>VII</b>Diversificación global</button>
+        </div>
+        <article class="s-level" id="levelCard" aria-live="polite">
+          <p class="s-level__tag">Nivel I · Fondo de emergencia</p>
+          <h3>Tu colchón para imprevistos</h3>
+          <dl>
+            <div><dt>Objetivo</dt><dd>Tener de 3 a 6 meses de gastos guardados y disponibles.</dd></div>
+            <div><dt>Para quién</dt><dd>Si hoy un gasto inesperado te obliga a usar la tarjeta o pedir prestado.</dd></div>
+          </dl>
+          <a class="s-level__link" href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP). Estoy en el nivel I (Fondo de emergencia) y me gustaría agendar una llamada.">Empezar por aquí</a>
+        </article>
+      </div>
+      <ul class="s-legend">
+        <li><i class="s-legend__build"></i>Niveles I a III · construir</li>
+        <li><i class="s-legend__keep"></i>Niveles IV a VII · consolidar y proteger</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="s-partners" aria-label="Instituciones aliadas">
     <div class="h-wrap h-partners__row">
       <p>Instituciones aliadas</p>
       <div class="h-partners__logos">
@@ -105,44 +125,38 @@
     </div>
   </section>
 
-  <section class="h-section" id="sobre" aria-labelledby="about-title">
-    <div class="h-wrap h-split">
-      <h2 id="about-title" class="h-title reveal">Sobre nosotros</h2>
-      <p class="h-prose reveal">En SIP creemos que empezar bien lo cambia todo. Creamos un espacio para aprender de finanzas, tomar acción y construir tu patrimonio de forma simple y acompañada. Desde tu primer fondo de emergencia hasta hacer crecer tu dinero, te guiamos con herramientas claras, asesoría honesta y experiencia real, para que le des un «SIP» a tu futuro financiero.</p>
-    </div>
-  </section>
-
-  <section class="h-section h-services" id="servicios" aria-labelledby="services-title">
+  <section class="s-section" id="servicios" aria-labelledby="services-title">
     <div class="h-wrap">
-      <h2 id="services-title" class="h-title reveal">Servicios</h2>
-      <div class="h-services__grid">
-        <article class="h-service reveal"><h3>Ahorra hoy, disfruta mañana</h3><p>Asegura tu futuro sin descuidar tu presente. Creamos contigo un plan de ahorro a largo plazo, flexible y constante, que te acerca paso a paso a una jubilación con libertad financiera.</p></article>
-        <article class="h-service reveal"><h3>Inversión con objetivo</h3><p>¿Tienes una meta concreta? Un viaje, tu primer departamento o una etapa importante de la vida: diseñamos una estrategia personalizada según tu horizonte de tiempo y perfil de riesgo.</p></article>
-        <article class="h-service reveal"><h3>Crowdfunding inmobiliario</h3><p>Haz que tu dinero construya algo sólido. Explora con nosotros oportunidades inmobiliarias alineadas a tu perfil, tus metas y tu momento de vida.</p></article>
+      <p class="s-pill">Cómo te ayudamos</p>
+      <h2 id="services-title" class="s-title reveal">Empezar bien lo cambia todo.</h2>
+      <div class="s-cards">
+        <article class="s-card reveal"><h3>Ahorra hoy, disfruta mañana</h3><p>Asegura tu futuro sin descuidar tu presente. Creamos contigo un plan de ahorro a largo plazo, flexible y constante, que te acerca paso a paso a una jubilación con libertad financiera.</p></article>
+        <article class="s-card reveal"><h3>Inversión con objetivo</h3><p>¿Tienes una meta concreta? Un viaje, tu primer departamento o una etapa importante de la vida: diseñamos una estrategia personalizada según tu horizonte de tiempo y perfil de riesgo.</p></article>
+        <article class="s-card reveal"><h3>Crowdfunding inmobiliario</h3><p>Haz que tu dinero construya algo sólido. Explora con nosotros oportunidades inmobiliarias alineadas a tu perfil, tus metas y tu momento de vida.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="h-section" aria-labelledby="why-title">
+  <section class="s-section s-section--tint" aria-labelledby="why-title">
     <div class="h-wrap h-split">
-      <h2 id="why-title" class="h-title reveal">¿Por qué SIP?</h2>
-      <ul class="h-reasons reveal">
+      <div>
+        <p class="s-pill">¿Por qué SIP?</p>
+        <h2 id="why-title" class="s-title reveal">Nadie te enseña esto en la escuela. Nosotros sí.</h2>
+      </div>
+      <ul class="s-checks reveal">
         <li>Porque empezar con el pie derecho te ahorra años de errores.</li>
         <li>Porque todos deberían tener acceso a herramientas claras, reguladas y seguras.</li>
-        <li>Porque nadie te enseña esto en la escuela.</li>
         <li>Porque no necesitas ser experto para tomar buenas decisiones.</li>
         <li>Porque creemos en acompañarte, no en venderte.</li>
       </ul>
     </div>
   </section>
 
-  <section class="h-section" aria-labelledby="diff-title">
-    <div class="h-wrap h-split">
-      <div class="reveal">
-        <h2 id="diff-title" class="h-title">¿Qué nos hace diferentes?</h2>
-        
-      </div>
-      <dl class="h-list reveal">
+  <section class="s-section" aria-labelledby="diff-title">
+    <div class="h-wrap">
+      <p class="s-pill">Lo que nos hace diferentes</p>
+      <h2 id="diff-title" class="s-title reveal">Te explicamos, te acompañamos y no te juzgamos.</h2>
+      <dl class="s-diff reveal">
         <div><dt>Acompañamiento real, sin juicio</dt><dd>Te guiamos paso a paso, desde cero.</dd></div>
         <div><dt>Lenguaje claro y cero rollo</dt><dd>Te explicamos lo que necesitas saber, sin adornos ni tecnicismos.</dd></div>
         <div><dt>Enfoque en metas, no en productos</dt><dd>Primero tus objetivos, luego las herramientas.</dd></div>
@@ -151,23 +165,25 @@
     </div>
   </section>
 
-  <section class="h-section h-steps" id="proceso" aria-labelledby="steps-title">
+  <section class="s-section s-section--tint" id="proceso" aria-labelledby="steps-title">
     <div class="h-wrap">
-      <h2 id="steps-title" class="h-title reveal">¿Cómo hacemos SIP?</h2>
-      <ol class="h-steps__list h-steps__list--4 reveal">
-        <li><span class="h-steps__n">1</span><h3>Radiografía financiera</h3><p>Sesión de asesoramiento y análisis donde conocemos tus necesidades, objetivos y situación actual para determinar tu perfil.</p></li>
-        <li><span class="h-steps__n">2</span><h3>Diseño de estrategia</h3><p>Determinamos las herramientas que más se alinean con tu perfil, cubriendo 4 áreas fundamentales: fondo de emergencia, ahorro para el retiro, inversiones pasivas e inversiones de gestión activa.</p></li>
-        <li><span class="h-steps__n">3</span><h3>Seguimiento puntual</h3><p>Una vez implementada la estrategia, damos seguimiento continuo y mantenemos el análisis.</p></li>
-        <li><span class="h-steps__n">4</span><h3>Evaluación de resultados</h3><p>Al cumplir puntos clave evaluamos resultados, necesidades y objetivos para decidir si se requiere un rebalance o continuidad de la estrategia.</p></li>
+      <p class="s-pill">El proceso</p>
+      <h2 id="steps-title" class="s-title reveal">¿Cómo hacemos SIP?</h2>
+      <ol class="s-flow reveal">
+        <li><span>1</span><h3>Radiografía financiera</h3><p>Una sesión para conocer tus necesidades, tus objetivos y tu situación actual, y saber en qué nivel estás.</p></li>
+        <li><span>2</span><h3>Diseño de estrategia</h3><p>Elegimos las herramientas que van con tu perfil: fondo de emergencia, retiro, inversión pasiva e inversión de gestión activa.</p></li>
+        <li><span>3</span><h3>Seguimiento puntual</h3><p>Con la estrategia en marcha, le damos seguimiento continuo y mantenemos el análisis.</p></li>
+        <li><span>4</span><h3>Evaluación de resultados</h3><p>Al cumplir cada meta revisamos resultados y objetivos para decidir si se rebalancea o se sigue igual.</p></li>
       </ol>
     </div>
   </section>
 
-  <section class="h-section h-close" aria-labelledby="close-title">
-    <div class="h-wrap h-close__in reveal">
-      <h2 id="close-title" class="h-quote">¿Listo para darle un SIP a tu futuro?</h2>
-      <p class="h-lead">Da el primer paso hoy. Te acompañamos sin compromiso.</p>
-      <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada%20para%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría agendar una llamada para empezar a invertir." class="h-btn h-btn--solid">Agenda tu llamada</a>
+  <section class="s-trust" aria-labelledby="trust-title">
+    <div class="h-wrap s-trust__in reveal">
+      <h2 id="trust-title">Tu dinero nunca pasa por nuestras cuentas.</h2>
+      <p>El contrato se emite a tu nombre.</p>
+      <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada%20para%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría agendar una llamada para empezar a invertir." class="h-btn s-btn--white">Agenda tu llamada</a>
+      <small>Da el primer paso hoy. Te acompañamos sin compromiso.</small>
     </div>
   </section>
 
@@ -197,5 +213,6 @@
 
 <script src="js/main.js"></script>
 <script src="js/contacto.js"></script>
+<script src="js/niveles.js"></script>
 </body>
 </html>

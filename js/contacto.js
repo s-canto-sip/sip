@@ -21,6 +21,8 @@
   };
 
   document.querySelectorAll('a[data-wa]').forEach(function(a){ point(a, a.dataset.wa, a.dataset.unit || 'invest'); });
+  // Para enlaces cuyo mensaje cambia después de cargar (niveles de SIP)
+  window.sipContact = function(a){ point(a, a.dataset.wa, a.dataset.unit || 'invest'); };
 
   // Calificador: dos o tres preguntas y el mensaje sale escrito, con la unidad al frente
   // para que quien conteste el chat sepa a quién turnarlo.
