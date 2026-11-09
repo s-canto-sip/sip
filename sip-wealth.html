@@ -32,9 +32,22 @@
   </a>
   <nav class="topbar__nav" aria-label="Principal">
     <a href="index.html">Inicio</a>
-    <a href="sip.html">SIP</a>
-    <a href="sip-wealth.html" aria-current="page">SIP Wealth</a>
-    <a href="consulting/">Empresas</a>
+    <div class="topbar__group">
+      <button type="button" class="topbar__trigger is-current" aria-expanded="false" aria-controls="menuPersonas">Personas</button>
+      <div class="topbar__menu" id="menuPersonas">
+        <p class="topbar__menu-label">SIP Investments</p>
+        <a href="sip.html">SIP<small>Para quien empieza a invertir</small></a>
+        <a href="sip-wealth.html" aria-current="page">SIP Wealth<small>Para quien ya tiene un patrimonio</small></a>
+      </div>
+    </div>
+    <div class="topbar__group">
+      <button type="button" class="topbar__trigger" aria-expanded="false" aria-controls="menuEmpresas">Empresas</button>
+      <div class="topbar__menu" id="menuEmpresas">
+        <p class="topbar__menu-label">SIP Consulting</p>
+        <a href="consulting/">Finanzas estratégicas<small>CFO fraccional para tu empresa</small></a>
+        <span class="topbar__soon">Mentat<small>Próximamente</small></span>
+      </div>
+    </div>
   </nav>
   <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%20Wealth%29.%20Me%20gustar%C3%ADa%20agendar%20una%20consulta%20sobre%20mi%20patrimonio." data-wa="Hola, vengo de sipartners.com.mx (SIP Wealth). Me gustaría agendar una consulta sobre mi patrimonio." class="topbar__cta">Contáctanos</a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
@@ -45,9 +58,12 @@
 <nav class="drawer" id="drawer" aria-label="Menú">
   <button class="close" id="drawerClose" aria-label="Cerrar menú">&times;</button>
   <a href="index.html">Inicio</a>
+  <p class="drawer__label">Personas · SIP Investments</p>
   <a href="sip.html">SIP</a>
   <a href="sip-wealth.html">SIP Wealth</a>
-  <a href="consulting/">Empresas</a>
+  <p class="drawer__label">Empresas · SIP Consulting</p>
+  <a href="consulting/">Finanzas estratégicas</a>
+  <span class="drawer__soon">Mentat <small>Próximamente</small></span>
   <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%20Wealth%29.%20Me%20gustar%C3%ADa%20agendar%20una%20consulta%20sobre%20mi%20patrimonio." data-wa="Hola, vengo de sipartners.com.mx (SIP Wealth). Me gustaría agendar una consulta sobre mi patrimonio." class="btn btn--mint">Contáctanos</a>
 </nav>
 

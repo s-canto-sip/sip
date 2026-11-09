@@ -32,9 +32,22 @@
   </a>
   <nav class="topbar__nav" aria-label="Principal">
     <a href="index.html">Inicio</a>
-    <a href="sip.html" aria-current="page">SIP</a>
-    <a href="sip-wealth.html">SIP Wealth</a>
-    <a href="consulting/">Empresas</a>
+    <div class="topbar__group">
+      <button type="button" class="topbar__trigger is-current" aria-expanded="false" aria-controls="menuPersonas">Personas</button>
+      <div class="topbar__menu" id="menuPersonas">
+        <p class="topbar__menu-label">SIP Investments</p>
+        <a href="sip.html" aria-current="page">SIP<small>Para quien empieza a invertir</small></a>
+        <a href="sip-wealth.html">SIP Wealth<small>Para quien ya tiene un patrimonio</small></a>
+      </div>
+    </div>
+    <div class="topbar__group">
+      <button type="button" class="topbar__trigger" aria-expanded="false" aria-controls="menuEmpresas">Empresas</button>
+      <div class="topbar__menu" id="menuEmpresas">
+        <p class="topbar__menu-label">SIP Consulting</p>
+        <a href="consulting/">Finanzas estratégicas<small>CFO fraccional para tu empresa</small></a>
+        <span class="topbar__soon">Mentat<small>Próximamente</small></span>
+      </div>
+    </div>
   </nav>
   <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada%20para%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría agendar una llamada para empezar a invertir." class="topbar__cta">Contáctanos</a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
@@ -45,9 +58,12 @@
 <nav class="drawer" id="drawer" aria-label="Menú">
   <button class="close" id="drawerClose" aria-label="Cerrar menú">&times;</button>
   <a href="index.html">Inicio</a>
+  <p class="drawer__label">Personas · SIP Investments</p>
   <a href="sip.html">SIP</a>
   <a href="sip-wealth.html">SIP Wealth</a>
-  <a href="consulting/">Empresas</a>
+  <p class="drawer__label">Empresas · SIP Consulting</p>
+  <a href="consulting/">Finanzas estratégicas</a>
+  <span class="drawer__soon">Mentat <small>Próximamente</small></span>
   <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20agendar%20una%20llamada%20para%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría agendar una llamada para empezar a invertir." class="btn btn--mint">Contáctanos</a>
 </nav>
 
@@ -64,20 +80,13 @@
           <a href="#proceso" class="h-btn h-btn--line">Cómo trabajamos</a>
         </div>
       </div>
-      <div class="h-index" role="group" aria-label="Tu camino con SIP">
-        <p class="h-index__group">Tu camino con SIP</p>
-        <div class="h-index__row h-index__row--static">
-          <span class="h-index__name">Fondo de emergencia</span>
-          <span class="h-index__for">Tu primer colchón para imprevistos</span>
-        </div>
-        <div class="h-index__row h-index__row--static">
-          <span class="h-index__name">Ahorro con objetivo</span>
-          <span class="h-index__for">Tus ahorros trabajando para una meta</span>
-        </div>
-        <div class="h-index__row h-index__row--static">
-          <span class="h-index__name">Retiro</span>
-          <span class="h-index__for">Empezar a ver por tu futuro desde hoy</span>
-        </div>
+      <div class="s-path">
+        <p class="s-path__title" id="path-title">Tu camino con SIP</p>
+        <ol aria-labelledby="path-title">
+          <li><b>Fondo de emergencia</b><span>Tu primer colchón para imprevistos</span></li>
+          <li><b>Ahorro con objetivo</b><span>Tus ahorros trabajando para una meta</span></li>
+          <li><b>Retiro</b><span>Empezar a ver por tu futuro desde hoy</span></li>
+        </ol>
       </div>
     </div>
     <dl class="h-wrap h-facts">

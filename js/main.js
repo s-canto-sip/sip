@@ -18,6 +18,18 @@
     addEventListener('keydown',function(e){if(e.key==='Escape'&&drawer.dataset.open==='true')close();});
     drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
   }
+  // top bar groups: hover opens them (CSS); click and keyboard toggle aria-expanded
+  var triggers=document.querySelectorAll('.topbar__trigger');
+  var shut=function(except){triggers.forEach(function(t){if(t!==except)t.setAttribute('aria-expanded','false');});};
+  triggers.forEach(function(t){
+    t.addEventListener('click',function(){var on=t.getAttribute('aria-expanded')!=='true';shut(t);t.setAttribute('aria-expanded',String(on));});
+  });
+  document.addEventListener('click',function(e){if(!e.target.closest('.topbar__group'))shut();});
+  addEventListener('keydown',function(e){
+    if(e.key!=='Escape')return;
+    var open=document.querySelector('.topbar__trigger[aria-expanded="true"]');
+    if(open){shut();open.focus();}
+  });
   // reveal on scroll
   var io=new IntersectionObserver(function(entries){
     entries.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);} });
