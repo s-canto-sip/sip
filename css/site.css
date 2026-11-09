@@ -58,7 +58,7 @@ body.v2 ::selection{background:#9B82F2;color:#070B12}
 .h-index__row:hover .h-index__arrow{transform:translateX(6px)}
 .u-row-sip{--row:var(--u-sip)} .u-row-wealth{--row:var(--u-wealth)} .u-row-con{--row:var(--u-con)}
 
-.h-facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:96px;border-top:1px solid var(--line)}
+.h-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:96px;border-top:1px solid var(--line)}
 .h-facts div{padding:28px 24px 32px 0}
 .h-facts dt{font-size:13px;color:var(--fg-muted)}
 .h-facts dd{margin-top:8px;font-size:20px;color:var(--fg)}
@@ -162,3 +162,7 @@ body.v2[data-brand="home"] .h-hero h1 em.u-con{color:var(--u-con)}
 /* footer: same width as the header and sections */
 body.v2 .foot .container{width:min(100% - 48px,1200px);padding-inline:0}
 @media (max-width:640px){body.v2 .foot .container{width:calc(100% - 32px)}}
+
+/* rhythm: list-and-title sections are tighter than full-width showcase sections */
+.h-section:has(> .h-split){padding:104px 0}
+@media (max-width:900px){.h-section:has(> .h-split){padding:72px 0}}

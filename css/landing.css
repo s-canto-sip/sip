@@ -82,8 +82,9 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 :focus-visible{outline:3px solid var(--mint);outline-offset:2px;border-radius:4px}
 
 /* ============ reveal (js adds .in via existing main.js IntersectionObserver) ============ */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-.reveal.in{opacity:1;transform:none}
+/* Hidden only once JS has marked the page: without JS, content stays visible. */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
 
 /* ============ buttons ============ */
 .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-body);
