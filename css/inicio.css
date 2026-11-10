@@ -19,9 +19,8 @@ body.v2[data-brand="home"] ::selection{background:var(--inv);color:var(--ink)}
 /* hero: una frase grande, luego qué es y las dos salidas */
 .i-hero{padding:104px 0 72px}
 .i-hero h1{font-family:var(--font-head);font-weight:700;font-size:clamp(48px,8.4vw,128px);line-height:.96;letter-spacing:-.045em;color:var(--fg);text-wrap:balance}
-.i-hero__row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:end;margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
-.i-hero__row p{max-width:40em;font-size:19px;line-height:1.6;color:var(--fg-muted)}
-.i-hero__cta{display:flex;gap:12px}
+.i-hero__row{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
+.i-hero__row p{max-width:44em;font-size:20px;line-height:1.6;color:var(--fg-muted)}
 
 /* las dos puertas */
 .i-doors{padding-bottom:96px}
@@ -77,13 +76,15 @@ body.v2[data-brand="home"] ::selection{background:var(--inv);color:var(--ink)}
 .i-cash__proj{fill:none;stroke:var(--con);stroke-width:3;stroke-dasharray:2 7;stroke-linecap:round;stroke-linejoin:round}
 .i-cash__dot{fill:#0E1312;stroke:#E5A25C;stroke-width:2.5}
 .i-cash__note{margin-top:8px;font-size:14px;line-height:1.5;color:#8E9894}
+.i-door__fine{margin-top:24px;max-width:36em;font-size:14px;line-height:1.55;color:rgba(255,255,255,.66)}
 .i-door__soon{display:flex;justify-content:space-between;padding:18px 0 0;border-top:1px solid var(--door-line);font-size:17px;font-weight:600;color:#6F7975}
 .i-door__soon span{font-size:14px}
 
 /* lo que significa SIP: las iniciales se leen hacia abajo */
 .i-label{font-size:15px;font-weight:600;color:var(--fg-muted)}
 .i-name{padding:120px 0;border-top:1px solid var(--line)}
-.i-name__list{margin-top:40px}
+.i-name__lead{margin-top:12px;font-family:var(--font-head);font-weight:700;font-size:clamp(28px,3vw,40px);line-height:1.1;letter-spacing:-.03em;color:var(--fg)}
+.i-name__list{margin-top:48px}
 .i-name__list div{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
 .i-name__list div:first-child{border-top:1px solid var(--line)}
 .i-name__list dt{font-family:var(--font-head);font-weight:700;font-size:clamp(52px,7.4vw,112px);line-height:1;letter-spacing:-.045em;color:#3F3F46}
@@ -95,6 +96,11 @@ body.v2[data-brand="home"] ::selection{background:var(--inv);color:var(--ink)}
 .i-trust{padding:120px 0;border-top:1px solid var(--line)}
 .i-trust__grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:start}
 .i-trust__list{border-top:1px solid var(--line)}
+.i-team__label{margin-top:48px}
+.i-team{display:grid;gap:0;margin-top:16px;list-style:none;border-top:1px solid var(--line)}
+.i-team li{display:grid;gap:4px;padding:18px 0;border-bottom:1px solid var(--line)}
+.i-team b{font-size:19px;font-weight:700;letter-spacing:-.01em;color:var(--fg)}
+.i-team span{font-size:15px;color:var(--fg-muted)}
 .i-trust__list div{padding:24px 0;border-bottom:1px solid var(--line)}
 .i-trust__list dt{font-size:21px;font-weight:700;letter-spacing:-.01em;color:var(--fg)}
 .i-trust__list dd{margin-top:8px;max-width:34em;font-size:17px;line-height:1.6;color:var(--fg-muted)}
@@ -113,13 +119,12 @@ body.v2[data-brand="home"] .h-chip input:checked+span{border-color:var(--fg);bac
 }
 @media (max-width:900px){
   .i-hero{padding:56px 0 48px}
-  .i-hero__row{grid-template-columns:1fr;gap:28px;margin-top:32px}
+  .i-hero__row{margin-top:32px}
   .i-trust__grid,.i-close__grid{grid-template-columns:1fr;gap:40px}
   .i-name,.i-trust,.i-close{padding:80px 0}
   .i-name__list div{grid-template-columns:1fr;gap:12px}
 }
 @media (max-width:640px){
-  .i-hero__cta{flex-direction:column}
   .i-door{padding:28px 20px;border-radius:20px}
   .i-stairs{column-gap:4px}
   .i-stairs__steps{height:240px}
