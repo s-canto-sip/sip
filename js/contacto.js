@@ -57,7 +57,7 @@
     if (etapa) lines.push('Etapa: ' + etapa.dataset.line + '.');
     if (necesidad) lines.push('Lo que más urge en la empresa: ' + necesidad.dataset.line + '.');
     if (facturacion) lines.push('Facturación anual: ' + facturacion.dataset.line + '.');
-    if (lines.length === 1) lines.push('Me gustaría recibir asesoría.');
+    if (lines.length === 1) lines.push('Me gustaría platicar con ustedes.');
 
     // Solo empresa va a Consulting; persona y ambos los abre inversiones.
     var viaWhatsApp = point(go, lines.join(' '), who === 'empresa' ? 'consulting' : 'invest');
