@@ -1,25 +1,33 @@
 @font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../fonts/urbanist-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/fraunces-latin-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(../fonts/fraunces-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300 700;
   font-display: swap;
   src: url(../fonts/inter-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url(../fonts/playfair-latin-italic.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 500 700;
-  font-display: swap;
-  src: url(../fonts/playfair-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -47,7 +55,8 @@ li{
   --maxw:1280px;
   --r:16px; --r-pill:30px;
   --ease:cubic-bezier(.22,.61,.36,1);
-  --font-head:'Playfair Display',Georgia,serif;
+  --font-head:'Fraunces',Georgia,serif;
+  --font-num:'Urbanist',system-ui,sans-serif;
   --font-body:'Inter',system-ui,-apple-system,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -474,3 +483,6 @@ body[data-brand="wealth"]{--mint:#6ea8ff;--mint-ink:#071326;--btn:#6ea8ff;--btn-
 .endcta{text-align:center;background:radial-gradient(120% 130% at 50% 120%,#0c2b3f,var(--ink) 70%)}
 .endcta h2{font-size:clamp(28px,4vw,44px);color:#fff;margin-bottom:12px}
 .endcta p{color:var(--fg-muted);font-size:17px;max-width:520px;margin:0 auto 28px}
+
+/* Numbers use Urbanist: Fraunces numerals and % read poorly at display sizes. */
+.hero__stats .n,.statband .stat b,.trust__num,.contact__pop b,.bento__num,.step__n,.process__dot{font-family:var(--font-num);font-weight:700;letter-spacing:-.02em}

@@ -42,7 +42,8 @@
   --ease:cubic-bezier(.22,.61,.36,1);
 
   /* tipografía */
-  --font-head:'Playfair Display',Georgia,serif;
+  --font-head:'Fraunces',Georgia,serif;
+  --font-num:'Urbanist',system-ui,sans-serif;
   --font-body:'Inter',system-ui,-apple-system,sans-serif;
 }
 
