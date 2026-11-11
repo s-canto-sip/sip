@@ -82,8 +82,9 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.08;letter-sp
 :focus-visible{outline:3px solid var(--mint);outline-offset:2px;border-radius:4px}
 
 /* ============ reveal (js adds .in via existing main.js IntersectionObserver) ============ */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-.reveal.in{opacity:1;transform:none}
+/* Hidden only once JS has marked the page: without JS, content stays visible. */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
 
 /* ============ buttons ============ */
 .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-body);
@@ -298,9 +299,9 @@ h2.on-light{color:#13202e}
 
 /* ============ footer ============ */
 .foot{background:var(--ink);border-top:1px solid var(--border);padding:64px 0 32px}
-.foot__top{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid var(--border)}
+.foot__top{display:grid;grid-template-columns:1fr 2fr;gap:40px;padding-bottom:36px;border-bottom:1px solid var(--border)}
 .foot__brand p{color:var(--fg-muted);font-size:14px;max-width:320px;margin-top:16px}
-.foot__nav{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.foot__nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 
 @media (max-width:520px){
 
@@ -486,3 +487,5 @@ body[data-brand="wealth"]{--mint:#6ea8ff;--mint-ink:#071326;--btn:#6ea8ff;--btn-
 
 /* Numbers use Urbanist: Fraunces numerals and % read poorly at display sizes. */
 .hero__stats .n,.statband .stat b,.trust__num,.contact__pop b,.bento__num,.step__n,.process__dot{font-family:var(--font-num);font-weight:700;letter-spacing:-.02em}
+@media (min-width:521px) and (max-width:860px){.foot__nav{grid-template-columns:1fr 1fr}}
+.foot__nav a{overflow-wrap:anywhere}
