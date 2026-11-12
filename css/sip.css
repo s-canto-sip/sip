@@ -1,0 +1,211 @@
+/* ============ SIP: para quien está construyendo su patrimonio ============
+   El morado del video de SIP, cuerpo lavanda claro y Urbanist como en todo el sitio.
+   La pieza central es la escalera: I a IV son de SIP; V y VI son la siguiente etapa, SIP Wealth. */
+body.v2[data-brand="sip"]{
+  --s-bg:#F6F4FC; --s-tint:#EEEAFB; --s-ink:#1A1240; --s-muted:#5E5878; --s-line:#E2DCF4;
+  --s-purple:#4A25A9; --s-purple-2:#5B2BD1; --s-lilac:#A88BF0; --s-deep:#2A0E73; --s-wealth:#3B6FD8;
+  --font-head:'Urbanist',system-ui,sans-serif; --font-body:'Urbanist',system-ui,sans-serif; --font-num:'Urbanist',system-ui,sans-serif;
+  background:var(--s-bg);color:var(--s-ink)
+}
+body.v2[data-brand="sip"] ::selection{background:var(--s-purple);color:#fff}
+body.v2[data-brand="sip"] .topbar{background:rgba(42,14,115,.92);border-bottom-color:rgba(255,255,255,.1)}
+body.v2[data-brand="sip"] .topbar__cta{background:#fff;color:var(--s-purple)}
+body.v2[data-brand="sip"] :focus-visible{outline-color:var(--s-purple-2)}
+
+.s-title{font-family:var(--font-head);font-size:clamp(32px,4vw,52px);font-weight:700;line-height:1.06;letter-spacing:-.035em;color:var(--s-ink);text-wrap:balance}
+.s-sub{margin-top:16px;max-width:34em;font-size:18px;line-height:1.6;color:var(--s-muted)}
+.s-section{padding:112px 0}
+
+.s-btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;border-radius:999px;font-size:16px;font-weight:600;transition:opacity .2s,background-color .2s}
+.s-btn--white{background:#fff;color:var(--s-purple)}
+.s-btn--purple{background:var(--s-purple);color:#fff}
+.s-btn--wealth{background:var(--s-wealth);color:#fff}
+.s-btn:hover{opacity:.88}
+
+/* hero: campo morado y seis barras que suben, como los niveles */
+.s-hero{position:relative;overflow:hidden;padding:96px 0 120px;background:linear-gradient(120deg,var(--s-deep) 0%,var(--s-purple) 58%,#5A2AC9 100%);color:#fff}
+.s-hero__in{position:relative;z-index:1}
+.s-hero__logo{display:block;width:auto;height:48px;margin-bottom:40px}
+.s-hero h1{max-width:12em;font-family:var(--font-head);font-size:clamp(44px,6.4vw,96px);font-weight:700;line-height:.98;letter-spacing:-.045em;text-wrap:balance}
+.s-hero h1 span{display:block;color:#C9B8FF}
+.s-hero__lead{max-width:34em;margin:32px 0 40px;font-size:20px;line-height:1.6;color:rgba(255,255,255,.82)}
+.s-hero__bars{position:absolute;right:max(24px,(100% - 1200px)/2);bottom:0;display:flex;align-items:flex-end;gap:10px;width:min(38%,460px);height:72%}
+.s-hero__bars i{flex:1;border-radius:8px 8px 0 0;background:rgba(255,255,255,.08);transform-origin:bottom;animation:s-rise .9s cubic-bezier(.22,1,.36,1) both}
+.s-hero__bars i:nth-child(1){height:30%}
+.s-hero__bars i:nth-child(2){height:42%;animation-delay:.06s}
+.s-hero__bars i:nth-child(3){height:55%;animation-delay:.12s}
+.s-hero__bars i:nth-child(4){height:68%;animation-delay:.18s}
+.s-hero__bars i:nth-child(5){height:84%;animation-delay:.24s;background:rgba(143,182,255,.07)}
+.s-hero__bars i:nth-child(6){height:100%;animation-delay:.3s;background:rgba(143,182,255,.07)}
+@keyframes s-rise{from{transform:scaleY(0)}}
+
+/* la escalera */
+.s-levels__grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:end;margin-top:56px}
+.s-stairs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:10px}
+.s-stairs__next{grid-column:5/7;grid-row:1;display:flex;flex-direction:column;gap:6px;padding-bottom:10px;font-size:13px;font-weight:700;line-height:1.25;color:var(--s-wealth)}
+.s-stairs__next::after{content:"";height:8px;border:1.5px solid currentColor;border-bottom:0;border-radius:4px 4px 0 0}
+.s-stairs__steps{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:subgrid;align-items:end;height:380px}
+.s-step{--h:40%;--top:var(--s-lilac);min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:8px;height:var(--h);padding:16px 12px;border:0;border-top:5px solid var(--top);border-radius:12px 12px 0 0;
+  background:#fff;box-shadow:0 10px 30px rgba(74,37,169,.08);
+  font:inherit;font-size:14px;font-weight:600;line-height:1.25;text-align:left;color:var(--s-ink);cursor:pointer;transition:background-color .2s,color .2s,box-shadow .2s}
+.s-step b{font-size:28px;font-weight:700;line-height:1;color:var(--top)}
+.s-step span{overflow-wrap:normal;hyphens:manual}
+.s-step:hover{box-shadow:0 16px 36px rgba(74,37,169,.16)}
+.s-step[aria-selected="true"]{background:var(--s-purple);color:#fff;box-shadow:0 18px 40px rgba(74,37,169,.3)}
+.s-step[aria-selected="true"] b{color:#fff}
+.s-step:nth-child(1){--h:34%}
+.s-step:nth-child(2){--h:46%}
+.s-step:nth-child(3){--h:58%;--top:#8D6BEA}
+.s-step:nth-child(4){--h:70%;--top:var(--s-purple-2)}
+.s-step:nth-child(5){--h:85%}
+.s-step:nth-child(6){--h:100%}
+/* V y VI: la siguiente etapa, más tenues */
+.s-step.is-wealth{--top:#9DB8EE;background:rgba(255,255,255,.45);box-shadow:none;outline:1.5px dashed #C3D3F3;outline-offset:-1.5px;color:var(--s-muted)}
+.s-step.is-wealth b{color:#7C9BDA}
+.s-step.is-wealth[aria-selected="true"]{background:var(--s-wealth);outline-color:transparent;color:#fff}
+.s-step.is-wealth[aria-selected="true"] b{color:#fff}
+
+.s-level{padding:36px;border-radius:20px;background:#fff;box-shadow:0 24px 60px rgba(74,37,169,.12)}
+/* las seis tarjetas ocupan la misma celda: el bloque mide lo que la más alta y nada se mueve al cambiar de nivel */
+.js .s-cards{display:grid}
+.js .s-level{grid-area:1/1}
+.js .s-level[hidden]{display:block;visibility:hidden}
+.s-level__tag{font-size:14px;font-weight:700;color:var(--s-purple-2)}
+.s-level h3{margin-top:8px;font-family:var(--font-head);font-size:30px;font-weight:700;line-height:1.12;letter-spacing:-.025em;color:var(--s-ink)}
+.s-level dl{display:grid;gap:18px;margin-top:24px;padding-top:24px;border-top:1px solid var(--s-line)}
+.s-level dt{font-size:14px;font-weight:700;color:var(--s-muted)}
+.s-level dd{margin-top:4px;font-size:17px;line-height:1.55;color:var(--s-ink)}
+.s-level__note{margin-top:20px;padding:12px 16px;border-radius:12px;background:#EEF3FD;font-size:15px;line-height:1.5;color:#2D4E93}
+.s-level__note a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.s-level__text{margin-top:16px;font-size:17px;line-height:1.6;color:var(--s-muted)}
+.s-level .s-btn{margin-top:28px}
+.s-level--wealth .s-level__tag{color:var(--s-wealth)}
+/* sin JavaScript se ven las seis tarjetas, una debajo de otra */
+html:not(.js) .s-cards{display:grid;gap:16px}
+
+/* cómo empezamos: los pasos y, al lado, la conversación de ejemplo */
+.s-start{background:var(--s-tint)}
+.s-start__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:start}
+.s-sub__link{display:inline-block;font-weight:600;color:var(--s-purple-2);text-decoration:underline;text-underline-offset:4px}
+
+/* ubica tu nivel: una pregunta a la vez; la tarjeta no cambia de alto entre preguntas */
+.s-quiz{display:flex;flex-direction:column;min-height:600px;margin-top:32px;padding:32px;border-radius:24px;background:#fff;box-shadow:0 24px 60px rgba(74,37,169,.12)}
+html:not(.js) .s-quiz{display:none}
+.s-quiz__bar{height:6px;border-radius:6px;background:var(--s-tint);overflow:hidden}
+.s-quiz__bar i{display:block;width:0;height:100%;border-radius:6px;background:var(--s-purple-2);transition:width .3s cubic-bezier(.22,1,.36,1)}
+.s-quiz__count{margin-top:12px;font-size:14px;font-weight:600;color:var(--s-muted)}
+.s-q{min-width:0;margin:24px 0 0;padding:0;border:0}
+.s-q legend{padding:0;font-size:26px;font-weight:700;line-height:1.2;letter-spacing:-.02em;color:var(--s-ink)}
+.s-q__hint{margin-top:8px;font-size:16px;color:var(--s-muted)}
+.s-q__opts{display:grid;gap:10px;margin-top:20px}
+.s-q__opts label{position:relative;display:block;cursor:pointer}
+.s-q__opts input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.s-q__opts span{display:block;padding:15px 18px;border:1.5px solid var(--s-line);border-radius:14px;font-size:17px;font-weight:600;color:var(--s-ink);transition:border-color .15s,background-color .15s,color .15s}
+.s-q__opts label:hover span{border-color:var(--s-lilac)}
+.s-q__opts input:focus-visible+span{outline:2px solid var(--s-purple-2);outline-offset:2px}
+.s-q__opts input:checked+span{border-color:var(--s-purple);background:var(--s-purple);color:#fff}
+.s-q__text{display:block;width:100%;margin-top:20px;padding:15px 18px;border:1.5px solid var(--s-line);border-radius:14px;background:#fff;font:inherit;font-size:17px;color:var(--s-ink)}
+.s-q__text:focus{outline:2px solid var(--s-purple-2);outline-offset:2px;border-color:transparent}
+.s-q .s-btn{margin-top:20px;border:0;cursor:pointer;font:inherit;font-weight:600;font-size:16px}
+.s-quiz__nav{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:24px}
+.s-quiz__back,.s-quiz__next{padding:10px 0;border:0;background:none;font:inherit;font-size:15px;font-weight:600;color:var(--s-muted);cursor:pointer}
+.s-quiz__back:hover{color:var(--s-ink)}
+.s-quiz__next{margin-left:auto;padding:10px 20px;border-radius:999px;background:var(--s-tint);color:var(--s-purple)}
+.s-quiz__next:disabled{opacity:.4;cursor:default}
+.s-quiz__result{margin-top:24px;outline:0}
+.s-quiz__kicker{font-size:14px;font-weight:700;color:var(--s-purple-2)}
+.s-quiz__result h3{margin-top:8px;font-size:28px;font-weight:700;line-height:1.15;letter-spacing:-.025em;color:var(--s-ink)}
+.s-quiz__result p:not(.s-quiz__kicker){margin-top:12px;font-size:17px;line-height:1.6;color:var(--s-muted)}
+.s-quiz__result .s-quiz__wealth{padding:12px 16px;border-radius:12px;background:#EEF3FD;font-size:15px;color:#2D4E93}
+.s-quiz__wealth a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.s-quiz__actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-top:24px}
+.s-quiz__link{font-weight:600;color:var(--s-purple-2);text-decoration:underline;text-underline-offset:4px}
+.s-quiz__result .s-quiz__fine{font-size:14px}
+.s-quiz__nojs{margin-top:20px;font-size:15px;color:var(--s-muted)}
+.s-quiz__nojs a{font-weight:600;color:var(--s-purple-2);text-decoration:underline;text-underline-offset:3px}
+.s-start .s-chat{margin-top:8px;position:sticky;top:96px}
+
+.s-chat{border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(42,14,115,.18)}
+.s-chat figcaption{display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--s-deep);color:#fff}
+.s-chat figcaption img{width:32px;height:32px;padding:5px;border-radius:50%;background:var(--s-purple)}
+.s-chat figcaption span{display:grid;line-height:1.2}
+.s-chat figcaption b{font-size:16px}
+.s-chat figcaption small{font-size:13px;color:rgba(255,255,255,.7)}
+.s-chat__body{display:flex;flex-direction:column;gap:8px;padding:24px 20px;background:#F3EFFC}
+.s-msg{max-width:82%;padding:10px 14px;border-radius:4px 16px 16px 16px;background:#fff;font-size:15px;line-height:1.45;color:var(--s-ink);box-shadow:0 1px 1px rgba(26,18,64,.06)}
+.s-msg--you{align-self:flex-end;border-radius:16px 4px 16px 16px;background:#DCD0FB}
+.s-msg--card{display:grid;gap:2px;border-left:4px solid var(--s-purple-2)}
+.s-msg--card b{margin-top:6px;color:var(--s-purple)}
+.s-msg--card span{font-size:13px;color:var(--s-muted)}
+.s-chat__time{align-self:center;margin:8px 0 4px;padding:4px 12px;border-radius:999px;background:rgba(74,37,169,.1);font-size:12px;font-weight:600;color:var(--s-purple)}
+
+/* por qué con SIP */
+.s-why__list{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
+.s-why__list div{padding-top:24px;border-top:2px solid var(--s-purple-2)}
+.s-why__list dt{font-size:22px;font-weight:700;line-height:1.2;letter-spacing:-.015em;color:var(--s-ink)}
+.s-why__list dd{margin-top:10px;font-size:17px;line-height:1.6;color:var(--s-muted)}
+.s-allies{display:flex;align-items:center;gap:40px;margin-top:72px;padding:28px 0;border-block:1px solid var(--s-line)}
+.s-allies p{flex:none;font-size:14px;font-weight:600;color:var(--s-muted)}
+.s-allies__logos{flex:1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px}
+.s-allies__logos img{height:26px;width:auto;filter:brightness(0);opacity:.55}
+.s-allies__logos img[src*="HANSARD"]{height:30px}
+.s-allies__logos img[src*="MONIFIC"]{height:24px}
+.s-allies__logos img[src*="FINIX"]{height:44px}
+.s-allies__logos img[src*="DINERO"]{height:40px}
+
+/* preguntas frecuentes */
+.s-faq{padding-top:0}
+.s-faq__grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:72px;align-items:start}
+.s-faq__list{border-top:1px solid var(--s-line)}
+.s-faq details{border-bottom:1px solid var(--s-line)}
+.s-faq summary{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;font-size:20px;font-weight:700;letter-spacing:-.01em;color:var(--s-ink);cursor:pointer;list-style:none}
+.s-faq summary::-webkit-details-marker{display:none}
+.s-faq summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--s-purple-2);border-bottom:2px solid var(--s-purple-2);transform:translateY(-3px) rotate(45deg);transition:transform .2s}
+.s-faq details[open] summary::after{transform:translateY(3px) rotate(-135deg)}
+.s-faq details p{max-width:40em;padding-bottom:24px;font-size:17px;line-height:1.65;color:var(--s-muted)}
+
+/* cierre */
+.s-close{padding:112px 0;background:linear-gradient(120deg,var(--s-deep) 0%,var(--s-purple) 70%);color:#fff}
+.s-close__in{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.s-close h2{font-family:var(--font-head);font-size:clamp(36px,5vw,68px);font-weight:700;line-height:1;letter-spacing:-.04em}
+.s-close p{max-width:30em;font-size:19px;line-height:1.6;color:rgba(255,255,255,.82)}
+.s-close .s-btn{margin-top:16px}
+
+@media (max-width:1000px){
+  .s-levels__grid,.s-start__grid{grid-template-columns:1fr;gap:40px}
+  .s-start .s-chat{position:static}
+  .s-hero__bars{width:46%;height:50%;opacity:.7}
+}
+@media (max-width:900px){
+  .s-section{padding:80px 0}
+  .s-faq{padding-top:0}
+  .s-why__list{grid-template-columns:1fr;gap:28px}
+  .s-faq__grid{grid-template-columns:1fr;gap:32px}
+  .s-allies{flex-direction:column;align-items:flex-start;gap:20px}
+}
+@media (max-width:640px){
+  .s-hero{padding:56px 0 88px}
+  .s-hero__logo{height:40px;margin-bottom:28px}
+  .s-hero__lead{font-size:18px}
+  .s-hero__bars{width:60%;height:34%;gap:6px;opacity:.6}
+  .s-stairs{column-gap:4px}
+  .s-stairs__next{font-size:11px}
+  .s-stairs__steps{height:300px}
+  .s-step{padding:10px 3px;font-size:11px;gap:6px}
+  .s-step b{font-size:20px}
+  .s-step span{font-size:0}
+  .s-step span::after{content:attr(data-short);font-size:10px;letter-spacing:-.02em}
+  .s-level{padding:24px}
+  .s-level h3{font-size:26px}
+  .s-chat__body{padding:20px 14px}
+  .s-msg{max-width:88%}
+  .s-quiz{min-height:600px;padding:24px 20px}
+  .s-q legend{font-size:22px}
+  .s-q__opts span{padding:14px 16px;font-size:16px}
+  .s-faq summary{font-size:18px}
+  .s-close{padding:80px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .s-hero__bars i{animation:none}
+  .s-step,.s-faq summary::after,.s-quiz__bar i,.s-q__opts span{transition:none}
+}

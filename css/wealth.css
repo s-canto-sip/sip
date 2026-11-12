@@ -1,0 +1,113 @@
+/* ============ SIP Wealth: la versión sobria del mundo de SIP Investments ============
+   El azul profundo con que termina la puerta de Personas del Inicio, líneas finas, mucho aire
+   y Urbanist como en todo el sitio. Si SIP es cercano, Wealth es discreto. */
+body.v2[data-brand="wealth"]{
+  --w-bg:#0A1226; --w-band:#0D1730; --w-line:rgba(255,255,255,.1);
+  --w-fg:#F1F4FA; --w-muted:#9AA6BF; --w-blue:#8FB6FF; --w-deep:#0F1B4D;
+  --font-head:'Urbanist',system-ui,sans-serif; --font-body:'Urbanist',system-ui,sans-serif; --font-num:'Urbanist',system-ui,sans-serif;
+  --ink:var(--w-bg);
+  background:var(--w-bg);color:var(--w-fg)
+}
+body.v2[data-brand="wealth"] ::selection{background:var(--w-blue);color:var(--w-bg)}
+body.v2[data-brand="wealth"] .topbar{background:rgba(10,18,38,.9)}
+body.v2[data-brand="wealth"] .topbar__cta{background:var(--w-fg);color:var(--w-bg)}
+
+.w-title{font-family:var(--font-head);font-size:clamp(32px,3.6vw,48px);font-weight:600;line-height:1.08;letter-spacing:-.03em;color:var(--w-fg);text-wrap:balance}
+.w-sub{margin-top:16px;max-width:36em;font-size:18px;line-height:1.6;color:var(--w-muted)}
+.w-section{padding:112px 0;border-top:1px solid var(--w-line)}
+
+.w-btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;border-radius:2px;font-size:16px;font-weight:600;transition:opacity .2s}
+.w-btn--solid{background:var(--w-fg);color:var(--w-bg)}
+.w-btn:hover{opacity:.88}
+
+/* hero */
+.w-hero{padding:104px 0 80px;background:linear-gradient(180deg,var(--w-deep) 0%,var(--w-bg) 100%)}
+.w-hero__logo{display:block;width:auto;height:44px;margin-bottom:48px}
+.w-hero h1{max-width:13em;font-family:var(--font-head);font-size:clamp(42px,6vw,88px);font-weight:600;line-height:1;letter-spacing:-.04em;color:var(--w-fg);text-wrap:balance}
+.w-hero h1 span{display:block;color:var(--w-blue)}
+.w-hero__row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px;margin-top:48px;padding-top:32px;border-top:1px solid var(--w-line)}
+.w-hero__row p{max-width:34em;font-size:20px;line-height:1.6;color:var(--w-muted)}
+.w-facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:72px;border-top:1px solid var(--w-line)}
+.w-facts div{padding:24px 24px 0 0}
+.w-facts div+div{padding-left:24px;border-left:1px solid var(--w-line)}
+.w-facts dt{font-size:14px;font-weight:600;color:var(--w-muted)}
+.w-facts dd{margin-top:8px;font-size:clamp(32px,3.4vw,48px);font-weight:600;line-height:1;letter-spacing:-.03em;color:var(--w-fg)}
+.w-facts__note{margin-top:20px;font-size:13px;color:#6F7C97}
+
+/* niveles III a VI: un índice, no tarjetas */
+.w-index{margin-top:56px;list-style:none;border-top:1px solid var(--w-line)}
+.w-index li{display:grid;grid-template-columns:120px minmax(0,.8fr) minmax(0,1.6fr);gap:32px;align-items:start;padding:36px 0;border-bottom:1px solid var(--w-line)}
+.w-index__num{font-size:44px;font-weight:300;line-height:1;letter-spacing:-.02em;color:var(--w-blue)}
+.w-index h3{font-size:28px;font-weight:600;line-height:1.15;letter-spacing:-.02em;color:var(--w-fg)}
+.w-index dl{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.7fr) minmax(0,1fr);gap:28px}
+.w-index dt{font-size:13px;font-weight:600;color:var(--w-muted)}
+.w-index dd{margin-top:6px;font-size:16px;line-height:1.55;color:#D7DDEA}
+.w-levels__back{margin-top:28px;font-size:16px;color:var(--w-muted)}
+.w-levels__back a{font-weight:600;color:var(--w-fg);text-decoration:underline;text-underline-offset:4px}
+
+/* cómo trabajamos */
+.w-steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px;list-style:none;counter-reset:paso;border-top:1px solid var(--w-line)}
+.w-steps li{counter-increment:paso;display:grid;gap:8px;align-content:start;padding:28px 28px 0 0}
+.w-steps li+li{padding-left:28px;border-left:1px solid var(--w-line)}
+.w-steps li::before{content:counter(paso);font-size:15px;font-weight:600;color:var(--w-blue)}
+.w-steps b{font-size:20px;font-weight:600;color:var(--w-fg)}
+.w-steps span{font-size:16px;line-height:1.6;color:var(--w-muted)}
+
+/* por qué */
+.w-why__list{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px}
+.w-why__list div{padding-top:24px;border-top:1px solid var(--w-blue)}
+.w-why__list dt{font-size:21px;font-weight:600;line-height:1.25;color:var(--w-fg)}
+.w-why__list dd{margin-top:10px;font-size:17px;line-height:1.6;color:var(--w-muted)}
+.w-allies{display:flex;align-items:center;gap:40px;margin-top:72px;padding:28px 0;border-block:1px solid var(--w-line)}
+.w-allies p{flex:none;font-size:14px;font-weight:600;color:var(--w-muted)}
+.w-allies__logos{flex:1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px}
+.w-allies__logos img{height:26px;width:auto;filter:brightness(0) invert(1);opacity:.6}
+.w-allies__logos img[src*="HANSARD"]{height:30px}
+.w-allies__logos img[src*="MONIFIC"]{height:24px}
+.w-allies__logos img[src*="FINIX"]{height:44px}
+.w-allies__logos img[src*="DINERO"]{height:40px}
+
+/* preguntas frecuentes */
+.w-faq__grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:72px;align-items:start}
+.w-faq__list{border-top:1px solid var(--w-line)}
+.w-faq details{border-bottom:1px solid var(--w-line)}
+.w-faq summary{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;font-size:20px;font-weight:600;color:var(--w-fg);cursor:pointer;list-style:none}
+.w-faq summary::-webkit-details-marker{display:none}
+.w-faq summary::after{content:"";flex:none;width:11px;height:11px;border-right:1.5px solid var(--w-blue);border-bottom:1.5px solid var(--w-blue);transform:translateY(-3px) rotate(45deg);transition:transform .2s}
+.w-faq details[open] summary::after{transform:translateY(3px) rotate(-135deg)}
+.w-faq details p{max-width:40em;padding-bottom:24px;font-size:17px;line-height:1.65;color:var(--w-muted)}
+
+/* cierre */
+.w-close{padding:128px 0;border-top:1px solid var(--w-line);background:linear-gradient(0deg,var(--w-deep) 0%,var(--w-bg) 100%)}
+.w-close__in{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+.w-close h2{font-size:clamp(36px,4.6vw,64px);font-weight:600;line-height:1.02;letter-spacing:-.04em;color:var(--w-fg);text-wrap:balance}
+.w-close p{max-width:32em;font-size:18px;line-height:1.6;color:var(--w-muted)}
+.w-close .w-btn{margin-top:12px}
+
+@media (max-width:1000px){
+  .w-index li{grid-template-columns:72px minmax(0,1fr);gap:16px 24px}
+  .w-index dl{grid-column:2;grid-template-columns:1fr;gap:16px}
+  .w-steps{grid-template-columns:1fr 1fr;row-gap:32px}
+  .w-steps li:nth-child(3){padding-left:0;border-left:0}
+}
+@media (max-width:900px){
+  .w-section{padding:80px 0}
+  .w-hero{padding:64px 0 56px}
+  .w-why__list{grid-template-columns:1fr;gap:28px}
+  .w-faq__grid{grid-template-columns:1fr;gap:32px}
+  .w-allies{flex-direction:column;align-items:flex-start;gap:20px}
+}
+@media (max-width:640px){
+  .w-hero__logo{height:36px;margin-bottom:32px}
+  .w-hero__row p{font-size:18px}
+  .w-facts{grid-template-columns:1fr}
+  .w-facts div,.w-facts div+div{padding:18px 0;border-left:0;border-bottom:1px solid var(--w-line)}
+  .w-index li{grid-template-columns:1fr;gap:12px}
+  .w-index dl{grid-column:1}
+  .w-index__num{font-size:32px}
+  .w-steps{grid-template-columns:1fr}
+  .w-steps li,.w-steps li+li{padding:20px 0;border-left:0;border-bottom:1px solid var(--w-line)}
+  .w-faq summary{font-size:18px}
+  .w-close{padding:88px 0}
+}
+@media (prefers-reduced-motion:reduce){.w-faq summary::after,.w-btn{transition:none}}

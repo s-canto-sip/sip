@@ -1,63 +1,55 @@
 /* ============================================================
-   SIP Design Tokens — CANONICAL brand source
+   SIP Investments design tokens: SIP (morado) y SIP Wealth (azul)
    ------------------------------------------------------------
-   This file is the single source of truth for the SIP brand
-   across ALL projects (SIP-Web, SIP-App, future repos).
-   Mint/teal + Playfair/Inter. No purple.
+   Colores oficiales: MANUAL IDENTIDAD SIP Y SIP WEALTH.
+   Espejo del :root de css/landing.css, que es la fuente real.
+   Otras unidades de negocio tienen su propia paleta.
 
-   Other repos consume a generated copy of these values
-   (see design-tokens.json for the JS/Tailwind/oklch version).
-   Change the brand HERE, then regenerate the copies.
-
-   Import in any HTML/CSS project:
-     <link rel="stylesheet" href="tokens.css">
-   Then style with var(--token) — never raw hex.
-
-   Brand switch: add data-brand="wealth" to <body> to flip
-   the accent from mint to blue across every component.
+   Cambio de marca: data-brand="wealth" en <body> cambia acento
+   y botones a azul en todos los componentes.
    ============================================================ */
 
 :root{
-  /* base surfaces */
+  /* superficies */
   --ink:#06080D;
   --surface:#0E1320;
   --surface-tint:#F3F4F2;
 
-  /* brand colors */
-  --teal:#13A394;
-  --teal-deep:#063B37;
-  --navy:#16335B;
-  --navy-deep:#0A1C34;
+  /* colores oficiales del manual */
+  --teal:#4a25a9;      /* morado SIP; el nombre del token es histórico */
+  --teal-deep:#30186b;
+  --navy:#071e44;      /* azul SIP Wealth */
 
-  /* accent (re-pointed by the brand switch below) */
-  --mint:#2FE6C6;
-  --mint-ink:#04241D;
+  /* acento sobre fondos oscuros: tono claro, el oficial no alcanza contraste */
+  --mint:#9b82f2;      /* el nombre del token es histórico */
+  --mint-ink:#160b33;
 
-  /* wealth-side accents (used directly on split sections) */
-  --wealth-glow:#6ea8ff;
-  --wealth-text:#9cc2ff;
+  /* botones sólidos */
+  --btn:#4a25a9;
+  --btn-ink:#fff;
 
-  /* text */
+  /* texto */
   --fg:#F8FAFC;
   --fg-muted:#9AA3B2;
   --border:#1C2230;
 
-  /* layout & geometry */
+  /* geometría */
   --maxw:1180px;
   --r:16px;
   --r-pill:30px;
 
-  /* motion */
+  /* movimiento */
   --ease:cubic-bezier(.22,.61,.36,1);
 
-  /* type */
-  --font-head:'Playfair Display',Georgia,serif;
+  /* tipografía */
+  --font-head:'Fraunces',Georgia,serif;
+  --font-num:'Urbanist',system-ui,sans-serif;
   --font-body:'Inter',system-ui,-apple-system,sans-serif;
 }
 
-/* SIP Wealth: re-point the accent token to blue.
-   Every component using var(--mint) turns blue automatically. */
 body[data-brand="wealth"]{
   --mint:#6ea8ff;
   --mint-ink:#071326;
+  --btn:#6ea8ff;
+  --btn-ink:#071326;
 }
