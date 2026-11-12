@@ -3,35 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIP Wealth — Estrategia patrimonial a tu medida</title>
-<meta name="description" content="SIP Wealth: acompañamiento personalizado para diversificar, consolidar y proyectar tu capital a largo plazo. +10 años de experiencia y +300M de pesos canalizados.">
+<title>SIP Wealth | Tu patrimonio ya tiene historia. Ahora, que tenga un plan</title>
+<meta name="description" content="SIP Wealth te acompaña a consolidar, proteger y hacer crecer tu patrimonio: bienes raíces, dólares, planeación patrimonial y deuda privada, con instituciones aliadas y el contrato a tu nombre.">
 <link rel="canonical" href="https://sipartners.com.mx/sip-wealth.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Simple Investment Partners">
-<meta property="og:title" content="SIP Wealth — Estrategia patrimonial a tu medida">
-<meta property="og:description" content="SIP Wealth: acompañamiento personalizado para diversificar, consolidar y proyectar tu capital a largo plazo. +10 años de experiencia y +300M de pesos canalizados.">
+<meta property="og:title" content="SIP Wealth | Tu patrimonio ya tiene historia. Ahora, que tenga un plan">
+<meta property="og:description" content="SIP Wealth te acompaña a consolidar, proteger y hacer crecer tu patrimonio: bienes raíces, dólares, planeación patrimonial y deuda privada, con instituciones aliadas y el contrato a tu nombre.">
 <meta property="og:url" content="https://sipartners.com.mx/sip-wealth.html">
 <meta property="og:image" content="https://sipartners.com.mx/img/og-wealth.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/WEALTH_ICON.png">
-<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/urbanist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/wealth.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Desde qué monto trabajan en SIP Wealth?", "acceptedAnswer": {"@type": "Answer", "text": "Normalmente con patrimonios desde 1 millón de pesos. Si tienes desde 500 mil, también platiquemos: hay opciones que pueden ir contigo."}},
+    {"@type": "Question", "name": "¿En qué se distingue de la banca privada?", "acceptedAnswer": {"@type": "Answer", "text": "Un banco privado te ofrece lo que tiene ese banco. En SIP Wealth trabajamos con varias instituciones y elegimos contigo lo que va con tu plan, y no necesitas montos de banca privada para empezar."}},
+    {"@type": "Question", "name": "¿A nombre de quién queda mi patrimonio?", "acceptedAnswer": {"@type": "Answer", "text": "A tu nombre. Cada contrato es directo con la institución y tu dinero nunca pasa por nuestras cuentas."}},
+    {"@type": "Question", "name": "¿Puedo sacar mi dinero cuando quiera?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del producto. Cada uno tiene sus plazos y sus condiciones de retiro, y salir antes de tiempo puede tener penalización. Te lo explicamos antes de firmar para que elijas lo que va con tus tiempos."}}
+  ]
+}
+</script>
 </head>
-<body data-brand="wealth">
+<body class="v2" data-brand="wealth">
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
-<header class="site-header" id="siteHeader">
-  <a href="index.html" class="brand" aria-label="Inicio"><img src="img/WEALTH_LOGO_W.png" alt="SIP Wealth" width="480" height="214"></a>
-  <nav class="nav-desktop" aria-label="Principal">
+<header class="topbar" id="siteHeader">
+  <a href="index.html" class="topbar__brand" aria-label="Ir al inicio de Simple Investment Partners">
+    <img src="img/SIP_ICON_W.png" alt="" width="28" height="28">
+    <span>Simple Investment Partners</span>
+  </a>
+  <nav class="topbar__nav" aria-label="Principal">
     <a href="index.html">Inicio</a>
-    <a href="#sobre">Sobre nosotros</a>
-    <a href="sip.html">SIP</a>
-    <a href="consulting/">Para empresas</a>
-    <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
+    <div class="topbar__group">
+      <button type="button" class="topbar__trigger is-current" aria-expanded="false" aria-controls="menuPersonas">Personas</button>
+      <div class="topbar__menu" id="menuPersonas">
+        <p class="topbar__menu-label">SIP Investments</p>
+        <a href="sip.html">SIP<small>Para quien empieza a invertir</small></a>
+        <a href="sip-wealth.html" aria-current="page">SIP Wealth<small>Para quien ya tiene un patrimonio</small></a>
+      </div>
+    </div>
+    <div class="topbar__group">
+      <button type="button" class="topbar__trigger" aria-expanded="false" aria-controls="menuEmpresas">Empresas</button>
+      <div class="topbar__menu" id="menuEmpresas">
+        <p class="topbar__menu-label">SIP Consulting</p>
+        <a href="consulting/">Finanzas estratégicas<small>CFO fraccional para tu empresa</small></a>
+        <span class="topbar__soon">Mentat<small>Próximamente</small></span>
+      </div>
+    </div>
   </nav>
+  <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%20Wealth%29.%20Me%20gustar%C3%ADa%20platicar%20sobre%20mi%20patrimonio." data-wa="Hola, vengo de sipartners.com.mx (SIP Wealth). Me gustaría platicar sobre mi patrimonio." class="topbar__cta">Contáctanos</a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
@@ -40,157 +71,166 @@
 <nav class="drawer" id="drawer" aria-label="Menú">
   <button class="close" id="drawerClose" aria-label="Cerrar menú">&times;</button>
   <a href="index.html">Inicio</a>
-  <a href="#sobre">Sobre nosotros</a>
+  <p class="drawer__label">Personas · SIP Investments</p>
   <a href="sip.html">SIP</a>
-  <a href="consulting/">Para empresas</a>
-  <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
+  <a href="sip-wealth.html">SIP Wealth</a>
+  <p class="drawer__label">Empresas · SIP Consulting</p>
+  <a href="consulting/">Finanzas estratégicas</a>
+  <span class="drawer__soon">Mentat <small>Próximamente</small></span>
+  <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%20Wealth%29.%20Me%20gustar%C3%ADa%20platicar%20sobre%20mi%20patrimonio." data-wa="Hola, vengo de sipartners.com.mx (SIP Wealth). Me gustaría platicar sobre mi patrimonio." class="btn btn--mint">Contáctanos</a>
 </nav>
 
 <main id="main">
 
-  <!-- PORTADA -->
-  <section class="portada">
-    <span class="portada__glow" aria-hidden="true"></span>
-    <div class="portada__inner">
-      <img class="portada__logo" src="img/WEALTH_LOGO_W.png" alt="SIP Wealth" width="480" height="214">
-      <h1>Tu patrimonio ya tiene historia. Ahora, que tenga <span class="hl">estrategia</span>.</h1>
-      <p>Acompañamiento personalizado para quienes buscan diversificar, consolidar y proyectar su capital a largo plazo.</p>
-      <div class="portada__cta"><a href="index.html#contacto" class="btn btn--mint">Agenda una consulta <span class="a">→</span></a></div>
+  <section class="w-hero" aria-labelledby="hero-title">
+    <div class="h-wrap">
+      <img class="w-hero__logo" src="img/WEALTH_LOGO_W.png" alt="SIP Wealth" width="120" height="54">
+      <h1 id="hero-title">Tu patrimonio ya tiene historia. <span>Ahora, que tenga un plan.</span></h1>
+      <div class="w-hero__row">
+        <p>Te acompañamos a consolidar, proteger y hacer crecer tu patrimonio, con productos de instituciones aliadas y el contrato siempre a tu nombre.</p>
+        <a class="w-btn w-btn--solid" href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP Wealth). Me gustaría platicar sobre mi patrimonio.">Agenda una plática</a>
+      </div>
+      <dl class="w-facts">
+        <div><dt>Años de experiencia</dt><dd>+10</dd></div>
+        <div><dt>Pesos canalizados</dt><dd>+300M</dd></div>
+        <div><dt>Contrato</dt><dd>A tu nombre</dd></div>
+      </dl>
+      <p class="w-facts__note">Experiencia y monto suman a SIP y a Dinero en Acción, institución aliada.</p>
     </div>
   </section>
 
-  <!-- SOBRE NOSOTROS -->
-  <section class="section" id="sobre">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Quiénes somos</span>
-        <h2>Sobre nosotros</h2>
-      </div>
-      <p class="prose reveal">En SIP Wealth diseñamos <span class="hl">estrategias patrimoniales personalizadas</span> para personas que buscan consolidar, diversificar y proyectar su capital a largo plazo. Ofrecemos acceso a productos financieros de alto nivel, gestionados profesionalmente y respaldados por instituciones autorizadas.</p>
+  <section class="w-section w-levels" aria-labelledby="levels-title">
+    <div class="h-wrap">
+      <h2 id="levels-title" class="w-title">Lo que trabajamos contigo</h2>
+      <p class="w-sub">Los niveles III a VI de la escalera de SIP Investments. Cada uno se suma a lo que ya construiste.</p>
+      <ol class="w-index">
+        <li>
+          <b class="w-index__num">III</b>
+          <h3>Activos reales</h3>
+          <dl>
+            <div><dt>Qué hacemos</dt><dd>Participas en proyectos inmobiliarios publicados en plataforma, con montos a la medida de tu patrimonio.</dd></div>
+            <div><dt>Con quién</dt><dd>Monific</dd></div>
+            <div><dt>Para quién es</dt><dd>Si quieres más bienes raíces sin administrar inmuebles.</dd></div>
+          </dl>
+        </li>
+        <li>
+          <b class="w-index__num">IV</b>
+          <h3>Patrimonio en dólares</h3>
+          <dl>
+            <div><dt>Qué hacemos</dt><dd>Una parte de tu patrimonio en dólares con Simple Fund, para no depender de una sola moneda.</dd></div>
+            <div><dt>Con quién</dt><dd>Hansard International</dd></div>
+            <div><dt>Para quién es</dt><dd>Si tienes capital que no vas a necesitar en 5 años o más.</dd></div>
+          </dl>
+        </li>
+        <li>
+          <b class="w-index__num">V</b>
+          <h3>Planeación patrimonial</h3>
+          <dl>
+            <div><dt>Qué hacemos</dt><dd>Ordenas y proteges tu patrimonio para ti y tu familia con Optimaxx Patrimonial, con fideicomiso.</dd></div>
+            <div><dt>Con quién</dt><dd>Allianz México</dd></div>
+            <div><dt>Para quién es</dt><dd>Si quieres dejar resuelto qué pasa con tu patrimonio a largo plazo.</dd></div>
+          </dl>
+        </li>
+        <li>
+          <b class="w-index__num">VI</b>
+          <h3>Deuda privada</h3>
+          <dl>
+            <div><dt>Qué hacemos</dt><dd>Diversificas con deuda privada, que paga flujos periódicos.</dd></div>
+            <div><dt>Con quién</dt><dd>Finix</dd></div>
+            <div><dt>Para quién es</dt><dd>Si buscas ingresos recurrentes de tu capital.</dd></div>
+          </dl>
+        </li>
+      </ol>
+      <p class="w-levels__back">¿Apenas estás empezando? Los niveles I y II los trabajamos en <a href="sip.html">SIP</a>.</p>
     </div>
   </section>
 
-  <!-- STATS BAND -->
-  <section class="section statband">
-    <div class="container">
-      <div class="section__head center reveal" style="margin-bottom:40px">
-        <span class="eyebrow">Nuestra trayectoria</span>
-        <h2>Resultados que <span class="accent">respaldan</span></h2>
-      </div>
-      <div class="stats reveal">
-        <div class="stat"><b>+10</b><span>años de experiencia</span></div>
-        <div class="stat"><b>+300M</b><span>pesos canalizados</span></div>
-        <div class="stat"><b>100%</b><span>estrategias a la medida</span></div>
-      </div>
+  <section class="w-section w-process" aria-labelledby="process-title">
+    <div class="h-wrap">
+      <h2 id="process-title" class="w-title">Cómo trabajamos</h2>
+      <ol class="w-steps">
+        <li><b>Platicamos.</b><span>Entendemos qué tienes y qué quieres lograr.</span></li>
+        <li><b>Conocemos tu perfil.</b><span>Un cuestionario para entender tu relación con el riesgo y tus planes.</span></li>
+        <li><b>Te presentamos opciones.</b><span>Con plazos y riesgos, para que decidas con calma.</span></li>
+        <li><b>Revisamos juntos.</b><span>Cada cierto tiempo vemos cómo va y si hay que ajustar.</span></li>
+      </ol>
     </div>
   </section>
 
-  <!-- POR QUÉ -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Razones</span>
-        <h2>¿Por qué <span class="accent">SIP Wealth</span>?</h2>
-      </div>
-      <div class="reasons">
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3 7 9l5 12 5-12-2-6"/></svg></div><p>Porque tu patrimonio merece atención personalizada y estrategia profesional.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></div><p>Porque una buena asesoría no vende productos: diseña soluciones.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-5-2-8-1.5v13C7 17 10 17.5 12 19c2-1.5 5-2 8-1.5v-13C17 4 14 4.5 12 6z"/><path d="M12 6v13"/></svg></div><p>Porque nadie te enseña esto en la escuela.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3 2.5-5.2 5.5-5.2s5.5 2.2 5.5 5.2"/><path d="M16 5.2A3.2 3.2 0 0 1 16 11.6"/><path d="M20.5 20c0-2.6-1.8-4.6-4.2-5"/></svg></div><p>Porque buscamos relaciones a largo plazo basadas en confianza.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div><p>Porque tus objetivos son nuestra prioridad, no nuestros intereses.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LO QUE HACE LA DIFERENCIA -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Nuestra diferencia</span>
-        <h2>Lo que hace la <span class="accent">diferencia</span></h2>
-        <p class="sub">No ofrecemos asesoría genérica. Creamos estrategias personalizadas, con expertos que entienden tu patrimonio, tu contexto y tus metas.</p>
-      </div>
-      <div class="diff">
-        <div class="diff__item reveal"><h3>Asesoría especializada</h3><p>Soluciones hechas a la medida, con análisis profundo y visión patrimonial.</p></div>
-        <div class="diff__item reveal"><h3>Acompañamiento estratégico</h3><p>Te acompañamos en cada etapa con seguimiento constante y visión de largo plazo.</p></div>
-        <div class="diff__item reveal"><h3>Transparencia total</h3><p>Sin comisiones ocultas ni intereses cruzados. La confianza es el centro de todo.</p></div>
-        <div class="diff__item reveal"><h3>Recomendaciones a tu medida</h3><p>Estrategias personalizadas para crecimiento, protección y liquidez.</p></div>
-        <div class="diff__item reveal"><h3>Asesores especializados</h3><p>Más de 10 años de experiencia combinada y +300M de pesos bajo gestión.</p></div>
-        <div class="diff__item reveal"><h3>Impulso patrimonial</h3><p>Acompañamiento a personas y negocios para optimizar sus recursos y planificación financiera.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICIOS -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Lo que hacemos</span>
-        <h2>Servicios</h2>
-      </div>
-      <div class="svc">
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-          <h3>Planeación patrimonial y protección financiera</h3>
-          <p>Estrategias diseñadas para proteger tu patrimonio personal y familiar, optimizar la sucesión y mejorar la eficiencia fiscal.</p>
-        </article>
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V11"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg></div>
-          <h3>Inversión en deuda privada</h3>
-          <p>Acceso a vehículos con flujos estables y riesgo moderado, ideales para conservar capital y generar ingresos recurrentes.</p>
-        </article>
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 4 5.7 4 9s-1.4 6.4-4 9c-2.6-2.6-4-5.7-4-9s1.4-6.4 4-9z"/></svg></div>
-          <h3>Portafolios diversificados globalmente</h3>
-          <p>Portafolios con exposición internacional y multiactivo, enfocados en crecimiento sostenible y alineados a tus objetivos de largo plazo.</p>
-        </article>
+  <section class="w-section w-why" aria-labelledby="why-title">
+    <div class="h-wrap">
+      <h2 id="why-title" class="w-title">Por qué SIP Wealth</h2>
+      <dl class="w-why__list">
+        <div><dt>Tu dinero nunca pasa por nuestras cuentas</dt><dd>Cada contrato es directo con la institución y queda a tu nombre.</dd></div>
+        <div><dt>Un equipo, no una persona</dt><dd>Tu patrimonio lo trabajamos entre varios y siempre hay alguien al pendiente.</dd></div>
+        <div><dt>Contigo a largo plazo</dt><dd>Revisamos tu patrimonio contigo, no solo el día que firmas.</dd></div>
+      </dl>
+      <div class="w-allies">
+        <p>Instituciones aliadas</p>
+        <div class="w-allies__logos">
+          <img decoding="async" src="img/ALLIANZ_LOGO.svg" alt="Allianz México" width="592" height="153"><img decoding="async" src="img/HANSARD_LOGO.svg" alt="Hansard International" width="259" height="90"><img decoding="async" src="img/MONIFIC_LOGO.svg" alt="Monific" width="264" height="58"><img decoding="async" src="img/FINIX_LOGO.png" alt="Finix" width="166" height="120"><img decoding="async" src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción" width="420" height="120">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section endcta">
-    <div class="container">
-      <h2 class="reveal">Tu patrimonio merece una <span class="accent">estrategia</span></h2>
-      <p class="reveal">Conversemos sobre cómo consolidar y proyectar tu capital. Sin compromiso.</p>
-      <div class="reveal"><a href="index.html#contacto" class="btn btn--mint">Agenda una consulta <span class="a">→</span></a></div>
+  <section class="w-section w-faq" aria-labelledby="faq-title">
+    <div class="h-wrap w-faq__grid">
+      <h2 id="faq-title" class="w-title">Preguntas frecuentes</h2>
+      <div class="w-faq__list">
+        <details>
+          <summary>¿Desde qué monto trabajan en SIP Wealth?</summary>
+          <p>Normalmente con patrimonios desde 1 millón de pesos. Si tienes desde 500 mil, también platiquemos: hay opciones que pueden ir contigo.</p>
+        </details>
+        <details>
+          <summary>¿En qué se distingue de la banca privada?</summary>
+          <p>Un banco privado te ofrece lo que tiene ese banco. En SIP Wealth trabajamos con varias instituciones y elegimos contigo lo que va con tu plan, y no necesitas montos de banca privada para empezar.</p>
+        </details>
+        <details>
+          <summary>¿A nombre de quién queda mi patrimonio?</summary>
+          <p>A tu nombre. Cada contrato es directo con la institución y tu dinero nunca pasa por nuestras cuentas.</p>
+        </details>
+        <details>
+          <summary>¿Puedo sacar mi dinero cuando quiera?</summary>
+          <p>Depende del producto. Cada uno tiene sus plazos y sus condiciones de retiro, y salir antes de tiempo puede tener penalización. Te lo explicamos antes de firmar para que elijas lo que va con tus tiempos.</p>
+        </details>
+      </div>
     </div>
   </section>
 
-  <!-- ALIADOS -->
-  <section class="partners" aria-label="Instituciones aliadas">
-    <p class="partners__lab">Instituciones aliadas</p>
-    <div class="marquee">
-      <div class="marquee__track">
-        <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="Monific" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="GBM" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="Finix" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="Hansard" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="Dooprimer" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="Allianz" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="Skandia" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción" width="420" height="120">
-        <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="" width="420" height="120">
-      </div>
+  <section class="w-close" aria-labelledby="close-title">
+    <div class="h-wrap w-close__in">
+      <h2 id="close-title">Platiquemos de tu patrimonio.</h2>
+      <p>Una plática sin compromiso para entender qué tienes y a dónde quieres llevarlo. Te responde una persona del equipo.</p>
+      <a class="w-btn w-btn--solid" href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP Wealth). Me gustaría platicar sobre mi patrimonio.">Agenda una plática</a>
     </div>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="foot">
   <div class="container">
     <div class="foot__top">
       <div class="foot__brand">
         <img src="img/WEALTH_LOGO_W.png" alt="SIP Wealth" width="120" height="54">
-        <p>Estrategias patrimoniales sólidas, transparentes y enfocadas en resultados de largo plazo.</p>
+        <p>Simple, inteligente y profesional. Te acompañamos en cada etapa de tu vida financiera.</p>
       </div>
-      <nav class="foot__nav">
-        <div><h2>Explora</h2><a href="index.html">Inicio</a><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="consulting/">SIP Consulting</a></div>
-        <div><h2>Contacto</h2><a href="index.html#contacto">Escríbenos</a><a href="mailto:hola@sipartners.com.mx">hola@sipartners.com.mx</a></div>
+      <nav class="foot__nav" aria-label="Pie de página">
+        <div><h2>Personas</h2><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="index.html#contacto">Escríbenos</a></div>
+        <div><h2>Empresas</h2><a href="consulting/">Finanzas estratégicas</a><a href="consulting/que-es-un-cfo-fraccional">¿Qué es un CFO fraccional?</a><a href="consulting/#contacto">Solicitar diagnóstico</a></div>
+        <div><h2>Contacto</h2><a href="mailto:contacto@sipartners.com.mx">contacto@sipartners.com.mx</a><a href="mailto:investments@sipartners.com.mx">investments@sipartners.com.mx</a><a href="mailto:consulting@sipartners.com.mx">consulting@sipartners.com.mx</a></div>
       </nav>
     </div>
     <div class="disclaimer">
       <h2>Aviso legal</h2>
-      <p>Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro rol se enfoca en orientación general, educación financiera y vinculación con instituciones autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni garantizamos rendimientos.</p>
+      <p>SIP no es una entidad financiera ni presta servicios de asesoría en inversiones. Los productos son emitidos y administrados por instituciones aliadas reguladas. Simple Fund es la marca comercial con la que SIP presenta un producto de Hansard International; SIP no administra fondos propios. Rendimientos pasados no garantizan rendimientos futuros.</p>
+      <p>Simple Investment Partners es la marca comercial de Simple, Inteligente y Profesional Gestora de Capitales, S.A.P.I. de C.V.</p>
     </div>
-    <div class="foot__bottom">© 2026 Simple Investment Partners · Todos los derechos reservados.</div>
+    <div class="foot__bottom">© 2026 Simple Investment Partners · SIP, SIP Wealth y SIP Consulting · Todos los derechos reservados.</div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/contacto.js"></script>
 </body>
 </html>

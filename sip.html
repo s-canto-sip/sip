@@ -3,35 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIP — Empieza tu camino financiero</title>
-<meta name="description" content="SIP te acompaña a construir tu fondo de emergencia, tomar tus primeras decisiones de inversión y alcanzar tus metas financieras de forma simple y acompañada.">
+<title>SIP | Invertir no empieza con un producto. Empieza con un plan</title>
+<meta name="description" content="SIP te acompaña a construir tu patrimonio paso a paso: fondo de emergencia, retiro, bienes raíces y dólares. Con instituciones aliadas y el contrato siempre a tu nombre.">
 <link rel="canonical" href="https://sipartners.com.mx/sip.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Simple Investment Partners">
-<meta property="og:title" content="SIP — Empieza tu camino financiero">
-<meta property="og:description" content="SIP te acompaña a construir tu fondo de emergencia, tomar tus primeras decisiones de inversión y alcanzar tus metas financieras de forma simple y acompañada.">
+<meta property="og:title" content="SIP | Invertir no empieza con un producto. Empieza con un plan">
+<meta property="og:description" content="SIP te acompaña a construir tu patrimonio paso a paso: fondo de emergencia, retiro, bienes raíces y dólares. Con instituciones aliadas y el contrato siempre a tu nombre.">
 <meta property="og:url" content="https://sipartners.com.mx/sip.html">
 <meta property="og:image" content="https://sipartners.com.mx/img/og-sip.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/SIP_ICON.png">
-<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/urbanist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/sip.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Cuánto necesito para empezar?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del nivel. En el fondo de emergencia la meta es juntar de 6 a 12 meses de tus gastos, a tu ritmo, según tu liquidez y lo que puedes ahorrar. En el retiro partimos de con cuánto te quieres retirar y de lo que hoy puedes aportar. Del nivel III en adelante cada producto tiene un monto mínimo de inversión; te lo decimos en la primera plática."}},
+    {"@type": "Question", "name": "¿Necesito saber de finanzas para empezar?", "acceptedAnswer": {"@type": "Answer", "text": "No. Para eso estamos. Te explicamos todo en palabras simples y avanzamos a tu ritmo."}},
+    {"@type": "Question", "name": "¿Puedo sacar mi dinero cuando quiera?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del producto. Cada uno tiene sus plazos y sus condiciones de retiro, y salir antes de tiempo puede tener penalización. Te lo explicamos antes de firmar para que elijas lo que va con tus tiempos."}},
+    {"@type": "Question", "name": "¿Por qué empezar por el fondo de emergencia?", "acceptedAnswer": {"@type": "Answer", "text": "Porque protege todo lo demás. Sin él, un imprevisto te obliga a pedir prestado o a sacar una inversión antes de tiempo. Con tu fondo listo, lo que inviertes después se puede quedar invertido."}},
+    {"@type": "Question", "name": "¿A nombre de quién queda mi inversión?", "acceptedAnswer": {"@type": "Answer", "text": "A tu nombre. Abres tu contrato directo con la institución y tu dinero nunca pasa por nuestras cuentas."}}
+  ]
+}
+</script>
 </head>
-<body data-brand="sip">
+<body class="v2" data-brand="sip">
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
-<header class="site-header" id="siteHeader">
-  <a href="index.html" class="brand" aria-label="Inicio"><img src="img/SIP_LOGO_W.png" alt="SIP" width="480" height="254"></a>
-  <nav class="nav-desktop" aria-label="Principal">
+<header class="topbar" id="siteHeader">
+  <a href="index.html" class="topbar__brand" aria-label="Ir al inicio de Simple Investment Partners">
+    <img src="img/SIP_ICON_W.png" alt="" width="28" height="28">
+    <span>Simple Investment Partners</span>
+  </a>
+  <nav class="topbar__nav" aria-label="Principal">
     <a href="index.html">Inicio</a>
-    <a href="#sobre">Sobre nosotros</a>
-    <a href="sip-wealth.html">SIP Wealth</a>
-    <a href="consulting/">Para empresas</a>
-    <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
+    <div class="topbar__group">
+      <button type="button" class="topbar__trigger is-current" aria-expanded="false" aria-controls="menuPersonas">Personas</button>
+      <div class="topbar__menu" id="menuPersonas">
+        <p class="topbar__menu-label">SIP Investments</p>
+        <a href="sip.html" aria-current="page">SIP<small>Para quien empieza a invertir</small></a>
+        <a href="sip-wealth.html">SIP Wealth<small>Para quien ya tiene un patrimonio</small></a>
+      </div>
+    </div>
+    <div class="topbar__group">
+      <button type="button" class="topbar__trigger" aria-expanded="false" aria-controls="menuEmpresas">Empresas</button>
+      <div class="topbar__menu" id="menuEmpresas">
+        <p class="topbar__menu-label">SIP Consulting</p>
+        <a href="consulting/">Finanzas estratégicas<small>CFO fraccional para tu empresa</small></a>
+        <span class="topbar__soon">Mentat<small>Próximamente</small></span>
+      </div>
+    </div>
   </nav>
+  <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría empezar a invertir." class="topbar__cta">Contáctanos</a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
@@ -40,136 +72,278 @@
 <nav class="drawer" id="drawer" aria-label="Menú">
   <button class="close" id="drawerClose" aria-label="Cerrar menú">&times;</button>
   <a href="index.html">Inicio</a>
-  <a href="#sobre">Sobre nosotros</a>
+  <p class="drawer__label">Personas · SIP Investments</p>
+  <a href="sip.html">SIP</a>
   <a href="sip-wealth.html">SIP Wealth</a>
-  <a href="consulting/">Para empresas</a>
-  <a href="index.html#contacto" class="btn btn--mint">Contáctanos <span class="a">→</span></a>
+  <p class="drawer__label">Empresas · SIP Consulting</p>
+  <a href="consulting/">Finanzas estratégicas</a>
+  <span class="drawer__soon">Mentat <small>Próximamente</small></span>
+  <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría empezar a invertir." class="btn btn--mint">Contáctanos</a>
 </nav>
 
 <main id="main">
 
-  <!-- PORTADA -->
-  <section class="portada">
-    <span class="portada__glow" aria-hidden="true"></span>
-    <div class="portada__inner">
-      <img class="portada__logo" src="img/SIP_LOGO_W.png" alt="SIP" width="480" height="254">
-      <h1>El poder de <span class="hl">empezar hoy</span>.</h1>
-      <p>¿Quieres empezar tu camino financiero? ¡SIP! Te acompañamos a construir tu fondo de emergencia, tus primeras decisiones sobre tu dinero y tus metas. Porque decirle que sí a tu futuro es decirle <span style="color:var(--mint);font-weight:600">¡SIP!</span></p>
-      <div class="portada__cta"><a href="index.html#contacto" class="btn btn--mint">Agenda tu llamada <span class="a">→</span></a></div>
+  <section class="s-hero" aria-labelledby="hero-title">
+    <div class="s-hero__bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="h-wrap s-hero__in">
+      <img class="s-hero__logo" src="img/SIP_LOGO_W.png" alt="SIP" width="120" height="64">
+      <h1 id="hero-title">Invertir no empieza con un producto. <span>Empieza con un plan.</span></h1>
+      <p class="s-hero__lead">Te acompañamos a construir tu patrimonio paso a paso: primero tu fondo de emergencia, después tu retiro y luego tus primeras inversiones, en pesos y en dólares.</p>
+      <a href="#niveles" class="s-btn s-btn--white">¿En qué nivel estás?</a>
     </div>
   </section>
 
-  <!-- SOBRE NOSOTROS -->
-  <section class="section" id="sobre">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Quiénes somos</span>
-        <h2>Sobre nosotros</h2>
-      </div>
-      <p class="prose reveal">En SIP creemos que empezar bien lo cambia todo. Creamos un espacio para aprender de finanzas, tomar acción y construir tu patrimonio de forma simple y acompañada. Desde tu primer fondo de emergencia hasta hacer crecer tu dinero, te guiamos con herramientas claras, asesoría honesta y experiencia real, para que le des un <span class="hl">“SIP” a tu futuro financiero.</span></p>
-    </div>
-  </section>
+  <section class="s-section s-levels" id="niveles" aria-labelledby="levels-title">
+    <div class="h-wrap">
+      <h2 id="levels-title" class="s-title">¿En qué nivel estás hoy?</h2>
+      <p class="s-sub">Cada nivel se construye sobre el anterior. Elige el tuyo y te decimos qué hacemos ahí y qué sigue. <a class="s-sub__link" href="#ubica">¿No sabes cuál es? Ubícalo en un minuto.</a></p>
 
-  <!-- SERVICIOS -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Lo que hacemos</span>
-        <h2>Servicios</h2>
-      </div>
-      <div class="svc">
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 8-7 0 4-3 7-8 7z"/><path d="M12 14c0-3-3-5-7-5 0 3 3 5 7 5z"/></svg></div>
-          <h3>Ahorra hoy, disfruta mañana</h3>
-          <p>Asegura tu futuro sin descuidar tu presente. Creamos contigo un plan de ahorro a largo plazo, flexible y constante, que te acerca paso a paso a una jubilación con libertad financiera.</p>
-        </article>
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
-          <h3>Inversión con objetivo</h3>
-          <p>¿Tienes una meta concreta? Un viaje, tu primer departamento o una etapa importante de la vida: diseñamos una estrategia personalizada según tu horizonte de tiempo y perfil de riesgo.</p>
-        </article>
-        <article class="svc__card reveal">
-          <div class="svc__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
-          <h3>Crowdfunding inmobiliario</h3>
-          <p>Haz que tu dinero construya algo sólido. Explora con nosotros oportunidades inmobiliarias alineadas a tu perfil, tus metas y tu momento de vida.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+      <div class="s-levels__grid">
+        <div class="s-stairs">
+          <p class="s-stairs__next" aria-hidden="true">Siguiente etapa: SIP Wealth</p>
+          <div class="s-stairs__steps" role="tablist" aria-label="Niveles">
+            <button type="button" class="s-step" role="tab" id="tab-1" aria-controls="nivel-1" aria-selected="true"><b>I</b><span data-short="Emer&shy;gencia">Fondo de emergencia</span></button>
+            <button type="button" class="s-step" role="tab" id="tab-2" aria-controls="nivel-2" aria-selected="false" tabindex="-1"><b>II</b><span data-short="Retiro">Fondo para el retiro</span></button>
+            <button type="button" class="s-step" role="tab" id="tab-3" aria-controls="nivel-3" aria-selected="false" tabindex="-1"><b>III</b><span data-short="Activos reales">Activos reales</span></button>
+            <button type="button" class="s-step" role="tab" id="tab-4" aria-controls="nivel-4" aria-selected="false" tabindex="-1"><b>IV</b><span data-short="Dólares">Patrimonio en dólares</span></button>
+            <button type="button" class="s-step is-wealth" role="tab" id="tab-5" aria-controls="nivel-5" aria-selected="false" tabindex="-1"><b>V</b><span data-short="Patrimo&shy;nial">Planeación patrimonial</span></button>
+            <button type="button" class="s-step is-wealth" role="tab" id="tab-6" aria-controls="nivel-6" aria-selected="false" tabindex="-1"><b>VI</b><span data-short="Deuda privada">Deuda privada</span></button>
+          </div>
+        </div>
 
-  <!-- POR QUÉ SIP -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Razones</span>
-        <h2>¿Por qué <span class="accent">SIP</span>?</h2>
-      </div>
-      <div class="reasons">
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg></div><p>Porque empezar con el pie derecho te ahorra años de errores.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><p>Porque todos deberían tener acceso a herramientas claras, reguladas y seguras.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-5-2-8-1.5v13C7 17 10 17.5 12 19c2-1.5 5-2 8-1.5v-13C17 4 14 4.5 12 6z"/><path d="M12 6v13"/></svg></div><p>Porque nadie te enseña esto en la escuela.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12c1 1 1 2 1 3h6c0-1 0-2 1-3a7 7 0 0 0-4-12z"/></svg></div><p>Porque no necesitas ser experto para tomar buenas decisiones.</p></div>
-        <div class="reason reveal"><div class="reason__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C5 16 3 12 3 8.5 3 6 5 4 7.5 4c1.7 0 3 .8 4.5 2.5C13.5 4.8 14.8 4 16.5 4 19 4 21 6 21 8.5 21 12 19 16 12 21z"/></svg></div><p>Porque creemos en acompañarte, no en venderte.</p></div>
-      </div>
-    </div>
-  </section>
+        <div class="s-cards">
+          <article class="s-level" id="nivel-1" role="tabpanel" aria-labelledby="tab-1">
+            <p class="s-level__tag">Nivel I · Fondo de emergencia</p>
+            <h3>Tu colchón para imprevistos</h3>
+            <dl>
+              <div><dt>Qué hacemos</dt><dd>Juntamos de 6 a 12 meses de tus gastos, a tu ritmo, en un lugar donde lo tienes a la mano si surge un imprevisto.</dd></div>
+              <div><dt>Con quién</dt><dd>Bancos y fintechs con cuentas de ahorro que pagan rendimiento y te dejan disponer de tu dinero cuando quieras.</dd></div>
+              <div><dt>Para quién es</dt><dd>Si hoy un imprevisto te obligaría a pedir prestado.</dd></div>
+            </dl>
+            <a class="s-btn s-btn--purple" href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP). Estoy en el nivel I (fondo de emergencia) y me gustaría empezar.">Estoy en el nivel I</a>
+          </article>
 
-  <!-- DIFERENTES -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Nuestra diferencia</span>
-        <h2>¿Qué nos hace <span class="accent">diferentes</span>?</h2>
-      </div>
-      <div class="diff">
-        <div class="diff__item reveal"><h3>Acompañamiento real, sin juicio</h3><p>Te guiamos paso a paso, desde cero.</p></div>
-        <div class="diff__item reveal"><h3>Lenguaje claro y cero rollo</h3><p>Te explicamos lo que necesitas saber, sin adornos ni tecnicismos.</p></div>
-        <div class="diff__item reveal"><h3>Enfoque en metas, no en productos</h3><p>Primero tus objetivos, luego las herramientas.</p></div>
-        <div class="diff__item reveal"><h3>Asesoría cercana y con propósito</h3><p>Nunca estás solo en tus decisiones financieras.</p></div>
-      </div>
-    </div>
-  </section>
+          <article class="s-level" id="nivel-2" role="tabpanel" aria-labelledby="tab-2">
+            <p class="s-level__tag">Nivel II · Fondo para el retiro</p>
+            <h3>Tu retiro, desde hoy</h3>
+            <dl>
+              <div><dt>Qué hacemos</dt><dd>Abres tu Plan Personal de Retiro (PPR) y te explicamos las opciones de inversión dentro del plan, para que además del beneficio fiscal tu ahorro trabaje.</dd></div>
+              <div><dt>Con quién</dt><dd>Allianz México.</dd></div>
+              <div><dt>Para quién es</dt><dd>Si ya tienes tu fondo de emergencia y quieres empezar a ver por tu retiro.</dd></div>
+            </dl>
+            <a class="s-btn s-btn--purple" href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP). Estoy en el nivel II (fondo para el retiro) y me gustaría empezar.">Estoy en el nivel II</a>
+          </article>
 
-  <!-- CÓMO HACEMOS SIP -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head center reveal">
-        <span class="eyebrow">Nuestro proceso</span>
-        <h2>¿Cómo hacemos <span class="accent">SIP</span>?</h2>
-      </div>
-      <div class="process">
-        <span class="process__fill"></span>
-        <div class="process__step"><span class="process__dot">1</span><div class="process__card"><h3>Radiografía financiera</h3><p>Sesión de asesoramiento y análisis donde conocemos tus necesidades, objetivos y situación actual para determinar tu perfil.</p></div></div>
-        <div class="process__step"><span class="process__dot">2</span><div class="process__card"><h3>Diseño de estrategia</h3><p>Determinamos las herramientas que más se alinean con tu perfil, cubriendo <span class="hl">4 áreas fundamentales:</span> fondo de emergencia, ahorro para el retiro, inversiones pasivas e inversiones de gestión activa.</p></div></div>
-        <div class="process__step"><span class="process__dot">3</span><div class="process__card"><h3>Seguimiento puntual</h3><p>Una vez implementada la estrategia, damos seguimiento continuo y mantenemos el análisis.</p></div></div>
-        <div class="process__step"><span class="process__dot">4</span><div class="process__card"><h3>Evaluación de resultados</h3><p>Al cumplir puntos clave evaluamos resultados, necesidades y objetivos para decidir si se requiere un rebalance o continuidad de la estrategia.</p></div></div>
+          <article class="s-level" id="nivel-3" role="tabpanel" aria-labelledby="tab-3">
+            <p class="s-level__tag">Nivel III · Activos reales</p>
+            <h3>Tu dinero en bienes raíces</h3>
+            <dl>
+              <div><dt>Qué hacemos</dt><dd>Participas en proyectos inmobiliarios publicados en plataforma, sin tener que comprar un inmueble completo.</dd></div>
+              <div><dt>Con quién</dt><dd>Monific.</dd></div>
+              <div><dt>Para quién es</dt><dd>Si quieres estar en bienes raíces con montos que se ajustan a ti.</dd></div>
+            </dl>
+            <p class="s-level__note">También lo trabajamos en <a href="sip-wealth.html">SIP Wealth</a>, para patrimonios más grandes.</p>
+            <a class="s-btn s-btn--purple" href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP). Estoy en el nivel III (activos reales) y me gustaría empezar.">Estoy en el nivel III</a>
+          </article>
+
+          <article class="s-level" id="nivel-4" role="tabpanel" aria-labelledby="tab-4">
+            <p class="s-level__tag">Nivel IV · Patrimonio en dólares</p>
+            <h3>Una parte de tu dinero, en dólares</h3>
+            <dl>
+              <div><dt>Qué hacemos</dt><dd>Ahorras en dólares con Simple Fund para no depender de una sola moneda.</dd></div>
+              <div><dt>Con quién</dt><dd>Hansard International.</dd></div>
+              <div><dt>Para quién es</dt><dd>Si tienes capital que no vas a necesitar en 5 años o más.</dd></div>
+            </dl>
+            <p class="s-level__note">También lo trabajamos en <a href="sip-wealth.html">SIP Wealth</a>, para patrimonios más grandes.</p>
+            <a class="s-btn s-btn--purple" href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP). Estoy en el nivel IV (patrimonio en dólares) y me gustaría empezar.">Estoy en el nivel IV</a>
+          </article>
+
+          <article class="s-level s-level--wealth" id="nivel-5" role="tabpanel" aria-labelledby="tab-5">
+            <p class="s-level__tag">Nivel V · Siguiente etapa: SIP Wealth</p>
+            <h3>Planeación patrimonial</h3>
+            <p class="s-level__text">Cuando ya construiste un patrimonio, el siguiente paso es ordenarlo y protegerlo para ti y tu familia. Eso lo trabajamos en SIP Wealth.</p>
+            <a class="s-btn s-btn--wealth" href="sip-wealth.html">Conoce SIP Wealth</a>
+          </article>
+
+          <article class="s-level s-level--wealth" id="nivel-6" role="tabpanel" aria-labelledby="tab-6">
+            <p class="s-level__tag">Nivel VI · Siguiente etapa: SIP Wealth</p>
+            <h3>Deuda privada</h3>
+            <p class="s-level__text">Para diversificar un patrimonio que ya está consolidado. Eso lo trabajamos en SIP Wealth.</p>
+            <a class="s-btn s-btn--wealth" href="sip-wealth.html">Conoce SIP Wealth</a>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section endcta">
-    <div class="container">
-      <h2 class="reveal">¿Listo para darle un <span class="accent">SIP</span> a tu futuro?</h2>
-      <p class="reveal">Da el primer paso hoy. Te acompañamos sin compromiso.</p>
-      <div class="reveal"><a href="index.html#contacto" class="btn btn--mint">Agenda tu llamada <span class="a">→</span></a></div>
+  <section class="s-section s-start" id="ubica" aria-labelledby="start-title">
+    <div class="h-wrap s-start__grid">
+      <div>
+        <h2 id="start-title" class="s-title">Ubica tu nivel en un minuto.</h2>
+        <p class="s-sub">Siete preguntas rápidas. Al final te decimos por dónde empezarías y nos mandas tu resultado por WhatsApp.</p>
+
+        <form class="s-quiz" id="nivelQuiz" aria-label="Ubica tu nivel" novalidate>
+          <div class="s-quiz__bar" aria-hidden="true"><i id="quizBar"></i></div>
+          <p class="s-quiz__count" id="quizCount" aria-live="polite">Pregunta 1 de 7</p>
+
+          <fieldset class="s-q" data-key="fondo">
+            <legend>¿Tienes un fondo de emergencia?</legend>
+            <p class="s-q__hint">Dinero guardado para un imprevisto, sin usar la tarjeta.</p>
+            <div class="s-q__opts">
+              <label><input type="radio" name="fondo" value="si"><span>Sí, ya lo tengo</span></label>
+              <label><input type="radio" name="fondo" value="algo"><span>Tengo algo, pero no alcanza</span></label>
+              <label><input type="radio" name="fondo" value="no"><span>Todavía no</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="s-q" data-key="ingresos">
+            <legend>¿Cuánto ganas al mes, más o menos?</legend>
+            <div class="s-q__opts">
+              <label><input type="radio" name="ingresos" value="Menos de $20,000"><span>Menos de $20,000</span></label>
+              <label><input type="radio" name="ingresos" value="$20,000 a $50,000"><span>$20,000 a $50,000</span></label>
+              <label><input type="radio" name="ingresos" value="$50,000 a $100,000"><span>$50,000 a $100,000</span></label>
+              <label><input type="radio" name="ingresos" value="Más de $100,000"><span>Más de $100,000</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="s-q" data-key="gastos">
+            <legend>¿Y cuánto gastas al mes?</legend>
+            <div class="s-q__opts">
+              <label><input type="radio" name="gastos" value="Menos de $10,000"><span>Menos de $10,000</span></label>
+              <label><input type="radio" name="gastos" value="$10,000 a $30,000"><span>$10,000 a $30,000</span></label>
+              <label><input type="radio" name="gastos" value="$30,000 a $60,000"><span>$30,000 a $60,000</span></label>
+              <label><input type="radio" name="gastos" value="$60,000 a $100,000"><span>$60,000 a $100,000</span></label>
+              <label><input type="radio" name="gastos" value="Más de $100,000"><span>Más de $100,000</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="s-q" data-key="meta">
+            <legend>¿Qué quieres lograr primero?</legend>
+            <div class="s-q__opts">
+              <label><input type="radio" name="meta" value="1" data-text="tener un colchón para imprevistos" data-you="tener un colchón para imprevistos"><span>Tener un colchón para imprevistos</span></label>
+              <label><input type="radio" name="meta" value="2" data-text="ahorrar para mi retiro" data-you="ahorrar para tu retiro"><span>Ahorrar para mi retiro</span></label>
+              <label><input type="radio" name="meta" value="3" data-text="invertir en bienes raíces" data-you="invertir en bienes raíces"><span>Invertir en bienes raíces</span></label>
+              <label><input type="radio" name="meta" value="4" data-text="tener parte de mi dinero en dólares" data-you="tener parte de tu dinero en dólares"><span>Tener parte de mi dinero en dólares</span></label>
+              <label><input type="radio" name="meta" value="0" data-text="todavía no lo sé"><span>Todavía no lo sé</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="s-q" data-key="plazo">
+            <legend>¿En cuánto tiempo?</legend>
+            <div class="s-q__opts">
+              <label><input type="radio" name="plazo" value="corto" data-text="menos de 1 año"><span>Menos de 1 año</span></label>
+              <label><input type="radio" name="plazo" value="medio" data-text="de 1 a 5 años"><span>De 1 a 5 años</span></label>
+              <label><input type="radio" name="plazo" value="largo" data-text="más de 5 años"><span>Más de 5 años</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="s-q" data-key="antes">
+            <legend>¿Has invertido antes?</legend>
+            <div class="s-q__opts">
+              <label><input type="radio" name="antes" value="Sí"><span>Sí</span></label>
+              <label><input type="radio" name="antes" value="No"><span>No, sería la primera vez</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="s-q" data-key="nombre">
+            <legend><label for="quizName">¿Cómo te llamas?</label></legend>
+            <p class="s-q__hint">Para saber a quién saludamos. Nada más.</p>
+            <input class="s-q__text" id="quizName" name="nombre" type="text" autocomplete="given-name" maxlength="60" placeholder="Tu nombre">
+            <button type="submit" class="s-btn s-btn--purple">Ver mi resultado</button>
+          </fieldset>
+
+          <div class="s-quiz__result" id="quizResult" tabindex="-1" hidden>
+            <p class="s-quiz__kicker">Tu resultado</p>
+            <h3 id="quizLevel"></h3>
+            <p id="quizWhy"></p>
+            <p class="s-quiz__wealth" id="quizWealth" hidden>Por lo que nos cuentas, también te puede interesar <a href="sip-wealth.html">SIP Wealth</a>.</p>
+            <div class="s-quiz__actions">
+              <a class="s-btn s-btn--purple" id="quizGo" href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP).">Mandar mi resultado por WhatsApp</a>
+              <a class="s-quiz__link" id="quizSee" href="#niveles">Ver el nivel en la escalera</a>
+            </div>
+            <p class="s-quiz__fine">Es una primera orientación. En la plática lo vemos con calma.</p>
+          </div>
+
+          <div class="s-quiz__nav">
+            <button type="button" class="s-quiz__back" id="quizBack">Atrás</button>
+            <button type="button" class="s-quiz__back" id="quizReset" hidden>Volver a empezar</button>
+            <button type="button" class="s-quiz__next" id="quizNext">Siguiente</button>
+          </div>
+        </form>
+        <p class="s-quiz__nojs">¿Prefieres platicarlo directo? <a href="mailto:contacto@sipartners.com.mx" data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría saber en qué nivel empezaría.">Escríbenos por WhatsApp</a>.</p>
+      </div>
+
+      <figure class="s-chat" aria-label="Ejemplo de conversación por WhatsApp con SIP">
+        <figcaption><img src="img/SIP_ICON_W.png" alt="" width="32" height="32"><span><b>SIP</b><small>Ejemplo de conversación</small></span></figcaption>
+        <div class="s-chat__body">
+          <p class="s-msg s-msg--you s-msg--card">Hola, soy Ana. Hice el cuestionario de sipartners.com.mx (SIP).<b>Resultado: nivel I (fondo de emergencia)</b><span>Fondo de emergencia: todavía no · Meta: ahorrar para mi retiro · Plazo: más de 5 años</span></p>
+          <p class="s-msg">¡Hola, Ana! Gracias. Antes del retiro empezamos por tu fondo de emergencia, así lo que inviertas después se puede quedar invertido. ¿Te queda una llamada esta semana?</p>
+          <p class="s-chat__time">Después de la llamada</p>
+          <p class="s-msg">Te mando las tres opciones que vimos, con lo que pagan, sus plazos y sus riesgos.</p>
+          <p class="s-msg s-msg--you">Me quedo con la segunda.</p>
+          <p class="s-msg">Listo. Abres la cuenta directo con la institución y queda a tu nombre. Tu dinero nunca pasa por nuestras cuentas.</p>
+          <p class="s-chat__time">Ocho meses después</p>
+          <p class="s-msg">Ya tienes seis meses de gastos guardados. ¿Vemos el nivel II?</p>
+        </div>
+      </figure>
     </div>
   </section>
 
-  <!-- ALIADOS -->
-  <section class="partners" aria-label="Instituciones aliadas">
-    <p class="partners__lab">Instituciones aliadas</p>
-    <div class="marquee">
-      <div class="marquee__track">
-        <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="Monific" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="GBM" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="Finix" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="Hansard" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="Dooprimer" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="Allianz" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="Skandia" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción" width="420" height="120">
-        <img loading="lazy" decoding="async" src="img/MONIFIC_LOGO.svg" alt="" width="317" height="125"><img loading="lazy" decoding="async" src="img/GBM_LOGO.svg" alt="" width="611" height="155"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="" width="166" height="120"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="" width="259" height="90"><img loading="lazy" decoding="async" src="img/DOOPRIMER_LOGO.webp" alt="" width="1200" height="630"><img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="" width="592" height="153"><img loading="lazy" decoding="async" src="img/SKANDIA_LOGO.png" alt="" width="643" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="" width="420" height="120">
+  <section class="s-section s-why" aria-labelledby="why-title">
+    <div class="h-wrap">
+      <h2 id="why-title" class="s-title">Por qué con SIP</h2>
+      <dl class="s-why__list">
+        <div><dt>Tu dinero nunca pasa por nuestras cuentas</dt><dd>Abres tu contrato directo con la institución y queda a tu nombre.</dd></div>
+        <div><dt>Un plan, no un producto</dt><dd>Primero entendemos dónde estás. El producto llega después, cuando tiene sentido para ti.</dd></div>
+        <div><dt>Contigo de nivel en nivel</dt><dd>No termina al firmar. Te damos seguimiento y, cuando estés listo, subimos juntos al siguiente nivel.</dd></div>
+      </dl>
+      <div class="s-allies">
+        <p>Instituciones aliadas</p>
+        <div class="s-allies__logos">
+          <img loading="lazy" decoding="async" src="img/ALLIANZ_LOGO.svg" alt="Allianz México" width="592" height="153"><img loading="lazy" decoding="async" src="img/HANSARD_LOGO.svg" alt="Hansard International" width="259" height="90"><img decoding="async" src="img/MONIFIC_LOGO.svg" alt="Monific" width="264" height="58"><img loading="lazy" decoding="async" src="img/FINIX_LOGO.png" alt="Finix" width="166" height="120"><img loading="lazy" decoding="async" src="img/DINEROENACCION_LOGO.png" alt="Dinero en Acción" width="420" height="120">
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section class="s-section s-faq" aria-labelledby="faq-title">
+    <div class="h-wrap s-faq__grid">
+      <h2 id="faq-title" class="s-title">Preguntas frecuentes</h2>
+      <div class="s-faq__list">
+        <details>
+          <summary>¿Cuánto necesito para empezar?</summary>
+          <p>Depende del nivel. En el fondo de emergencia la meta es juntar de 6 a 12 meses de tus gastos, a tu ritmo, según tu liquidez y lo que puedes ahorrar. En el retiro partimos de con cuánto te quieres retirar y de lo que hoy puedes aportar. Del nivel III en adelante cada producto tiene un monto mínimo de inversión; te lo decimos en la primera plática.</p>
+        </details>
+        <details>
+          <summary>¿Necesito saber de finanzas para empezar?</summary>
+          <p>No. Para eso estamos. Te explicamos todo en palabras simples y avanzamos a tu ritmo.</p>
+        </details>
+        <details>
+          <summary>¿Puedo sacar mi dinero cuando quiera?</summary>
+          <p>Depende del producto. Cada uno tiene sus plazos y sus condiciones de retiro, y salir antes de tiempo puede tener penalización. Te lo explicamos antes de firmar para que elijas lo que va con tus tiempos.</p>
+        </details>
+        <details>
+          <summary>¿Por qué empezar por el fondo de emergencia?</summary>
+          <p>Porque protege todo lo demás. Sin él, un imprevisto te obliga a pedir prestado o a sacar una inversión antes de tiempo. Con tu fondo listo, lo que inviertes después se puede quedar invertido.</p>
+        </details>
+        <details>
+          <summary>¿A nombre de quién queda mi inversión?</summary>
+          <p>A tu nombre. Abres tu contrato directo con la institución y tu dinero nunca pasa por nuestras cuentas.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-close" aria-labelledby="close-title">
+    <div class="h-wrap s-close__in">
+      <h2 id="close-title">¿En qué nivel estás hoy?</h2>
+      <p>Escríbenos y lo vemos juntos. Te responde una persona del equipo.</p>
+      <a href="mailto:contacto@sipartners.com.mx?subject=Contacto%20desde%20sipartners.com.mx&amp;body=Hola%2C%20vengo%20de%20sipartners.com.mx%20%28SIP%29.%20Me%20gustar%C3%ADa%20empezar%20a%20invertir." data-wa="Hola, vengo de sipartners.com.mx (SIP). Me gustaría empezar a invertir." class="s-btn s-btn--white">Escríbenos por WhatsApp</a>
     </div>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="foot">
   <div class="container">
     <div class="foot__top">
@@ -177,19 +351,24 @@
         <img src="img/SIP_LOGO_W.png" alt="SIP" width="120" height="64">
         <p>Simple, inteligente y profesional. Te acompañamos en cada etapa de tu vida financiera.</p>
       </div>
-      <nav class="foot__nav">
-        <div><h2>Explora</h2><a href="index.html">Inicio</a><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="consulting/">SIP Consulting</a></div>
-        <div><h2>Contacto</h2><a href="index.html#contacto">Escríbenos</a><a href="mailto:hola@sipartners.com.mx">hola@sipartners.com.mx</a></div>
+      <nav class="foot__nav" aria-label="Pie de página">
+        <div><h2>Personas</h2><a href="sip.html">SIP</a><a href="sip-wealth.html">SIP Wealth</a><a href="index.html#contacto">Escríbenos</a></div>
+        <div><h2>Empresas</h2><a href="consulting/">Finanzas estratégicas</a><a href="consulting/que-es-un-cfo-fraccional">¿Qué es un CFO fraccional?</a><a href="consulting/#contacto">Solicitar diagnóstico</a></div>
+        <div><h2>Contacto</h2><a href="mailto:contacto@sipartners.com.mx">contacto@sipartners.com.mx</a><a href="mailto:investments@sipartners.com.mx">investments@sipartners.com.mx</a><a href="mailto:consulting@sipartners.com.mx">consulting@sipartners.com.mx</a></div>
       </nav>
     </div>
     <div class="disclaimer">
       <h2>Aviso legal</h2>
-      <p>Simple Investment Partners es una firma independiente. No somos una entidad financiera ni un asesor en inversiones registrado ante la Comisión Nacional Bancaria y de Valores (CNBV). Nuestro rol se enfoca en orientación general, educación financiera y vinculación con instituciones autorizadas por las autoridades competentes. No ofrecemos productos financieros propios ni garantizamos rendimientos.</p>
+      <p>SIP no es una entidad financiera ni presta servicios de asesoría en inversiones. Los productos son emitidos y administrados por instituciones aliadas reguladas. Simple Fund es la marca comercial con la que SIP presenta un producto de Hansard International; SIP no administra fondos propios. Rendimientos pasados no garantizan rendimientos futuros.</p>
+      <p>Simple Investment Partners es la marca comercial de Simple, Inteligente y Profesional Gestora de Capitales, S.A.P.I. de C.V.</p>
     </div>
-    <div class="foot__bottom">© 2026 Simple Investment Partners · Todos los derechos reservados.</div>
+    <div class="foot__bottom">© 2026 Simple Investment Partners · SIP, SIP Wealth y SIP Consulting · Todos los derechos reservados.</div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/contacto.js"></script>
+<script src="js/niveles.js"></script>
+<script src="js/ubica.js"></script>
 </body>
 </html>
